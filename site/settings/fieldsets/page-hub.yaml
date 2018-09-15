@@ -1,0 +1,14 @@
+sections:
+  main:
+    display: Main
+    fields:
+      hero:
+        fieldset: partial-hero
+        type: partial
+        display: Hero
+      components:
+        fieldset: page_components
+        type: partial
+        display: Components
+taxonomies: true
+title: 'Page - Hub'

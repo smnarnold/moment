@@ -1,0 +1,33 @@
+sections:
+  main:
+    display: Main
+    fields:
+      hero-section:
+        type: section
+        display: Hero
+      hero-theme:
+        max_items: '1'
+        collection:
+          - themes
+        type: collection
+        width: 33
+        display: Theme
+      hero-image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        type: assets
+        display: Image
+        width: 66
+      hero-tagline:
+        type: text
+        display: Tagline
+      hero-title:
+        type: text
+        display: Title
+      hero-subtitle:
+        type: text
+        display: Subtitle
+taxonomies: false
+title: 'Partial - Hero'

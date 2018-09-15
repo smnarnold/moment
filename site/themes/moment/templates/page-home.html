@@ -1,0 +1,29 @@
+<div data-page="Home">
+
+  <!-- Hero -->
+  {{ partial:components/hero }}
+
+  <!-- Post List -->
+  <section class="section theme--white">
+    <div class="container">
+      <h2 class="section__title">Latest posts</h2>
+      <div class="row">
+        {{ if get:jobs or get:topics }}
+          {{ collection:blog taxonomy:jobs:any="{ get:jobs }" taxonomy:topics:any="{ get:topics }" sort="featured|date:desc" as="posts" }}
+            {{ partial:components/post-list }}
+          {{ /collection:blog }}
+        {{ else }}
+          {{ collection:blog taxonomy="true" sort="featured|date:desc" as="posts" }}
+            {{ partial:components/post-list }}
+          {{ /collection:blog }}
+        {{ /if }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Components -->
+  {{ components }}
+    {{ partial src="components/{type}" }}
+  {{ /components }}
+
+</div>

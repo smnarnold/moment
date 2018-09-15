@@ -1,0 +1,29 @@
+sections:
+  main:
+    display: Main
+    fields:
+      background:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Background
+      text:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Text
+      highlight:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Highlight
+taxonomies: true
+title: 'Collection - Theme'
+create_title: ''
+hide: true

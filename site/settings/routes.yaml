@@ -1,0 +1,6 @@
+collections:
+  blog: '/blog/{year}/{month}/{day}/{slug}'
+taxonomies:
+  jobs: '/blog/job/{slug}'
+  tags: '/blog/tags/{slug}'
+  topics: '/blog/topic/{slug}'

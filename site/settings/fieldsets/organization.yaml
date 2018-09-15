@@ -1,0 +1,60 @@
+taxonomies:
+  tags: true
+title: 'Collection - Organization'
+sections:
+  main:
+    display: Main
+    fields:
+      role:
+        type: select
+        display: Role
+        options:
+          main: Main
+          partner: Partner
+        width: 50
+      website:
+        type: text
+        display: Website
+        width: 50
+        validate: url
+      description:
+        type: textarea
+        display: Description
+      logo:
+        type: assets
+        display: Logo
+        container: main
+        folder: /
+        restrict: false
+      place:
+        type: collection
+        display: Place
+        collection:
+          - places
+        max_items: '1'
+        mode: panes
+        width: 33
+      email:
+        type: text
+        display: Email
+        width: 33
+        validate: email
+      telephone:
+        type: text
+        display: Telephone
+        width: 33
+      fax:
+        type: text
+        display: Fax
+        width: 33
+      founders:
+        type: collection
+        display: Founders
+        collection:
+          - persons
+        width: 66
+      social_medias:
+        type: partial
+        display: 'Social Medias'
+        fieldset: social_medias_partial
+hide: true

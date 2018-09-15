@@ -1,0 +1,10 @@
+sections:
+  main:
+    display: Main
+    fields:
+      cell-youtube:
+        type: video_embed
+        display: Youtube
+taxonomies: true
+title: 'Partial - Cell - Youtube'
+hide: true

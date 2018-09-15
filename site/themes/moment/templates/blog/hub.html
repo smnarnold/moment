@@ -1,0 +1,31 @@
+<div data-page="Hub">
+
+  <!-- Hero -->
+  {{ partial:components/hero modifier="small" random="true"}}
+
+  <!-- Filters -->
+  {{ partial:components/filters }}
+
+  <!-- Post List -->
+  <section class="section theme--white">
+    <div class="container">
+      <div class="row">
+        {{ if get:jobs or get:topics }}
+          {{ collection:blog taxonomy:jobs:any="{ get:jobs }" taxonomy:topics:any="{ get:topics }" sort="featured|date:desc" as="posts" }}
+            {{ partial:components/post-list }}
+          {{ /collection:blog }}
+        {{ else }}
+          {{ collection:blog taxonomy="true" sort="featured|date:desc" as="posts" }}
+            {{ partial:components/post-list }}
+          {{ /collection:blog }}
+        {{ /if }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Components -->
+  {{ components }}
+    {{ partial src="components/{type}" }}
+  {{ /components }}
+
+</div>

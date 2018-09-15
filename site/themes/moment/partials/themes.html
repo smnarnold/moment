@@ -1,0 +1,7 @@
+{{ collection:themes }}
+    .theme--{{ slug }} { background-color: {{ background }}; color: {{ text }}; }
+    .theme--{{ slug }} * { outline-color: {{ highlight }}; }
+    .theme--{{ slug }} *::selection { background-color: {{ highlight }}; }
+    .theme--{{ slug }} + .theme-{{ slug }} { padding-top: 0; }
+    .theme--{{ slug }} .theme-fill { fill: {{ highlight }}; stroke-color: {{ highlight }}; }
+{{ /collection:themes }}

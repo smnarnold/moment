@@ -1,0 +1,48 @@
+locales:
+  fr:
+    full: fr_CA
+    name: French
+    url: 'http://moment.local/'
+timezone: America/Montreal
+date_format: 'F jS, Y'
+default_extension: md
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: ytoage3bqgCU49cLg9a5ZMr46A7noDCL
+redactor:
+  -
+    name: Standard
+    settings:
+      buttons:
+        - bold
+        - italic
+        - mark
+        - cite
+        - code
+        - link
+        - unorderedlist
+        - orderedlist
+        - html
+  -
+    name: Basic
+    settings:
+      buttons:
+        - bold
+        - italic
+csrf_exclude:
+  - '/!/Fetch/*'
+yaml_parser: symfony
+send_powered_by_header: true
+ensure_unique_ids: true

@@ -1,0 +1,30 @@
+taxonomies:
+  tags: true
+title: 'Collection - Place'
+sections:
+  main:
+    display: Main
+    fields:
+      street_address:
+        type: text
+        display: 'Street Address'
+        width: 33
+      address_locality:
+        type: text
+        display: City
+        width: 33
+      address_region:
+        type: text
+        display: Province/State
+        width: 33
+        default: Québec
+      address_country:
+        type: text
+        display: Country
+        width: 33
+        default: Canada
+      postal_code:
+        type: text
+        display: 'Postal Code'
+        width: 33
+hide: true

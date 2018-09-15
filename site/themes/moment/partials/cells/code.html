@@ -1,0 +1,7 @@
+{{ if cell-language }}
+  {{ relate:cell-language }}
+  <pre class="prettyprint lang-{{ slug }}">{{ cell-code | entities }}</pre>
+  {{ /relate:cell-language }}
+{{ else }}
+  {{ cell-code }}
+{{ /if }}

@@ -1,0 +1,139 @@
+.anchors-menu {
+  height: 60px;
+  padding: 0;
+  transition: background-color $s;
+
+  &__wrapper {
+    background-color: #fff;
+    height: 100%;
+    padding: 0;
+    transition: background-color $s;
+  }
+
+  &__placeholder {
+    height: 60px;
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
+
+  .button {
+    display: none;
+  }
+
+  &__nav {
+    display: none;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+  }
+
+  &__list {
+    @extend %list;
+
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: auto;
+  }
+
+  &__line {
+    opacity: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  &__link {
+    color: inherit;
+    font-weight: 500;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity $s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__select {
+    background-color: #fff;
+  }
+
+  &.is-fixed {
+    position: sticky;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .anchors-menu {
+    height: $site-header-height-desktop;
+    transition: height $s;
+
+    &__wrapper {
+      height: $site-header-height-desktop;
+      text-align: center;
+      transition: height $s, background-color $s;
+      width: 100%;
+    }
+
+    .button {
+      display: block;
+      opacity: 0;
+      transform: translate(0, -100px);
+      transition: background-color $s, border-color $s, opacity $s, transform $s;
+    }
+
+    &__select {
+      display: none;
+    }
+
+    &__nav {
+      display: inline-block;
+    }
+
+    &__line {
+      background-color: #000;
+      bottom: 0;
+      height: 4px;
+      left: 0;
+      position: absolute;
+      transition: transform $s, width $s, opacity $s;
+      width: 100px;
+    }
+
+    &.is-docked {
+      height: $site-header-height-desktop;
+
+      .anchors-menu {
+        &__wrapper {
+          background-color: palette(grey, x-light);
+          height: $site-header-height-desktop;
+          overflow: hidden;
+          position: fixed;
+          top: $site-header-height-desktop;
+          z-index: 20;
+        }
+
+        &__line {
+          opacity: 1;
+        }
+
+        &__placeholder {
+          height: $site-header-height-desktop;
+        }
+      }
+
+      .button {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+  }
+}

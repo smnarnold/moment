@@ -1,0 +1,16 @@
+taxonomies:
+  tags: true
+title: 'Page - Default'
+sections:
+  main:
+    display: Main
+    fields:
+      hero:
+        fieldset: partial-hero
+        type: partial
+        display: Hero
+      components:
+        type: partial
+        display: Components
+        fieldset: page_components
+create_title: page-default

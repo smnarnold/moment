@@ -1,0 +1,10 @@
+{{ if no_results }}
+  <div class="col-12">Aww, there are no results.</div>
+{{ /if }}
+{{ posts }}
+  {{ if ! segment_2 && ! get:jobs && ! get:topcis && zero_index < 2 && featured }}
+    <div class="col-12">{{ partial:cards/featured-post }}<hr></div>
+  {{ else }}
+    <div class="col-12 col-sm-6 col-lg-4 d-flex">{{ partial:cards/post }}</div>
+  {{ /if }}
+{{ /posts }}

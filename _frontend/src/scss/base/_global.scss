@@ -1,0 +1,21 @@
+html,
+body {
+  background: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  font: 300 10px/1.4 font(sans-serif);
+}
+
+body {
+  font-size: 1.6rem; // 16px
+  padding-top: 64px;
+}
+
+.sr-only {
+  @extend %sr-only;
+}

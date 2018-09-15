@@ -1,0 +1,34 @@
+/**
+ * variables
+ * =========
+ */
+
+$s: 0.3s;
+
+$palettes: (
+  black: (
+    base: #000,
+  ),
+  grey: (
+    x-light: #ebebeb,
+    light: #bfbfbf,
+    base: #7f7f7f,
+    dark: #404040,
+    x-dark: #373737,
+  ),
+  white: (
+    base: #fff,
+  ),
+  pink: (
+    base: #eac7c2,
+    highlight: #f694c1,
+  ),
+);
+
+$fonts: (
+  sans-serif: #{ 'visuelt', helvetica, arial, sans-serif },
+  serif: #{ 'sang_bleu_kingdom', Georgia, Times, serif }
+);
+
+$site-header-height-mobile: 64px;
+$site-header-height-desktop: 64px;

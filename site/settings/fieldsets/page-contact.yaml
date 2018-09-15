@@ -1,0 +1,10 @@
+sections:
+  main:
+    display: Main
+    fields:
+      hero:
+        fieldset: partial-hero
+        type: partial
+        display: Hero
+taxonomies: true
+title: 'Page - Contact'

@@ -1,0 +1,52 @@
+taxonomies:
+  tags: true
+title: 'Collection - Person'
+create_title: ''
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      first_name:
+        type: text
+        display: 'First name'
+        width: 25
+      last_name:
+        type: text
+        display: 'Last name'
+        width: 25
+      job_title:
+        type: list
+        display: 'Job title'
+        width: 25
+        localizable: true
+      gender:
+        type: radio
+        display: Gender
+        options:
+          male: Male
+          female: Female
+        inline: false
+        width: 25
+        default: male
+      description:
+        type: markdown
+        display: Description
+        cheatsheet: false
+        restrict_assets: false
+        localizable: true
+      image:
+        type: assets
+        display: Image
+        container: main
+        folder: persons
+        restrict: true
+      social_medias:
+        type: partial
+        display: 'Social Medias'
+        fieldset: social_medias_partial
+      website:
+        type: text
+        display: Website
+        width: 50
+        validate: url

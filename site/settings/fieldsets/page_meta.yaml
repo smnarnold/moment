@@ -1,0 +1,38 @@
+taxonomies:
+  tags: true
+title: 'Partial - Metas'
+create_title: ''
+sections:
+  main:
+    display: Main
+    fields:
+      page_title:
+        type: text
+        display: 'Meta Title'
+        instructions: 'Will appear on social medias'
+        localizable: true
+      page_description:
+        type: text
+        display: 'Meta Description'
+        instructions: 'Will appear on social medias'
+        localizable: true
+      page_image:
+        type: assets
+        display: 'Meta Image'
+        container: main
+        folder: /
+        restrict: false
+        instructions: 'Will appear on social medias'
+        localizable: true
+        mode: grid
+        max_files: 1
+      page_type:
+        type: select
+        display: 'Meta Type'
+        options:
+          website: Website
+          article: Article
+          profile: Profile
+        width: 33
+        default: website
+hide: true

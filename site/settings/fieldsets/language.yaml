@@ -1,0 +1,13 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+taxonomies: true
+title: 'Collection - Language'

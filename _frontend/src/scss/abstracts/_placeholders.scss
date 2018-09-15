@@ -1,0 +1,173 @@
+/**
+ * placeholders
+ * ============
+ * They're meant to be used with the @extend directive.
+ * On their own, without any use of @extend, rulesets that use placeholder selectors will not be rendered to CSS.
+ */
+
+// positions
+
+%centered {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// components
+
+%sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+%overlay {
+  background: rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity $s cubic-bezier(0, 0, 0.3, 1);
+  width: 100%;
+  will-change: opacity;
+}
+
+// buttons
+
+%close-button {
+  $close-color: #fff;
+
+  @extend %reset-button;
+
+  display: block;
+  height: 40px;
+  transform: scale(1);
+  transition: transform $s ease;
+  width: 40px;
+
+  &::before,
+  &::after {
+    background-color: $close-color;
+    content: '';
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    width: 40px;
+    z-index: 1;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+%play-button {
+  $play-color: #fff;
+
+  @extend %reset-button;
+
+  &::before,
+  &::after {
+    @extend %centered;
+
+    content: '';
+    pointer-events: none;
+    transition: opacity $s, transform $s;
+  }
+
+  &::before {
+    border: solid 0.25rem $play-color;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &::after {
+    border-bottom: 1rem solid transparent;
+    border-left: 1.5rem solid $play-color;
+    border-top: 1rem solid transparent;
+    height: 0;
+    margin: 0 0 0 0.2rem;
+  }
+}
+
+%reset-button {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  user-select: none;
+}
+
+// ratios
+
+%ratio-16-9,
+%ratio-4-3,
+%ratio-3-2,
+%ratio-8-5 {
+  height: 0;
+  margin: auto;
+  position: relative;
+  width: 100%;
+
+  > * {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+%ratio-16-9 {
+  max-width: 177.78vh; // 16/9 = 1.778
+  padding-bottom: 56.25%;
+}
+
+%ratio-4-3 {
+  max-width: 133.33vh; // 4/3 = 1.333
+  padding-bottom: 75%;
+}
+
+%ratio-3-2 {
+  max-width: 150vh; // 3/2 = 1.5
+  padding-bottom: 66.66%;
+}
+
+%ratio-8-5 {
+  max-width: 160vh; // 8/5 = 1.6
+  padding-bottom: 62.5%;
+}

@@ -1,0 +1,35 @@
+<div class="card card--featured-post">
+  <div class="row">
+    <div class="card__col col-12 col-sm-6 col-lg-4">
+      <a href="{{ url }}">
+        {{ if hero-image }}
+          <img class="card__image" src="{{ glide:hero-image width="500" height="280" fit="crop" }}" alt="">
+        {{ /if }}
+      </a>
+    </div>
+    <div class="card__col col-12 col-sm-6">
+      <div class="card__info">
+        <a class="card__title" href="{{ url }}">{{ title }}</a>
+        <div class="card__topics">
+          [{{ relate:topics }}
+            <a href="/blog/topic/{{ slug }}">{{ title }}</a>{{ unless last }}, {{ /unless }}
+          {{ /relate:topics }}]
+        </div>
+        <a class="card__excerpt" href="{{ url }}">{{ excerpt }}</a>
+      </div>
+      <div class="card__meta">
+        <div class="card__author">
+          {{ relate:author }}
+            {{ first_name }} {{ last_name }}
+            <span class="sr-only" itemscope itemtype="http://schema.org/Person">{{ partial:metas/person }}</span>
+          {{ /relate:author }}
+        </div>
+        <span class="card__date">{{ date }},</span>
+        <span class="card__time">
+          <svg class="icon icon--small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          {{ components | flatten | collapse | join | strip_tags | read_time:150 or '1' }} min read
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

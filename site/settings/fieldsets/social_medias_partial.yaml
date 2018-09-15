@@ -1,0 +1,33 @@
+taxonomies:
+  tags: true
+title: 'Partial - Social medias'
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      facebook:
+        type: text
+        display: Facebook
+        width: 50
+        validate: url
+      twitter:
+        type: text
+        display: Twitter
+        width: 50
+        validate: url
+      instagram:
+        type: text
+        display: Instagram
+        width: 50
+        validate: url
+      linkedin:
+        type: text
+        display: LinkedIn
+        width: 50
+        validate: url
+      youtube:
+        type: text
+        display: Youtube
+        width: 50
+        validate: url
