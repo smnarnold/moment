@@ -1,0 +1,73 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      tpl-place:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - places
+        mode: tags
+        type: collection
+        width: 33
+        display: Place
+      tpl-subject:
+        sort: 'title:asc'
+        collection:
+          - persons
+        type: collection
+        width: 33
+        display: Subject
+      tpl-date:
+        allow_blank: false
+        allow_time: true
+        require_time: true
+        earliest_date: 'January 1, 2000'
+        format: Y.m.d
+        input_format: YYYY.MM.DD
+        type: date
+        width: 33
+        display: Date
+      tpl-description:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Description
+      tpl-image:
+        container: main
+        folder: content/images/landscape
+        restrict: false
+        max_files: 1
+        type: assets
+        display: Image
+      tpl-display:
+        options:
+          normal: Normal
+          large: large
+        inline: true
+        type: radio
+        width: 33
+        display: Display
+        default: normal
+      tpl-background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Background Color'
+      tpl-text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Text Color'
+taxonomies: true
+title: 'Partial - 📝🖼️ Landscape'
+hide: true

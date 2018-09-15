@@ -26,4 +26,11 @@ sections:
                 fieldset: partial-hero
                 type: partial
                 display: Hero
+          tpl:
+            display: '📝🖼️ Landscape'
+            fields:
+              tpl:
+                fieldset: landscape
+                type: partial
+                display: '📝🖼️ Landscape'
 hide: true

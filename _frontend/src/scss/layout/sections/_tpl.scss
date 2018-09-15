@@ -1,0 +1,197 @@
+.tpl {
+  $paddingH: 25px;
+
+  position: relative;
+  width: 100%;
+  padding: 3.6rem 0;
+
+  &__bg {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  &__title,
+  &__description,
+  &__figure {
+    padding: 0 $paddingH;
+  }
+
+  &__title {
+    flex: 2 1 100%;
+    order: 1;
+    letter-spacing: -2px;
+    line-height: 1;
+    font-size: 6rem;
+    margin: 0 0 6rem;
+  }
+
+  &__description,
+  &__figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__description {
+    @extend %children-margin;
+
+    order: 3;
+    padding-top: 3.6rem;
+
+    p,
+    blockquote {
+      margin: 2.4rem 0;
+    }
+
+    blockquote {
+      font-family: font(sans-serif);
+      line-height: 1.25;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+  }
+
+  &__figure {
+    padding-top: 3.6rem;
+    order: 2;
+
+    &[style*='background-color'] {
+      padding-top: 0;
+      padding-bottom: 3.6rem;
+    }
+  }
+
+  &__picture {
+    display: block;
+    max-width: 100%;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__metas {
+    position: relative;
+    display: inline-block;
+    font-family: font(sans-serif);
+    text-align: left;
+    margin: 3.6rem 0 0;
+    padding: 0 3rem 0 1.8rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background-color: currentColor;
+      opacity: 0.5;
+    }
+  }
+
+  &--large {
+    .tpl {
+      &__figure {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &__metas {
+        margin-left: $paddingH;
+        margin-right: $paddingH;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .tpl {
+    $paddingH: 40px;
+
+    padding: 8.6rem 0;
+
+    &__bg {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    &__title,
+    &__description,
+    &__figure {
+      padding: 0 $paddingH;
+    }
+
+    &__title {
+      padding: 0 calc(50% + #{$paddingH}) 0 $paddingH;
+    }
+
+    &__description,
+    &__figure {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+
+    &__description {
+      order: 2;
+    }
+
+    &__figure {
+      order: 3;
+      text-align: right;
+
+      &[style*='background-color'] {
+        padding-bottom: 0;
+      }
+    }
+
+    &__picture {
+      margin: 0.4rem 0 0; // compensate description line-height
+    }
+
+    &:nth-child(even) {
+      .tpl {
+        &__bg {
+          left: 0;
+          right: auto;
+        }
+
+        &__title {
+          padding: 0 $paddingH 0 calc(50% + #{$paddingH});
+        }
+
+        &__description {
+          order: 3;
+        }
+
+        &__figure {
+          order: 2;
+          text-align: left;
+        }
+      }
+    }
+
+    &--large {
+      .tpl {
+        &__metas {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -8,11 +8,12 @@ body {
 }
 
 html {
-  font: 300 10px/1.4 font(sans-serif);
+  font: 300 10px/1.4 font(serif);
 }
 
 body {
   font-size: 1.6rem; // 16px
+  line-height: 1.5;
   padding-top: 64px;
 }
 

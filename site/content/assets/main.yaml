@@ -14,3 +14,6 @@ assets:
     title: 'redwood sign'
   img/desert.jpg:
     focus: 77-70
+  content/images/landscape/img_3962.jpg:
+    title: 'Réflexion humaine'
+    alt: 'Réflexion humaine'
