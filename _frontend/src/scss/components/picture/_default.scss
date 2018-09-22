@@ -1,4 +1,4 @@
-.tpl {
+.picture {
   $paddingH: 25px;
 
   position: relative;
@@ -30,8 +30,6 @@
   }
 
   &__title {
-    flex: 2 1 100%;
-    order: 1;
     letter-spacing: -2px;
     line-height: 1;
     font-size: 6rem;
@@ -123,7 +121,7 @@
   }
 
   &--large {
-    .tpl {
+    .picture {
       &__figure {
         padding-left: 0;
         padding-right: 0;
@@ -139,7 +137,7 @@
 
 // Medium devices (tablets, 992px and up)
 @include media-breakpoint-up(lg) {
-  .tpl {
+  .picture {
     $paddingH: 40px;
 
     padding: 8.6rem 0;
@@ -162,14 +160,9 @@
       order: 2;
     }
 
-    &__title,
     &__description,
     &__figure {
       padding: 0 $paddingH;
-    }
-
-    &__title {
-      padding: 0 calc(50% + #{$paddingH}) 0 $paddingH;
     }
 
     &__description,
@@ -196,7 +189,7 @@
     }
 
     &:nth-child(even) {
-      .tpl {
+      .picture {
         &__bg {
           left: 0;
           right: auto;
@@ -208,10 +201,6 @@
 
         &__main {
           order: 1;
-        }
-
-        &__title {
-          padding: 0 $paddingH 0 calc(50% + #{$paddingH});
         }
 
         &__description {
@@ -226,7 +215,7 @@
     }
 
     &--large {
-      .tpl {
+      .picture {
         &__metas {
           margin-left: 0;
           margin-right: 0;
@@ -238,7 +227,7 @@
 
 // Medium devices (tablets, 1200px and up)
 @include media-breakpoint-up(xl) {
-  .tpl {
+  .picture {
     $paddingH: 40px;
     $asideW: 100px;
 
@@ -253,10 +242,6 @@
       display: block;
     }
 
-    &__title {
-      padding: 0 calc(50% + #{$paddingH} + #{$asideW}) 0 $paddingH;
-    }
-
     &__description {
       flex: 1 1 calc(50% - #{$asideW});
       max-width: calc(50% - #{$asideW});
@@ -265,14 +250,6 @@
     &__figure {
       flex: 1 1 calc(50% + #{$asideW});
       max-width: calc(50% + #{$asideW});
-    }
-
-    &:nth-child(even) {
-      .tpl {
-        &__title {
-          padding: 0 $paddingH 0 calc(50% + #{$paddingH} + #{$asideW});
-        }
-      }
     }
   }
 }

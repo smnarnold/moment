@@ -6,7 +6,17 @@ sections:
         display: Title
         type: text
         localizable: true
-      tpl-place:
+        width: 66
+      picture_orientation:
+        options:
+          landscape: Landscape
+          portrait: Portrait
+        inline: true
+        type: radio
+        width: 33
+        display: Orientation
+        default: landscape
+      picture_place:
         max_items: '1'
         sort: 'title:asc'
         label: '{{ title }}'
@@ -16,52 +26,53 @@ sections:
         type: collection
         width: 33
         display: Place
-      tpl-subject:
+      picture_subject:
         sort: 'title:asc'
         collection:
           - persons
         type: collection
         width: 33
         display: Subject
-      tpl-date:
+      picture_date:
         allow_blank: false
         allow_time: true
         require_time: true
         earliest_date: 'January 1, 2000'
-        format: Y.m.d
-        input_format: YYYY.MM.DD
         type: date
         width: 33
         display: Date
-      tpl-description:
+        input_format: YYYY.MM.DD
+      picture_description:
         cheatsheet: true
         restrict_assets: false
         type: markdown
         display: Description
-      tpl-image:
+        width: 66
+      picture_image:
         container: main
-        folder: content/images/landscape
+        folder: content/images
         restrict: false
         max_files: 1
         type: assets
         display: Image
-      tpl-display:
+        width: 33
+      picture_size:
         options:
           normal: Normal
-          large: large
+          large: Large
         inline: true
         type: radio
         width: 33
-        display: Display
+        display: Size
         default: normal
-      tpl-background_color:
+      picture_background_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
         display: 'Background Color'
-      tpl-text_color:
+      picture_text_color:
         format: hex
         control: hue
         show_opacity: false
@@ -69,5 +80,6 @@ sections:
         width: 33
         display: 'Text Color'
 taxonomies: true
-title: 'Partial - 📝🖼️ Landscape'
+title: 'Collection - Picture'
+create_title: ''
 hide: true

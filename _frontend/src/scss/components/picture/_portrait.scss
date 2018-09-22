@@ -1,0 +1,24 @@
+.picture--portrait {
+  .picture {
+
+  }
+}
+
+// Medium devices (tablets, 992px and up)
+@include media-breakpoint-up(lg) {
+  .picture--portrait {
+    .picture {
+      &__title {
+        padding: 0;
+      }
+    }
+
+    &:nth-child(odd) {
+      .picture {
+        &__metas {
+          float: right;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.picture--landscape {
+  .picture {
+    &__title {
+      flex: 2 1 100%;
+      order: 1;
+    }
+  }
+}
+
+// Medium devices (tablets, 992px and up)
+@include media-breakpoint-up(lg) {
+  .picture--landscape {
+    $paddingH: 40px;
+
+    .picture {
+      &__title {
+        padding: 0 $paddingH;
+        padding: 0 calc(50% + #{$paddingH}) 0 $paddingH;
+      }
+    }
+
+    &:nth-child(even) {
+      .picture {
+        &__title {
+          padding: 0 $paddingH 0 calc(50% + #{$paddingH});
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 1200px and up)
+@include media-breakpoint-up(xl) {
+  .picture--landscape {
+    $paddingH: 40px;
+    $asideW: 100px;
+
+    .picture {
+      &__title {
+        padding: 0 calc(50% + #{$paddingH} + #{$asideW}) 0 $paddingH;
+      }
+    }
+
+    &:nth-child(even) {
+      .picture {
+        &__title {
+          padding: 0 $paddingH 0 calc(50% + #{$paddingH} + #{$asideW});
+        }
+      }
+    }
+  }
+}

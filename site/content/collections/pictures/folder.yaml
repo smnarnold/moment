@@ -1,4 +1,4 @@
 order: date
-fieldset: page-post
+fieldset: collection_picture
 template: pictures/post
 title: Pictures
