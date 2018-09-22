@@ -1,12 +1,12 @@
 <div data-page="Home">
 
   <!-- Post List -->
-  {{ collection:blog sort="date:desc" as="entries" }}
+  {{ collection:pictures sort="date:desc" as="entries" }}
     {{ entries }}
       {{ components }}
         {{ partial src="components/tpl" }}
       {{ /components }}
     {{ /entries }}
 
-  {{ /collection:blog }}
+  {{ /collection:pictures }}
 </div>

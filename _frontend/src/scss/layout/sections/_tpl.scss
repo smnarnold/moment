@@ -3,6 +3,7 @@
 
   position: relative;
   width: 100%;
+  //background: url(https://i.imgur.com/H4uA0fG.jpg);
   padding: 3.6rem 0;
 
   &__bg {
@@ -12,9 +13,14 @@
   &__container {
     display: flex;
     position: relative;
-    flex-wrap: wrap;
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
+  }
+
+  &__main {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
   }
 
   &__title,
@@ -62,7 +68,7 @@
     padding-top: 3.6rem;
     order: 2;
 
-    &[style*='background-color'] {
+    &[style*="background-color"] {
       padding-top: 0;
       padding-bottom: 3.6rem;
     }
@@ -98,6 +104,24 @@
     }
   }
 
+  &__aside {
+    display: none;
+    font-family: font(sans-serif);
+  }
+
+  &__subject {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+
+  &__tag {
+    text-decoration: none;
+    color: currentColor;
+  }
+
   &--large {
     .tpl {
       &__figure {
@@ -113,8 +137,8 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@include media-breakpoint-up(md) {
+// Medium devices (tablets, 992px and up)
+@include media-breakpoint-up(lg) {
   .tpl {
     $paddingH: 40px;
 
@@ -128,6 +152,14 @@
       width: 50%;
       height: 100%;
       pointer-events: none;
+    }
+
+    &__aside {
+      order: 1;
+    }
+
+    &__main {
+      order: 2;
     }
 
     &__title,
@@ -154,7 +186,7 @@
       order: 3;
       text-align: right;
 
-      &[style*='background-color'] {
+      &[style*="background-color"] {
         padding-bottom: 0;
       }
     }
@@ -168,6 +200,14 @@
         &__bg {
           left: 0;
           right: auto;
+        }
+
+        &__aside {
+          order: 2;
+        }
+
+        &__main {
+          order: 1;
         }
 
         &__title {
@@ -190,6 +230,47 @@
         &__metas {
           margin-left: 0;
           margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 1200px and up)
+@include media-breakpoint-up(xl) {
+  .tpl {
+    $paddingH: 40px;
+    $asideW: 100px;
+
+    &__bg {
+      width: calc(50% + #{$asideW}/2);
+    }
+
+    &__aside {
+      flex: 1 1 $asideW;
+      min-width: $asideW;
+      max-width: $asideW;
+      display: block;
+    }
+
+    &__title {
+      padding: 0 calc(50% + #{$paddingH} + #{$asideW}) 0 $paddingH;
+    }
+
+    &__description {
+      flex: 1 1 calc(50% - #{$asideW});
+      max-width: calc(50% - #{$asideW});
+    }
+
+    &__figure {
+      flex: 1 1 calc(50% + #{$asideW});
+      max-width: calc(50% + #{$asideW});
+    }
+
+    &:nth-child(even) {
+      .tpl {
+        &__title {
+          padding: 0 $paddingH 0 calc(50% + #{$paddingH} + #{$asideW});
         }
       }
     }
