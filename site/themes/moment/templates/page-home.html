@@ -1,7 +1,5 @@
 <div data-page="Home">
-  {{ collection:pictures as="picture" sort="picture_date:desc" }}
-    {{ picture }}
-      {{ partial src="pictures/{picture_orientation}" }}
-    {{ /picture }}
-  {{ /collection:pictures }}
+  {{ components }}
+    {{ partial src="components/{type}" }}
+  {{ /components }}
 </div>

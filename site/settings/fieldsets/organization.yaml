@@ -5,27 +5,20 @@ sections:
   main:
     display: Main
     fields:
-      role:
-        type: select
-        display: Role
-        options:
-          main: Main
-          partner: Partner
-        width: 50
-      website:
-        type: text
-        display: Website
-        width: 50
-        validate: url
       description:
         type: textarea
         display: Description
+        width: 66
       logo:
         type: assets
         display: Logo
         container: main
         folder: /
         restrict: false
+        width: 33
+      svg:
+        type: textarea
+        display: SVG
       place:
         type: collection
         display: Place
@@ -34,6 +27,11 @@ sections:
         max_items: '1'
         mode: panes
         width: 33
+      website:
+        type: text
+        display: Website
+        width: 33
+        validate: url
       email:
         type: text
         display: Email
@@ -52,7 +50,14 @@ sections:
         display: Founders
         collection:
           - persons
-        width: 66
+        width: 33
+      organization_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 50
+        display: Color
       social_medias:
         type: partial
         display: 'Social Medias'

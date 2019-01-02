@@ -233,7 +233,7 @@
     $asideW: 100px;
 
     &__bg {
-      width: calc(50% + #{$asideW}/2);
+      width: calc(50% + #{$asideW}/ 2);
     }
 
     &__aside {

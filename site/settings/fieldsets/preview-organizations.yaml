@@ -1,0 +1,44 @@
+sections:
+  main:
+    display: Main
+    fields:
+      preview-organizations_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Background Color'
+        instructions: 'What''s the background color of this section?'
+      preview-organizations_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        instructions: 'What''s the logos color?'
+        width: 33
+        display: 'Text Color'
+      preview-organizations_sort:
+        options:
+          'title:asc': 'Name (A-Z)'
+          'title:desc': 'Name (Z-A)'
+          random: Random
+        type: select
+        instructions: 'What''s the items order?'
+        width: 33
+        display: Sort
+      preview-organizations_introduction:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        width: 66
+        display: Introduction
+      preview-organizations_list:
+        sort: 'title:asc'
+        collection:
+          - organization
+        mode: tags
+        type: collection
+        display: List
+taxonomies: true
+title: 'Preview - Organizations'

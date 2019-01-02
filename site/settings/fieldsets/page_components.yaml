@@ -26,11 +26,18 @@ sections:
                 fieldset: partial-hero
                 type: partial
                 display: Hero
-          tpl:
-            display: '📝🖼️ Landscape'
+          preview-pictures:
+            display: Preview Pictures
             fields:
-              tpl:
-                fieldset: landscape
+              preview-pictures:
+                fieldset: preview-pictures
                 type: partial
-                display: '📝🖼️ Landscape'
+                display: Preview Pictures
+          preview-organizations:
+            display: Preview Organizations
+            fields:
+              preview-organizations:
+                fieldset: preview-organizations
+                type: partial
+                display: Preview Organizations
 hide: true

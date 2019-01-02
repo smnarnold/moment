@@ -20,10 +20,6 @@ sections:
                 fieldset: partial-cell-image
                 type: partial
                 display: Image
-              test:
-                fieldset: landscape
-                type: partial
-                display: test
           youtube:
             display: Youtube
             fields:
@@ -31,13 +27,6 @@ sections:
                 fieldset: partial-cell-youtube
                 type: partial
                 display: Youtube
-          set_5:
-            display: 'Set 5'
-            fields:
-              tpl:
-                fieldset: landscape
-                type: partial
-                display: '📝🖼️ Landscape'
 taxonomies: true
 title: 'Partial - Cells'
 hide: true

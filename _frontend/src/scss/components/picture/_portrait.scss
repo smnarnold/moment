@@ -1,10 +1,8 @@
 .picture--portrait {
   .picture {
-
   }
 }
 
-// Medium devices (tablets, 992px and up)
 @include media-breakpoint-up(lg) {
   .picture--portrait {
     .picture {
