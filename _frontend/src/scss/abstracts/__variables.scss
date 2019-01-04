@@ -4,6 +4,8 @@
  */
 
 $s: 0.3s;
+$containerWidth: 1200px;
+$gutter: 25px;
 
 $palettes: (
   black: (
@@ -32,3 +34,7 @@ $fonts: (
 
 $site-header-height-mobile: 64px;
 $site-header-height-desktop: 64px;
+
+@include media-breakpoint-up(lg) {
+  $gutter: 40px;
+}

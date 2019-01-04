@@ -1,0 +1,75 @@
+sections:
+  main:
+    display: Main
+    fields:
+      website_description:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Description
+        width: 66
+      website_vimeo:
+        type: video
+        display: Vimeo
+        width: 66
+        validate: URL
+      website_vimeo_orientation:
+        options:
+          landscape: Landscape
+          portrait: Portrait
+        type: select
+        width: 33
+        display: 'Vimeo Orientation'
+        show_when:
+          website_vimeo: 'not null'
+      website_client:
+        max_items: '2'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - organization
+        mode: tags
+        type: collection
+        width: 50
+        display: Client
+      website_producer:
+        max_items: '2'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - organization
+        mode: tags
+        type: collection
+        width: 50
+        display: Producer
+      theming:
+        type: section
+        display: Theming
+      website_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Background Color'
+      website_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Text Color'
+      website_mobile_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Mobile Color'
+        default: '#000000'
+        show_when:
+          website_vimeo: 'not null'
+          website_vimeo_orientation: portrait
+taxonomies: true
+title: 'Collection - Website'
+hide: true

@@ -11,14 +11,6 @@ sections:
         display: Anchor
         type: text
         width: 50
-      section-theme:
-        max_items: '1'
-        collection:
-          - themes
-        type: collection
-        width: 50
-        display: Theme
-        default: White
       section-container:
         options:
           container: default

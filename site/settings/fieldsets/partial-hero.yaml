@@ -5,13 +5,6 @@ sections:
       hero-section:
         type: section
         display: Hero
-      hero-theme:
-        max_items: '1'
-        collection:
-          - themes
-        type: collection
-        width: 33
-        display: Theme
       hero-image:
         container: main
         folder: /

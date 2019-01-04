@@ -26,6 +26,13 @@ sections:
                 fieldset: partial-hero
                 type: partial
                 display: Hero
+          preview-websites:
+            display: Preview Websites
+            fields:
+              preview-websites:
+                fieldset: preview-websites
+                type: partial
+                display: Preview Websites
           preview-pictures:
             display: Preview Pictures
             fields:

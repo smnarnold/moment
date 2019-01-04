@@ -3,10 +3,10 @@
 
   <div class="picture__container">
     <div class="picture__main">
-      <div class="picture__description" itemprop="description">
+      <div class="picture__description">
         <h2 class="picture__title" itemprop="name">{{ title }}</h2>
         <meta itemprop="author" content="Simon Arnold">
-        {{ picture_description| markdown }}
+        <div itemprop="description">{{ picture_description | markdown }}</div>
         {{ partial:pictures/parts/metas }}
       </div>
       <figure class="picture__figure" {{ if picture_background_color || picture_text_color }} style="background-color: {{ picture_background_color }}; color: {{ picture_text_color }};"{{ /if }}>

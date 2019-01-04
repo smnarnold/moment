@@ -1,75 +1,30 @@
 .picture {
   $paddingH: 25px;
 
-  position: relative;
-  width: 100%;
-  //background: url(https://i.imgur.com/H4uA0fG.jpg);
-  padding: 3.6rem 0;
+  @extend %side-by-side;
 
   &__bg {
-    display: none;
+    @extend %side-by-side__bg;
   }
 
   &__container {
-    display: flex;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend %side-by-side__container;
   }
 
   &__main {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-  }
-
-  &__title,
-  &__description,
-  &__figure {
-    padding: 0 $paddingH;
+    @extend %side-by-side__main;
   }
 
   &__title {
-    letter-spacing: -2px;
-    line-height: 1;
-    font-size: 6rem;
-    margin: 0 0 6rem;
-  }
-
-  &__description,
-  &__figure {
-    flex: 1 1 100%;
-    max-width: 100%;
-    margin: 0;
+    @extend %side-by-side__title;
   }
 
   &__description {
-    @extend %children-margin;
-
-    order: 3;
-    padding-top: 3.6rem;
-
-    p,
-    blockquote {
-      margin: 2.4rem 0;
-    }
-
-    blockquote {
-      font-family: font(sans-serif);
-      line-height: 1.25;
-      font-size: 2.4rem;
-      font-weight: 500;
-    }
+    @extend %side-by-side__description;
   }
 
   &__figure {
-    padding-top: 3.6rem;
-    order: 2;
-
-    &[style*="background-color"] {
-      padding-top: 0;
-      padding-bottom: 3.6rem;
-    }
+    @extend %side-by-side__figure;
   }
 
   &__picture {
@@ -103,8 +58,7 @@
   }
 
   &__aside {
-    display: none;
-    font-family: font(sans-serif);
+    @extend %side-by-side__aside;
   }
 
   &__type {
@@ -139,80 +93,8 @@
 // Medium devices (tablets, 992px and up)
 @include media-breakpoint-up(lg) {
   .picture {
-    $paddingH: 40px;
-
-    padding: 8.6rem 0;
-
-    &__bg {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      pointer-events: none;
-    }
-
-    &__aside {
-      order: 1;
-    }
-
-    &__main {
-      order: 2;
-    }
-
-    &__description,
-    &__figure {
-      padding: 0 $paddingH;
-    }
-
-    &__description,
-    &__figure {
-      flex: 1 1 50%;
-      max-width: 50%;
-    }
-
-    &__description {
-      order: 2;
-    }
-
-    &__figure {
-      order: 3;
-      text-align: right;
-
-      &[style*="background-color"] {
-        padding-bottom: 0;
-      }
-    }
-
     &__picture {
       margin: 0.4rem 0 0; // compensate description line-height
-    }
-
-    &:nth-child(even) {
-      .picture {
-        &__bg {
-          left: 0;
-          right: auto;
-        }
-
-        &__aside {
-          order: 2;
-        }
-
-        &__main {
-          order: 1;
-        }
-
-        &__description {
-          order: 3;
-        }
-
-        &__figure {
-          order: 2;
-          text-align: left;
-        }
-      }
     }
 
     &--large {
@@ -222,35 +104,6 @@
           margin-right: 0;
         }
       }
-    }
-  }
-}
-
-// Medium devices (tablets, 1200px and up)
-@include media-breakpoint-up(xl) {
-  .picture {
-    $paddingH: 40px;
-    $asideW: 100px;
-
-    &__bg {
-      width: calc(50% + #{$asideW}/ 2);
-    }
-
-    &__aside {
-      flex: 1 1 $asideW;
-      min-width: $asideW;
-      max-width: $asideW;
-      display: block;
-    }
-
-    &__description {
-      flex: 1 1 calc(50% - #{$asideW});
-      max-width: calc(50% - #{$asideW});
-    }
-
-    &__figure {
-      flex: 1 1 calc(50% + #{$asideW});
-      max-width: calc(50% + #{$asideW});
     }
   }
 }

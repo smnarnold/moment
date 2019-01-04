@@ -1,0 +1,7 @@
+{{ collection:websites as="website" sort="{preview-websites_sort}" limit="{preview-websites_limit}" }}
+    {{ website }}
+        {{ if website_vimeo && website_vimeo_orientation == 'portrait' }}
+            {{ partial src="websites/mobile-vimeo" }}
+        {{ /if }}
+    {{ /website }}
+{{ /collection:websites }}

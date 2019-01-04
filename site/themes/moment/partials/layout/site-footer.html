@@ -1,13 +1,42 @@
 <footer class="site-footer">
   <div class="site-footer__container container">
-    <ul class="site-footer__list">
+    <p itemscope itemtype="http://schema.org/Person">
+      Je suis
+      <span itemprop="givenName">Simon</span>&nbsp;<span itemprop="familyName">Arnold</span> – 
+      <span itemprop="jobTitle">Développeur front-end</span> chez 
+      <span itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="Sid Lee">
+        <a href="http://sidlee.com/fr/" itemprop="url" rel="noopener">Sid&nbsp;Lee</a>
+      </span><br>
+      Je fais des trucs que ta grand-mère ne comprendrait probablement&nbsp;pas.
+
+      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <meta itemprop="addressLocality" content="Montréal">
+        <meta itemprop="addressRegion" content="Québec">
+        <meta itemprop="addressCountry" content="Canada">
+      </span>
+      <meta itemprop="image" content="http://graph.facebook.com/720961390/picture?type=large&amp;w&zwnj;&#8203;idth=720&amp;height=720">
+        <meta itemprop="sameAs" content="https://www.facebook.com/sim0n.arn0ld">
+        <meta itemprop="sameAs" content="https://twitter.com/smnarnold">
+        <meta itemprop="sameAs" content="https://www.linkedin.com/in/smnarnold/">
+        <meta itemprop="sameAs" content="https://www.instagram.com/smnarnold/">
+        <meta itemprop="sameAs" content="https://github.com/smnarnold">
+        <meta itemprop="sameAs" content="https://bitbucket.org/smnarnold/">
+        <meta itemprop="sameAs" content="https://stackoverflow.com/users/886539/simon-arnold">
+        <meta itemprop="sameAs" content="https://www.npmjs.com/~smnarnold">
+        <meta itemprop="gender" content="male">
+        <meta itemprop="email" content="moi@smnarnold.com">
+        <meta itemprop="name" content="Simon Arnold">
+    </p>
+
+    <!-- <ul class="site-footer__list">
       {{ nav from="/" scope="tag" is_hidden:isnt="true"}}
         <li class="site-footer__item">
           <a class="site-footer__link" href="{{ url }}">{{ tag:nav_title or title }}</a>
         </li>
       {{ /nav }}
-    </ul>
+    </ul> -->
 
-    <div class="site-footer__copyright">&copy; {{ now format="Y" }} {{ author_name }}</div>
+    <!-- <div class="site-footer__copyright">&copy; {{ now format="Y" }} {{ author_name }}</div> -->
   </div>
 </footer>

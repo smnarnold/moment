@@ -1,9 +1,9 @@
 @charset "UTF-8"; // stylelint-disable-line string-quotes
-// abstracts
-@import 'abstracts/**/*';
 // vendors
 @import 'vendors/normalize/normalize';
 @import 'vendors/bootstrap/bootstrap-grid';
+// abstracts
+@import 'abstracts/**/*';
 // placeholders
 @import 'placeholders/**/*';
 // base
