@@ -1,0 +1,31 @@
+{{ section:side_by_side_text }}
+    {{ website_description | markdown }}
+{{ /section:side_by_side_text }}
+
+{{ section:side_by_side_media }}
+    <p data-height="400" 
+    {{ if website_codepen_theme }}data-theme-id="{{ website_codepen_theme }}" {{ /if }}
+    {{ if website_codepen_id }}data-slug-hash="{{ website_codepen_id }}"{{ /if }} 
+    data-default-tab="result" 
+    data-user="sarnold" 
+    class="codepen">Voir le <a href="https://codepen.io">CodePen</a> 
+    {{ if website_codepen_id }}
+        <a href="https://codepen.io/sarnold/pen/{{ website_codepen_id }}/">{{ title }}</a>
+    {{ /if }} 
+    de Simon Arnold (<a href="https://codepen.io/sarnold">@sarnold</a>).</p>
+{{ /section:side_by_side_media }}
+
+{{ section:side_by_side_aside }}
+    <aside class="picture__aside">
+        <strong class="picture__type">{{ if picture_subject }}Portrait{{ else }}Paysage{{ /if }}</strong><br>
+      
+        {{ tags }}
+          <a href="{{ url }}" class="picture__tag">{{ title }}</a>
+        {{ /tags }}
+    </aside>
+{{ /section:side_by_side_aside }}
+
+
+
+
+

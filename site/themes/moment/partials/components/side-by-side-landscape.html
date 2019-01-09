@@ -1,0 +1,28 @@
+<article class="side-by-side side-by-side--media-landscape side-by-side--media-{{ side_by_side_media_size }}">
+    {{ if side_by_side_media_background_color }}
+        <span class="side-by-side__bg" style="background-color: {{ side_by_side_media_background_color }};"></span>
+    {{ /if }}
+    
+    <div class="side-by-side__container">
+        {{ if tags }}
+            <aside class="side-by-side__aside">
+                <strong class="picture__type">{{ yield:side_by_side_aside_title }}</strong><br>
+                
+                {{ tags }}
+                    <a href="{{ url }}" class="side-by-side__tag">{{ title }}</a>
+                {{ /tags }}
+            </aside>
+        {{ /if }}
+
+        <div class="side-by-side__wrapper">
+            <h2 class="side-by-side__title" itemprop="name">{{ title | markdown }}</h2>
+            <div class="side-by-side__text">
+                <div class="side-by-side__text__wrapper" itemprop="description">{{ yield:side_by_side_text }}</div>
+            </div>
+            <figure class="side-by-side__media" {{ if side_by_side_media_background_color || side_by_side_media_text_color }} style="background-color: {{ side_by_side_media_background_color }}; color: {{ side_by_side_media_text_color }};"{{ /if }}>
+                {{ yield:side_by_side_media }}
+                {{ yield:side_by_side_metas }}
+            </figure>
+        </div>
+    </div>
+</article>

@@ -53,6 +53,20 @@
   font-weight: 500;
 }
 
+%small-caps {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+%tag {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: currentColor;
+}
+
 @include media-breakpoint-up(sm) {
   %super {
     font-size: calc(2.8rem + 1.75vw);

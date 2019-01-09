@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Main
+    fields: 
+      theming:
+        type: section
+        display: Theming
+      side_by_side_media_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Media Background Color'
+      side_by_side_media_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Media Text Color'
+      side_by_side_media_size:
+        options:
+          normal: Normal
+          large: Large
+        inline: true
+        type: radio
+        width: 33
+        display: 'Media Size'
+        default: normal
+      side_by_side_media_frame:
+        options:
+          none: None
+          desktop: Desktop
+          mobile: Mobile
+        type: select
+        width: 33
+        display: 'Media Frame'
+        default: none
+      side_by_side_media_frame_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Media Frame Color'
+        default: '#000000'
+        show_when:
+          side_by_side_media_frame: [desktop, mobile]
+taxonomies: true
+title: 'Partial - Side by Side'

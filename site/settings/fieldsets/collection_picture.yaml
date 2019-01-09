@@ -48,6 +48,14 @@ sections:
         type: markdown
         display: Description
         width: 66
+      picture_template:
+        options:
+          side_by_side_landscape: Side by Side | Media Landscape
+          side_by_side_portrait: Side by Side | Media Portrait
+        type: select
+        width: 33
+        display: 'Template'
+        default: side_by_side_portrait
       picture_image:
         container: main
         folder: content/images
@@ -79,6 +87,12 @@ sections:
         type: colorpicker
         width: 33
         display: 'Text Color'
+      website_theme:
+        fieldset: partial_side_by_side
+        type: partial
+        display: Theme fff
+        show_when:
+          picture_template: [side_by_side_landscape, side_by_side_portrait]
 taxonomies: true
 title: 'Collection - Picture'
 create_title: ''

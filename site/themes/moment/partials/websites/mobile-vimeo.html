@@ -1,18 +1,16 @@
-<article class="website">
-    {{ partial:websites/parts/background }}
-  
-    <div class="website__container">
-      <div class="website__main">
-        
-        <meta itemprop="author" content="Simon Arnold">
-        <div class="website__description" itemprop="description">
-            <h2 class="website__title" itemprop="name">{{ title }}</h2>
-            {{ website_description | markdown }}
+{{ section:side_by_side_text }}
+    {{ website_description | markdown }}
+{{ /section:side_by_side_text }}
+
+{{ section:side_by_side_media }}
+    <div class="phone" style="background-color: {{ website_mobile_color }};">
+        <div class="phone__wrapper">
+            {{ if website_vimeo | is_embeddable }}
+                <iframe src="{{ website_vimeo | embed_url }}?muted=1&autoplay=1&loop=1&title=0&byline=0&portrait=0"></iframe>
+            {{ else }}
+                <!-- html video tag -->
+            {{ /if }}
         </div>
-        <figure class="website__figure" {{ if website_background_color || website_text_color }} style="background-color: {{ website_background_color }}; color: {{ website_text_color }};"{{ /if }}>
-          {{ partial:websites/parts/mobile-vimeo }}
-        </figure>
-      </div>
     </div>
-</article>
+{{ /section:side_by_side_media }}
   

@@ -1,7 +1,7 @@
 @include media-breakpoint-up(lg) {
-  .picture--portrait {
+  .side-by-side-media--portrait {
     &:nth-child(odd) {
-      .picture {
+      .side-by-side {
         &__metas {
           float: right;
         }

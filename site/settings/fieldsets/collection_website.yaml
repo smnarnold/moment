@@ -8,6 +8,14 @@ sections:
         type: markdown
         display: Description
         width: 66
+      website_template:
+        options:
+          side_by_side_landscape: Side by Side | Media Landscape
+          side_by_side_portrait: Side by Side | Media Portrait
+        type: select
+        width: 33
+        display: 'Template'
+        default: side_by_side_portrait
       website_vimeo:
         type: video
         display: Vimeo
@@ -42,34 +50,28 @@ sections:
         type: collection
         width: 50
         display: Producer
-      theming:
+      website_codepen:
         type: section
-        display: Theming
-      website_background_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        width: 25
-        display: 'Background Color'
-      website_text_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        width: 25
-        display: 'Text Color'
-      website_mobile_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        width: 25
-        display: 'Mobile Color'
-        default: '#000000'
+        display: Codepen
+      website_codepen_id:
+        type: text
+        instructions: '_ex: OrEqNb_'
+        width: 33
+        display: 'Codepen Id'
+      website_codepen_theme:
+        options:
+          light: Light
+          dark: Dark
+        type: select
+        width: 33
+        display: Theme
+        default: light
+      website_theme:
+        fieldset: partial_side_by_side
+        type: partial
+        display: Theme
         show_when:
-          website_vimeo: 'not null'
-          website_vimeo_orientation: portrait
+          website_template: [side_by_side_landscape, side_by_side_portrait]
 taxonomies: true
 title: 'Collection - Website'
 hide: true
