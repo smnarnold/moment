@@ -1,4 +1,4 @@
-.phone {
+.frame-mobile {
   position: relative;
   background: #000;
   max-width: 260px;
@@ -42,25 +42,25 @@
 }
 
 @media screen and (min-height: 575px) {
-  .phone {
+  .frame-mobile {
     max-width: 275px;
   }
 }
 
 @media screen and (min-height: 650px) {
-  .phone {
+  .frame-mobile {
     max-width: 315px;
   }
 }
 
 @media screen and (min-height: 725px) {
-  .phone {
+  .frame-mobile {
     max-width: 360px;
   }
 }
 
 @media screen and (min-height: 800px) {
-  .phone {
+  .frame-mobile {
     max-width: 397px;
   }
 }

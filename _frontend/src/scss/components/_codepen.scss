@@ -11,10 +11,10 @@
   }
 
   .side-by-side--media-landscape & {
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; // 16/9
   }
 
   .side-by-side--media-portrait & {
-    padding-bottom: 140%;
+    padding-bottom: 140%; // 5/7
   }
 }

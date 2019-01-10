@@ -20,7 +20,14 @@
                 <div class="side-by-side__text__wrapper" itemprop="description">{{ yield:side_by_side_text }}</div>
             </div>
             <figure class="side-by-side__media" {{ if side_by_side_media_background_color || side_by_side_media_text_color }} style="background-color: {{ side_by_side_media_background_color }}; color: {{ side_by_side_media_text_color }};"{{ /if }}>
-                {{ yield:side_by_side_media }}
+                {{ if side_by_side_media_frame == 'mobile' }}
+                    {{ partial src="components/frame-mobile" }}
+                {{ elseif side_by_side_media_frame == 'desktop' }}
+                    {{ partial src="components/frame-desktop" }}
+                {{ else }}
+                    {{ yield:side_by_side_media }}
+                {{ /if }}
+                
                 {{ yield:side_by_side_metas }}
             </figure>
         </div>
