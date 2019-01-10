@@ -1,9 +1,0 @@
-<div class="phone" style="background-color: {{ website_mobile_color }};">
-    <div class="phone__wrapper">
-        {{ if website_vimeo | is_embeddable }}
-            <!-- Youtube and Video -->
-            <iframe src="{{ website_vimeo | embed_url }}?muted=1&autoplay=1&loop=1&title=0&byline=0&portrait=0"></iframe>
-        {{ else }}
-        {{ /if }}
-    </div>
-</div>

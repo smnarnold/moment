@@ -1,0 +1,74 @@
+sections:
+  main:
+    display: Main
+    fields:
+      main_media_template:
+        options:
+          side-by-side-landscape: 'Side by Side | Media Landscape'
+          side-by-side-portrait: 'Side by Side | Media Portrait'
+        type: select
+        width: 50
+        display: Template
+        default: side-by-side-landscape
+      main_media_type:
+        options:
+          image: Image
+          video: Video
+          codepen: Codepen
+        type: select
+        width: 50
+        display: 'Media Type'
+        default: image
+      main_media_video:
+        type: section
+        display: Video
+        show_when:
+          main_media_type: video
+      main_media_video_url:
+        type: video
+        display: Url
+        width: 50
+        validate: URL
+        show_when:
+          main_media_type: video
+      main_media_video_type:
+        type: select
+        options:
+          regular: Regular
+          gifv: Gifv
+        display: Type
+        default: regular
+        width: 25
+        show_when:
+          main_media_type: video
+      main_media_video_ratio:
+        type: text
+        instructions: Hauteur/Largeur=Ratio
+        width: 25
+        display: Ratio
+        default: '0.5625'
+        show_when:
+          main_media_type: video
+      main_media_codepen:
+        type: section
+        display: Codepen
+        show_when:
+          main_media_type: codepen
+      main_media_codepen_id:
+        type: text
+        width: 50
+        display: Id
+        show_when:
+          main_media_type: codepen
+      main_media_codepen_theme:
+        options:
+          light: Light
+          dark: Dark
+        type: select
+        width: 50
+        display: Theme
+        default: light
+        show_when:
+          main_media_type: codepen
+taxonomies: true
+title: 'Partial - Main Media'

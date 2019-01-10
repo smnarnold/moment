@@ -1,0 +1,14 @@
+{{ section:side_by_side_text }}
+    {{ website_description | markdown }}
+{{ /section:side_by_side_text }}
+
+{{ section:side_by_side_media }}
+    {{ if main_media_video_url | is_embeddable }}
+        <div class="video" {{ if main_media_video_ratio }}style="padding-bottom: {{ main_media_video_ratio | *:100 }}%;"{{ /if }}>
+            <iframe class="video__iframe" src="{{ main_media_video_url | embed_url }}?title=0&byline=0&portrait=0{{ if main_media_video_type == 'gifv' }}&muted=1&autoplay=1&loop=1{{ /if }}"></iframe>
+        </div>
+    {{ else }}
+        <!-- html video tag -->
+    {{ /if }}
+{{ /section:side_by_side_media }}
+  

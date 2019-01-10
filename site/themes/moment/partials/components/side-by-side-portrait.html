@@ -15,14 +15,19 @@
         {{ /if }}
 
         <div class="side-by-side__wrapper">
-            <meta itemprop="author" content="Simon Arnold">
             <div class="side-by-side__text">
                 <h2 class="side-by-side__title" itemprop="name">{{ title | markdown }}</h2>
                 <div class="side-by-side__text__wrapper" itemprop="description">{{ yield:side_by_side_text }}</div>
                 {{ yield:side_by_side_metas }}
             </div>
             <figure class="side-by-side__media" {{ if side_by_side_media_background_color || side_by_side_media_text_color }} style="background-color: {{ side_by_side_media_background_color }}; color: {{ side_by_side_media_text_color }};"{{ /if }}>
-                {{ yield:side_by_side_media }}
+                {{ if side_by_side_media_frame == 'mobile' }}
+                    {{ partial src="components/frame-mobile" }}
+                {{ else }}
+                    {{ yield:side_by_side_media }}
+                {{ /if }}
+                
+                
             </figure>
         </div>
     </div>
