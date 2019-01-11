@@ -162,7 +162,7 @@
 @include media-breakpoint-up(xl) {
   .side-by-side {
     &__bg {
-      width: calc(50% + 50px);
+      width: calc(50% + 100px);
     }
 
     &__aside {
@@ -181,6 +181,14 @@
     &__media {
       flex: 1 1 calc(50% + 100px);
       max-width: calc(50% + 100px);
+    }
+
+    &--w-aside {
+      .side-by-side {
+        &__bg {
+          width: calc(50% + 50px);
+        }
+      }
     }
   }
 }

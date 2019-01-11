@@ -1,7 +1,5 @@
 {{ collection:pictures as="picture" sort="{preview-pictures_sort}" limit="{preview-pictures_limit}" }}
     {{ picture }}
-        <!-- {{ partial src="pictures/{picture_orientation}" }} -->
-
         {{ section:side_by_side_text }}
             {{ picture_description | markdown }}
         {{ /section:side_by_side_text }}
