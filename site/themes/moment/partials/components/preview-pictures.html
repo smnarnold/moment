@@ -1,71 +1,9 @@
 {{ collection:pictures as="picture" sort="{preview-pictures_sort}" limit="{preview-pictures_limit}" }}
     {{ picture }}
-        {{ section:side_by_side_text }}
-            {{ picture_description | markdown }}
-        {{ /section:side_by_side_text }}
+        {{# ex: image, video, codepen #}}
+        {{ partial src="components/{{ main_media_type }}" }}
 
-        {{ section:side_by_side_media }}
-            {{ assets:picture_image }}
-                <picture class="picture">
-                    <source srcset="{{ glide:url width='580' }}" media="(max-width: 320px) and (min-resolution: 2dppx)">
-                    <source srcset="{{ glide:url width='690' }}" media="(max-width: 375px) and (min-resolution: 2dppx)">
-                    <source srcset="{{ glide:url width='1000' }}" media="(max-width: 500px) and (min-resolution: 2dppx)">
-                    <source srcset="{{ glide:url width='1380' }}" media="(min-resolution: 2dppx)">
-                    <source srcset="{{ glide:url width='768' }}">
-                    <img src="{{ glide:url width='768' }}" alt="{{ alt }}" itemprop="contentUrl" />
-                </picture>
-            {{ /assets:picture_image }}
-        {{ /section:side_by_side_media }}
-
-        {{ section:side_by_side_metas }}
-            <figcaption class="picture__metas">
-                {{ if picture_subject }}
-                    {{ relate:picture_place }}
-                        <em class="picture__place">{{ title }}</em>
-                    {{ /relate:picture_place }}<br>
-                    <strong class="picture__subject">
-                        {{ relate:picture_subject }}{{ title }}{{ if !last }}, {{ /if}}{{ /relate:picture_subject }}
-                    </strong><br>
-                {{ else }}
-                    {{ relate:picture_place }}
-                        <em class="picture__city">{{ address_locality }}{{ if address_country != 'Canada' }}, {{ address_country }}{{ /if
-                            }}</em><br>
-                        <strong class="picture__place">{{ title }}</strong><br>
-                    {{ /relate:picture_place }}
-                {{ /if }}
-                
-                <time datetime="{{ picture_date format='Y-m-d' }}" class="picture__date" itemprop="dateCreated">{{ picture_date format="Y" }}</time>
-                
-                {{ relate:picture_place }}
-                <span itemprop="contentLocation" itemscope itemtype="http://schema.org/Place">
-                    <meta itemprop="name" content="{{ title }}">
-                    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    {{ if street_address }}
-                        <meta itemprop="streetAddress" content="{{ street_address }}">{{ /if }}
-                    {{ if address_locality }}
-                        <meta itemprop="addressLocality" content="{{ address_locality }}">{{ /if }}
-                    {{ if address_region }}
-                        <meta itemprop="addressRegion" content="{{ address_region }}">{{ /if }}
-                    {{ if address_country }}
-                        <meta itemprop="addressCountry" content="{{ address_country }}">{{ /if }}
-                    </span>
-                </span>
-                {{ /relate:picture_place }}
-            </figcaption>
-        {{ /section:side_by_side_metas }}
-
-        {{ section:side_by_side_aside_title }}
-            {{ if picture_subject }}
-                Portrait
-            {{ else }}
-                Paysage
-            {{ /if }}
-        {{ /section:side_by_side_aside_title }}
-
-        {{ if picture_template == 'side_by_side_landscape'}}
-            {{ partial src="components/side-by-side-landscape" }}
-        {{ else }}
-            {{ partial src="components/side-by-side-portrait" }}
-        {{ /if }}
+        {{# ex: side-by-side-landscape, side-by-side-portrait #}}
+        {{ partial src="components/{{ main_media_template }}" }}
     {{ /picture }}
 {{ /collection:pictures }}

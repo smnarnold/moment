@@ -2,63 +2,14 @@ sections:
   main:
     display: Main
     fields:
-      title:
-        display: Title
-        type: text
-        localizable: true
-        width: 66
-      picture_template:
-        options:
-          side_by_side_landscape: 'Side by Side | Media Landscape'
-          side_by_side_portrait: 'Side by Side | Media Portrait'
-        type: select
-        width: 33
-        display: Template
-        default: side_by_side_portrait
-      picture_place:
-        max_items: '1'
-        sort: 'title:asc'
-        label: '{{ title }}'
-        collection:
-          - places
-        mode: tags
-        type: collection
-        width: 33
-        display: Place
-      picture_subject:
-        sort: 'title:asc'
-        collection:
-          - persons
-        type: collection
-        width: 33
-        display: Subject
-      picture_date:
-        allow_blank: false
-        allow_time: true
-        require_time: true
-        earliest_date: 'January 1, 2000'
-        type: date
-        width: 33
-        display: Date
-        input_format: YYYY.MM.DD
-      picture_description:
-        cheatsheet: true
-        restrict_assets: false
-        type: markdown
-        display: Description
-        width: 66
-      picture_image:
-        container: main
-        folder: content/images
-        restrict: false
-        max_files: 1
-        type: assets
-        display: Image
-        width: 33
+      picture_media:
+        fieldset: partial-main-media
+        type: partial
+        display: Media
       website_theme:
         fieldset: partial_side_by_side
         type: partial
-        display: 'Theme fff'
+        display: Theme
         show_when:
           picture_template:
             - side_by_side_landscape

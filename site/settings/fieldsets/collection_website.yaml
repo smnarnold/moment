@@ -2,11 +2,6 @@ sections:
   main:
     display: Main
     fields:
-      website_description:
-        cheatsheet: true
-        restrict_assets: false
-        type: markdown
-        display: Description
       website_media:
         fieldset: partial-main-media
         type: partial

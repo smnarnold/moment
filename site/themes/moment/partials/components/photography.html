@@ -1,0 +1,65 @@
+{{ section:side_by_side_text }}
+    {{ post_description | markdown }}
+{{ /section:side_by_side_text }}
+
+{{ section:side_by_side_media }}
+    {{ assets:main_media_photography_src }}
+        <picture class="picture">
+            <source srcset="{{ glide:url width='580' }}" media="(max-width: 320px) and (min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='690' }}" media="(max-width: 375px) and (min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='1000' }}" media="(max-width: 500px) and (min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='1380' }}" media="(min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='768' }}">
+            <img src="{{ glide:url width='768' }}" alt="{{ alt }}" itemprop="contentUrl" />
+        </picture>
+    {{ /assets:main_media_photography_src }}
+{{ /section:side_by_side_media }}
+
+{{ section:side_by_side_metas }}
+    <figcaption class="picture__metas">
+        {{ if main_media_photography_subject }}
+          {{ relate:main_media_photography_place }}
+            <em class="picture__place">{{ title }}</em>
+          {{ /relate:main_media_photography_place }}<br>
+          <strong class="picture__subject">
+            {{ relate:main_media_photography_subject }}{{ title }}{{ if !last }}, {{ /if}}{{ /relate:main_media_photography_subject }}
+          </strong><br>
+        {{ else }}
+          {{ relate:main_media_photography_place }}
+            <em class="picture__city">{{ address_locality }}{{ if address_country != 'Canada' }}, {{ address_country }}{{ /if
+              }}</em><br>
+            <strong class="picture__place">{{ title }}</strong><br>
+          {{ /relate:main_media_photography_place }}
+        {{ /if }}
+      
+        <time datetime="{{ date format='Y-m-d' }}" class="picture__date" itemprop="dateCreated">{{ date format="Y" }}</time>
+      
+        {{ relate:main_media_photography_place }}
+        <span itemprop="contentLocation" itemscope itemtype="http://schema.org/Place">
+          <meta itemprop="name" content="{{ title }}">
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            {{ if street_address }}
+            <meta itemprop="streetAddress" content="{{ street_address }}">{{ /if }}
+            {{ if address_locality }}
+            <meta itemprop="addressLocality" content="{{ address_locality }}">{{ /if }}
+            {{ if address_region }}
+            <meta itemprop="addressRegion" content="{{ address_region }}">{{ /if }}
+            {{ if address_country }}
+            <meta itemprop="addressCountry" content="{{ address_country }}">{{ /if }}
+          </span>
+        </span>
+        {{ /relate:main_media_photography_place }}
+    </figcaption>
+{{ /section:side_by_side_metas }}
+
+{{ section:side_by_side_aside }}
+    {{ if tags }}
+        <aside class="side-by-side__aside">
+            <strong class="side-by-side__type">{{ if main_media_photography_subject }}Portrait{{ else }}Paysage{{ /if }}</strong><br>
+            
+            {{ tags }}
+                <a href="{{ url }}" class="side-by-side__tag">{{ title }}</a>
+            {{ /tags }}
+        </aside>
+    {{ /if }}
+{{ /section:side_by_side_aside }}

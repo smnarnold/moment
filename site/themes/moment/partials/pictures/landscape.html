@@ -4,8 +4,7 @@
   <div class="picture__container">
     <div class="picture__main">
       <h2 class="picture__title" itemprop="name">{{title}}</h2>
-      <meta itemprop="author" content="Simon Arnold">
-      <div class="picture__description" itemprop="description">{{ picture_description| markdown }}</div>
+      <div class="picture__description" itemprop="description">{{ picture_description | markdown }}</div>
       <figure class="picture__figure" {{ if picture_background_color || picture_text_color }} style="background-color: {{ picture_background_color }}; color: {{ picture_text_color }};"{{ /if }}>
         {{ partial:pictures/parts/image }}
 

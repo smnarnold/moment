@@ -12,7 +12,6 @@
 
   &__container {
     display: flex;
-    position: relative;
     max-width: $containerWidth;
     margin: 0 auto;
   }
@@ -171,6 +170,10 @@
       min-width: 100px;
       max-width: 100px;
       display: block;
+
+      + .side-by-side__bg {
+        width: calc(50% + 50px);
+      }
     }
 
     &__text {

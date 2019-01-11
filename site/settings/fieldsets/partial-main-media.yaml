@@ -2,6 +2,11 @@ sections:
   main:
     display: Main
     fields:
+      post_description:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Description
       main_media_template:
         options:
           side-by-side-landscape: 'Side by Side | Media Landscape'
@@ -13,12 +18,66 @@ sections:
       main_media_type:
         options:
           image: Image
+          photography: Photography
           video: Video
           codepen: Codepen
         type: select
         width: 50
         display: 'Media Type'
         default: image
+      main_media_image:
+        type: section
+        display: Image
+        show_when:
+          main_media_type: image
+      main_media_image_src:
+        container: main
+        folder: content/images
+        restrict: false
+        type: assets
+        width: 33
+        display: Src
+        show_when:
+          main_media_type: image
+      main_media_photography:
+        type: section
+        display: Photography
+        show_when:
+          main_media_type: photography
+      main_media_photography_src:
+        container: main
+        folder: content/images
+        restrict: false
+        type: assets
+        width: 33
+        display: Src
+        mode: grid
+        show_when:
+          main_media_type: photography
+      main_media_photography_place:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - places
+        mode: tags
+        type: collection
+        width: 33
+        display: Place
+        show_when:
+          main_media_type: photography
+      main_media_photography_subject:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - persons
+        mode: tags
+        type: collection
+        width: 33
+        display: Subject
+        show_when:
+          main_media_type: photography
       main_media_video:
         type: section
         display: Video

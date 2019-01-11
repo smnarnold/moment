@@ -1,17 +1,9 @@
-<article class="side-by-side side-by-side--media-portrait side-by-side--media-{{ side_by_side_media_size }} {{ if tags }}side-by-side--w-aside{{ /if }}">
-    {{ if side_by_side_media_background_color }}
-        <span class="side-by-side__bg" style="background-color: {{ side_by_side_media_background_color }};"></span>
-    {{ /if }}
-    
+<article class="side-by-side side-by-side--media-portrait side-by-side--media-{{ side_by_side_media_size }}">
     <div class="side-by-side__container">
-        {{ if tags }}
-            <aside class="side-by-side__aside">
-                <strong class="side-by-side__type">{{ yield:side_by_side_aside_title }}</strong><br>
-                
-                {{ tags }}
-                    <a href="{{ url }}" class="side-by-side__tag">{{ title }}</a>
-                {{ /tags }}
-            </aside>
+        {{ yield:side_by_side_aside }}
+
+        {{ if side_by_side_media_background_color }}
+            <span class="side-by-side__bg" style="background-color: {{ side_by_side_media_background_color }};"></span>
         {{ /if }}
         
         <div class="side-by-side__wrapper">

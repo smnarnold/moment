@@ -5,7 +5,6 @@ components:
   -
     type: preview-websites
     preview-websites_sort: 'picture_date:desc'
-    preview-websites_limit: 2
   -
     type: preview-organizations
     preview-organizations_sort: 'title:asc'
