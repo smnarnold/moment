@@ -1,7 +1,7 @@
 {{ collection:pictures as="picture" sort="{preview-pictures_sort}" limit="{preview-pictures_limit}" }}
     {{ picture }}
         {{# ex: image, video, codepen #}}
-        {{ partial src="components/{{ post_featured_media }}" }}
+        {{ partial src="medias/{{ post_featured_media }}" }}
 
         {{# ex: side-by-side-landscape, side-by-side-portrait #}}
         {{ partial src="components/{{ post_featured_template }}" }}

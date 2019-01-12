@@ -9,14 +9,14 @@
         <div class="side-by-side__wrapper">
             <div class="side-by-side__text">
                 <h2 class="side-by-side__title" itemprop="name">{{ title | markdown }}</h2>
-                <div class="side-by-side__text__wrapper" itemprop="description">{{ yield:post_featured_text }}</div>
+                <div class="side-by-side__text__wrapper" itemprop="description">{{ post_description | markdown }}</div>
                 {{ yield:post_featured_metas }}
             </div>
             <figure class="side-by-side__media" {{ if post_featured_media_background_color || post_featured_media_text_color }} style="background-color: {{ post_featured_media_background_color }}; color: {{ post_featured_media_text_color }};"{{ /if }}>
                 {{ if post_featured_media_frame == 'mobile' }}
-                    {{ partial src="components/frame-mobile" }}
+                    {{ partial src="media-frames/frame-mobile" }}
                 {{ elseif post_featured_media_frame == 'desktop' }}
-                    {{ partial src="components/frame-desktop" }}
+                    {{ partial src="media-frames/frame-desktop" }}
                 {{ else }}
                     {{ yield:post_featured_media }}
                 {{ /if }}

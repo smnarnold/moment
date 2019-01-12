@@ -1,7 +1,3 @@
-{{ section:post_featured_text }}
-    {{ post_description | markdown }}
-{{ /section:post_featured_text }}
-
 {{ section:post_featured_media }}
     {{ if post_featured_video_url | is_embeddable }}
         <div class="video" {{ if post_featured_video_ratio }}style="padding-bottom: {{ post_featured_video_ratio | *:100 }}%;"{{ /if }}>
