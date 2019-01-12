@@ -3,7 +3,7 @@ sections:
     display: Main
     fields:
       picture_media:
-        fieldset: partial-main-media
+        fieldset: partial-post
         type: partial
         display: Media
 taxonomies: true

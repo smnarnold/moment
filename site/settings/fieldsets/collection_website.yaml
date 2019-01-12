@@ -2,30 +2,23 @@ sections:
   main:
     display: Main
     fields:
+      title:
+        width: 50
+        type: text
+        localizable: true
+      post_url:
+        type: text
+        width: 50
+        display: Url
+        validate: URL
       website_media:
-        fieldset: partial-main-media
+        fieldset: partial-post
         type: partial
         display: Media
-      website_client:
-        max_items: '2'
-        sort: 'title:asc'
-        label: '{{ title }}'
-        collection:
-          - organization
-        mode: tags
-        type: collection
-        width: 50
-        display: Client
-      website_producer:
-        max_items: '2'
-        sort: 'title:asc'
-        label: '{{ title }}'
-        collection:
-          - organization
-        mode: tags
-        type: collection
-        width: 50
-        display: Producer
+      credits:
+        fieldset: partial_credits
+        type: partial
+        display: Credits 2
 taxonomies: true
 title: 'Collection - Website'
 hide: true
