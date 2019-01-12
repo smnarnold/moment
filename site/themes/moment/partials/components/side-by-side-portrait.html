@@ -1,24 +1,24 @@
-<article class="side-by-side side-by-side--media-portrait side-by-side--media-{{ side_by_side_media_size }}">
+<article class="side-by-side side-by-side--media-portrait side-by-side--media-{{ post_featured_media_size }}">
     <div class="side-by-side__container">
-        {{ yield:side_by_side_aside }}
+        {{ yield:post_featured_aside }}
 
-        {{ if side_by_side_media_background_color }}
-            <span class="side-by-side__bg" style="background-color: {{ side_by_side_media_background_color }};"></span>
+        {{ if post_featured_media_background_color }}
+            <span class="side-by-side__bg" style="background-color: {{ post_featured_media_background_color }};"></span>
         {{ /if }}
         
         <div class="side-by-side__wrapper">
             <div class="side-by-side__text">
                 <h2 class="side-by-side__title" itemprop="name">{{ title | markdown }}</h2>
-                <div class="side-by-side__text__wrapper" itemprop="description">{{ yield:side_by_side_text }}</div>
-                {{ yield:side_by_side_metas }}
+                <div class="side-by-side__text__wrapper" itemprop="description">{{ yield:post_featured_text }}</div>
+                {{ yield:post_featured_metas }}
             </div>
-            <figure class="side-by-side__media" {{ if side_by_side_media_background_color || side_by_side_media_text_color }} style="background-color: {{ side_by_side_media_background_color }}; color: {{ side_by_side_media_text_color }};"{{ /if }}>
-                {{ if side_by_side_media_frame == 'mobile' }}
+            <figure class="side-by-side__media" {{ if post_featured_media_background_color || post_featured_media_text_color }} style="background-color: {{ post_featured_media_background_color }}; color: {{ post_featured_media_text_color }};"{{ /if }}>
+                {{ if post_featured_media_frame == 'mobile' }}
                     {{ partial src="components/frame-mobile" }}
-                {{ elseif side_by_side_media_frame == 'desktop' }}
+                {{ elseif post_featured_media_frame == 'desktop' }}
                     {{ partial src="components/frame-desktop" }}
                 {{ else }}
-                    {{ yield:side_by_side_media }}
+                    {{ yield:post_featured_media }}
                 {{ /if }}
             </figure>
         </div>

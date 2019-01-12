@@ -7,7 +7,7 @@ sections:
         restrict_assets: false
         type: markdown
         display: Description
-      main_media_template:
+      post_featured_template:
         options:
           side-by-side-landscape: 'Side by Side | Media Landscape'
           side-by-side-portrait: 'Side by Side | Media Portrait'
@@ -15,7 +15,7 @@ sections:
         width: 50
         display: Template
         default: side-by-side-landscape
-      main_media_type:
+      post_featured_media:
         options:
           image: Image
           photography: Photography
@@ -25,12 +25,12 @@ sections:
         width: 50
         display: 'Media Type'
         default: image
-      main_media_image:
+      post_featured_image:
         type: section
         display: Image
         show_when:
-          main_media_type: image
-      main_media_image_src:
+          post_featured_media: image
+      post_featured_image_asset:
         container: main
         folder: content/images
         restrict: false
@@ -38,13 +38,13 @@ sections:
         width: 33
         display: Src
         show_when:
-          main_media_type: image
-      main_media_photography:
+          post_featured_media: image
+      post_featured_photography:
         type: section
         display: Photography
         show_when:
-          main_media_type: photography
-      main_media_photography_src:
+          post_featured_media: photography
+      post_featured_photography_asset:
         container: main
         folder: content/images
         restrict: false
@@ -53,8 +53,8 @@ sections:
         display: Src
         mode: grid
         show_when:
-          main_media_type: photography
-      main_media_photography_place:
+          post_featured_media: photography
+      post_featured_photography_place:
         max_items: '1'
         sort: 'title:asc'
         label: '{{ title }}'
@@ -65,8 +65,8 @@ sections:
         width: 33
         display: Place
         show_when:
-          main_media_type: photography
-      main_media_photography_subject:
+          post_featured_media: photography
+      post_featured_photography_subject:
         max_items: '1'
         sort: 'title:asc'
         label: '{{ title }}'
@@ -77,20 +77,20 @@ sections:
         width: 33
         display: Subject
         show_when:
-          main_media_type: photography
-      main_media_video:
+          post_featured_media: photography
+      post_featured_video:
         type: section
         display: Video
         show_when:
-          main_media_type: video
-      main_media_video_url:
+          post_featured_media: video
+      post_featured_video_url:
         type: video
         display: Url
         width: 50
         validate: URL
         show_when:
-          main_media_type: video
-      main_media_video_type:
+          post_featured_media: video
+      post_featured_video_type:
         type: select
         options:
           regular: Regular
@@ -99,27 +99,27 @@ sections:
         default: regular
         width: 25
         show_when:
-          main_media_type: video
-      main_media_video_ratio:
+          post_featured_media: video
+      post_featured_video_ratio:
         type: text
         instructions: Hauteur/Largeur=Ratio
         width: 25
         display: Ratio
         default: '0.5625'
         show_when:
-          main_media_type: video
-      main_media_codepen:
+          post_featured_media: video
+      post_featured_codepen:
         type: section
         display: Codepen
         show_when:
-          main_media_type: codepen
-      main_media_codepen_id:
+          post_featured_media: codepen
+      post_featured_codepen_id:
         type: text
         width: 50
         display: Id
         show_when:
-          main_media_type: codepen
-      main_media_codepen_theme:
+          post_featured_media: codepen
+      post_featured_codepen_theme:
         options:
           light: Light
           dark: Dark
@@ -128,6 +128,55 @@ sections:
         display: Theme
         default: light
         show_when:
-          main_media_type: codepen
+          post_featured_media: codepen
+      theming:
+        type: section
+        display: Theming
+      post_featured_media_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Media Background Color'
+      post_featured_media_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Media Text Color'
+      post_featured_media_size:
+        options:
+          normal: Normal
+          large: Large
+        inline: true
+        type: radio
+        width: 33
+        display: 'Media Size'
+        default: normal
+      post_featured_media_frame:
+        options:
+          none: None
+          desktop: Desktop
+          mobile: Mobile
+        type: select
+        width: 33
+        display: 'Media Frame'
+        default: none
+        hide_when:
+          post_featured_media: photography
+      post_featured_media_frame_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Media Frame Color'
+        default: '#000000'
+        show_when:
+          post_featured_media_frame:
+            - desktop
+            - mobile
 taxonomies: true
-title: 'Partial - Main Media'
+title: 'Partial - Post'

@@ -1,9 +1,9 @@
 {{ collection:pictures as="picture" sort="{preview-pictures_sort}" limit="{preview-pictures_limit}" }}
     {{ picture }}
         {{# ex: image, video, codepen #}}
-        {{ partial src="components/{{ main_media_type }}" }}
+        {{ partial src="components/{{ post_featured_media }}" }}
 
         {{# ex: side-by-side-landscape, side-by-side-portrait #}}
-        {{ partial src="components/{{ main_media_template }}" }}
+        {{ partial src="components/{{ post_featured_template }}" }}
     {{ /picture }}
 {{ /collection:pictures }}

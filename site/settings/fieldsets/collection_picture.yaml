@@ -6,14 +6,6 @@ sections:
         fieldset: partial-main-media
         type: partial
         display: Media
-      website_theme:
-        fieldset: partial_side_by_side
-        type: partial
-        display: Theme
-        show_when:
-          picture_template:
-            - side_by_side_landscape
-            - side_by_side_portrait
 taxonomies: true
 title: 'Collection - Picture'
 create_title: ''

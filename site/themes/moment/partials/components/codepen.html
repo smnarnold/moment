@@ -1,19 +1,20 @@
-{{ section:side_by_side_text }}
+{{ section:post_featured_text }}
     {{ post_description | markdown }}
-{{ /section:side_by_side_text }}
+{{ /section:post_featured_text }}
 
-{{ section:side_by_side_media }}
+{{ section:post_featured_media }}
     <p data-height="400" 
-    {{ if main_media_codepen_theme }}data-theme-id="{{ main_media_codepen_theme }}" {{ /if }}
-    {{ if main_media_codepen_id }}data-slug-hash="{{ main_media_codepen_id }}"{{ /if }} 
-    data-default-tab="result" 
-    data-user="sarnold" 
-    class="codepen">Voir le <a href="https://codepen.io">CodePen</a> 
-    {{ if main_media_codepen_id }}
-        <a href="https://codepen.io/sarnold/pen/{{ main_media_codepen_id }}/">{{ title }}</a>
-    {{ /if }} 
-    de Simon Arnold (<a href="https://codepen.io/sarnold">@sarnold</a>).</p>
-{{ /section:side_by_side_media }}
+        {{ if post_featured_codepen_theme }}data-theme-id="{{ post_featured_codepen_theme }}" {{ /if }}
+        {{ if post_featured_codepen_id }}data-slug-hash="{{ post_featured_codepen_id }}"{{ /if }} 
+        data-default-tab="result" 
+        data-user="sarnold" 
+        class="codepen">Voir le <a href="https://codepen.io">CodePen</a> 
+        {{ if post_featured_codepen_id }}
+            <a href="https://codepen.io/sarnold/pen/{{ post_featured_codepen_id }}/">{{ title }}</a>
+        {{ /if }} 
+        de Simon Arnold (<a href="https://codepen.io/sarnold">@sarnold</a>).
+    </p>
+{{ /section:post_featured_media }}
 
 
 
