@@ -434,7 +434,7 @@ class CollectionTags extends Tags
     protected function getSortOrder()
     {
         // If a sort parameter has been explicitly specified, we're done.
-        if ($sort = $this->get('sort')) {
+        if (! is_null($sort = $this->get('sort'))) {
             return $sort;
         }
 
@@ -581,7 +581,7 @@ class CollectionTags extends Tags
             $this->collection = $this->collection->supplement('date_group', function ($entry) use ($format, $field) {
                 $date = ($field === 'date')
                         ? $entry->date()
-                        : carbon($entry->get($field));
+                        : carbon($entry->getWithDefaultLocale($field));
 
                 return $date->format($format);
             });

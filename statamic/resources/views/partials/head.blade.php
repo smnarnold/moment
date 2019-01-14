@@ -18,10 +18,12 @@
         'resourceUrl': '{!! cp_resource_url('/') !!}',
         'locales': {!! json_encode(Statamic\API\Config::get('system.locales')) !!},
         'markdownHardWrap': {{ bool_str(Statamic\API\Config::get('theming.markdown_hard_wrap')) }},
+        'bard': {
+            'plugins': [],
+            'buttons': []
+        },
         'conditions': {},
-        'MediumEditorExtensions': {},
         'flash': [],
-        'staticCachingEnabled': {{ \Statamic\API\Config::get('caching.static_caching_enabled') ? 'true' : 'false' }},
         'userId': '{{ \Statamic\API\User::loggedIn() ? \Statamic\API\User::getCurrent()->id() : null }}',
         'dateFormat': '{{ to_moment_js_date_format(\Statamic\API\Config::get('cp.date_format')) }}'
     };
