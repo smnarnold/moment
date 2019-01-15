@@ -3,12 +3,16 @@
         {{ yield:post_featured_aside }}
 
         {{ if post_featured_media_background_color }}
-            <span class="side-by-side__bg" style="background-color: {{ post_featured_media_background_color }};"></span>
+            <span class="side-by-side__bg side-by-side__bg--media" style="background-color: {{ post_featured_media_background_color }};"></span>
+        {{ /if }}
+
+        {{ if post_featured_text_background_color }}
+          <span class="side-by-side__bg side-by-side__bg--text" style="background-color: {{ post_featured_text_background_color }};"></span>
         {{ /if }}
 
         <div class="side-by-side__wrapper">
             <h2 class="side-by-side__title" itemprop="name">{{ title | markdown }}</h2>
-            <div class="side-by-side__text">
+            <div class="side-by-side__text" {{ if post_featured_text_text_color }}style="color: {{ post_featured_text_text_color }};"{{ /if }}>
                 <div class="side-by-side__text__wrapper" itemprop="description">{{ post_description | markdown }}</div>
             </div>
             <figure class="side-by-side__media" {{ if post_featured_media_background_color || post_featured_media_text_color }} style="background-color: {{ post_featured_media_background_color }}; color: {{ post_featured_media_text_color }};"{{ /if }}>

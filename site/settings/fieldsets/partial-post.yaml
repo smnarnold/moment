@@ -178,5 +178,19 @@ sections:
           post_featured_media_frame:
             - desktop
             - mobile
+      post_featured_text_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Text Background Color'
+      post_featured_text_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: 'Text Text Color'
 taxonomies: true
 title: 'Partial - Post'

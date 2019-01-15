@@ -103,10 +103,17 @@
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
       width: 50%;
       height: 100%;
       pointer-events: none;
+
+      &--media {
+        right: 0;
+      }
+
+      &--text {
+        left: 0;
+      }
     }
 
     &__aside {
@@ -139,6 +146,16 @@
         &__bg {
           left: 0;
           right: auto;
+
+          &--media {
+            left: 0;
+            right: auto;
+          }
+
+          &--text {
+            left: auto;
+            right: 0;
+          }
         }
 
         &__wrapper {
@@ -160,8 +177,12 @@
 
 @include media-breakpoint-up(xl) {
   .side-by-side {
-    &__bg {
+    &__bg--media {
       width: calc(50% + 100px);
+    }
+
+    &__bg--text {
+      width: calc(50% - 100px);
     }
 
     &__aside {
@@ -184,14 +205,6 @@
     &__media {
       flex: 1 1 calc(50% + 100px);
       max-width: calc(50% + 100px);
-    }
-
-    &--w-aside {
-      .side-by-side {
-        &__bg {
-          width: calc(50% + 50px);
-        }
-      }
     }
   }
 }
