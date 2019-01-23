@@ -11,7 +11,7 @@
         {{ /if }}
 
         <div class="side-by-side__wrapper">
-            <h2 class="side-by-side__title" itemprop="name">{{ title | markdown }}</h2>
+            <h2 class="side-by-side__title" itemprop="name" {{ if post_featured_text_text_color }}style="color: {{ post_featured_text_text_color }};"{{ /if }}>{{ title | markdown }}</h2>
             <div class="side-by-side__text" {{ if post_featured_text_text_color }}style="color: {{ post_featured_text_text_color }};"{{ /if }}>
                 <div class="side-by-side__text__wrapper" itemprop="description">{{ post_description | markdown }}</div>
             </div>

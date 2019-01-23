@@ -33,10 +33,10 @@ components:
       - aa80e023-5904-4c11-9bdf-9ce59a50be63
       - 72b22431-4e0d-4b9e-8059-636fada79875
       - e9524109-c2c9-4a6a-9d2a-9d9e46367b9f
+      - dadc5f98-29fc-41bb-bd28-3832460c1916
+      - 93687fc9-6a85-4088-a74c-eafec15fc114
     background_color: 'rgba(133, 37, 37, 1)'
-    preview-organizations_introduction: |
-      Depuis le début de ma carrière, j’ai eu le privilège de travailler sur plusieurs comptes majeurs. En voici quelques-uns.
-      
+    preview-organizations_introduction: 'Depuis le début de ma carrière, j’ai eu le privilège de travailler sur plusieurs comptes majeurs. En voici quelques-uns.'
   -
     type: preview-pictures
     preview-pictures_limit: 2
