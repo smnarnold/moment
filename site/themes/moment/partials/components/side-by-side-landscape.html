@@ -2,11 +2,15 @@
     <div class="side-by-side__container">
         {{ yield:post_featured_aside }}
 
-        {{ if post_featured_media_background_color }}
-            <span class="side-by-side__bg side-by-side__bg--media" style="background-color: {{ post_featured_media_background_color }};"></span>
+        {{ if post_featured_media_background_color && post_featured_media_gradient_color }}
+          <span class="side-by-side__bg side-by-side__bg--media" style="background: linear-gradient(to bottom, {{ post_featured_media_background_color }} 0%,{{ post_featured_media_gradient_color }} 100%);"></span>
+        {{ elseif post_featured_media_background_color }}
+          <span class="side-by-side__bg side-by-side__bg--media" style="background-color: {{ post_featured_media_background_color }};"></span>
         {{ /if }}
 
-        {{ if post_featured_text_background_color }}
+        {{ if post_featured_text_background_color && post_featured_text_gradient_color }}
+          <span class="side-by-side__bg side-by-side__bg--text" style="background: linear-gradient(to bottom, {{ post_featured_text_background_color }} 0%,{{ post_featured_text_gradient_color }} 100%);"></span>
+        {{ elseif post_featured_text_background_color }}
           <span class="side-by-side__bg side-by-side__bg--text" style="background-color: {{ post_featured_text_background_color }};"></span>
         {{ /if }}
 
@@ -15,7 +19,7 @@
             <div class="side-by-side__text" {{ if post_featured_text_text_color }}style="color: {{ post_featured_text_text_color }};"{{ /if }}>
                 <div class="side-by-side__text__wrapper" itemprop="description">{{ post_description | markdown }}</div>
             </div>
-            <figure class="side-by-side__media" {{ if post_featured_media_background_color || post_featured_media_text_color }} style="background-color: {{ post_featured_media_background_color }}; color: {{ post_featured_media_text_color }};"{{ /if }}>
+            <figure class="side-by-side__media" {{ if post_featured_media_text_color }} style="color: {{ post_featured_media_text_color }};"{{ /if }}>
                 {{ if post_featured_media_frame == 'mobile' }}
                     {{ partial src="media-frames/frame-mobile" }}
                 {{ elseif post_featured_media_frame == 'tablet-landscape' }}

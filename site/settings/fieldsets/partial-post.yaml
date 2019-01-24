@@ -137,14 +137,21 @@ sections:
         control: hue
         show_opacity: false
         type: colorpicker
-        width: 33
+        width: 25
         display: 'Media Background Color'
+      post_featured_media_gradient_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Media Gradient Color'
       post_featured_media_text_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
-        width: 33
+        width: 25
         display: 'Media Text Color'
       post_featured_media_size:
         options:
@@ -152,7 +159,7 @@ sections:
           large: Large
         inline: true
         type: radio
-        width: 33
+        width: 25
         display: 'Media Size'
         default: normal
       post_featured_media_frame:
@@ -162,7 +169,7 @@ sections:
           tablet-landscape: 'Tablet Landscape'
           mobile: Mobile
         type: select
-        width: 33
+        width: 25
         display: 'Media Frame'
         default: none
         hide_when:
@@ -172,26 +179,34 @@ sections:
         control: hue
         show_opacity: false
         type: colorpicker
-        width: 33
+        width: 25
         display: 'Media Frame Color'
         default: '#000000'
         show_when:
           post_featured_media_frame:
             - desktop
+            - tablet-landscape
             - mobile
       post_featured_text_background_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
-        width: 33
+        width: 25
         display: 'Text Background Color'
+      post_featured_text_gradient_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Text Gradient Color'
       post_featured_text_text_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
-        width: 33
+        width: 25
         display: 'Text Text Color'
 taxonomies: true
 title: 'Partial - Post'
