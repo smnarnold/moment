@@ -5,7 +5,7 @@
   border-radius: 34px;
   border: solid 2px #ccc;
   margin: 0 auto;
-  padding: 8px 45px;
+  padding: 20px;
 
   &::before,
   &::after {
@@ -18,13 +18,13 @@
   }
 
   &::before {
-    right: -4px;
+    right: -17px;
     width: 60px;
     transform: rotate(90deg) translateY(-50%);
   }
 
   &::after {
-    right: 20px;
+    right: 7px;
     top: calc(50% + 40px);
     width: 6px;
     transform: translateY(-50%);

@@ -1621,6 +1621,26 @@
         ]
     },
     {
+        "name": "marbles/sitemap",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "dist": {
+            "type": "path",
+            "url": "../site/addons/Sitemap",
+            "reference": "8de7e73a0f9e6f156066ba92185e469e781aa9bd",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "Automatically add a Sitemap.xml to your website",
+        "transport-options": {
+            "symlink": false
+        }
+    },
+    {
         "name": "maximebf/debugbar",
         "version": "1.13.1",
         "version_normalized": "1.13.1.0",
@@ -3972,25 +3992,5 @@
             }
         ],
         "description": "A Laravel 5 package to output to the console from outside of command classes"
-    },
-    {
-        "name": "marbles/sitemap",
-        "version": "dev-develop",
-        "version_normalized": "dev-develop",
-        "dist": {
-            "type": "path",
-            "url": "../site/addons/Sitemap",
-            "reference": "8de7e73a0f9e6f156066ba92185e469e781aa9bd",
-            "shasum": null
-        },
-        "type": "library",
-        "installation-source": "dist",
-        "license": [
-            "MIT"
-        ],
-        "description": "Automatically add a Sitemap.xml to your website",
-        "transport-options": {
-            "symlink": false
-        }
     }
 ]
