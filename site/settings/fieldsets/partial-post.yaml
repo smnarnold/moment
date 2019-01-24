@@ -159,6 +159,7 @@ sections:
         options:
           none: None
           desktop: Desktop
+          tablet-landscape: 'Tablet Landscape'
           mobile: Mobile
         type: select
         width: 33

@@ -18,6 +18,8 @@
             <figure class="side-by-side__media" {{ if post_featured_media_background_color || post_featured_media_text_color }} style="background-color: {{ post_featured_media_background_color }}; color: {{ post_featured_media_text_color }};"{{ /if }}>
                 {{ if post_featured_media_frame == 'mobile' }}
                     {{ partial src="media-frames/frame-mobile" }}
+                {{ elseif post_featured_media_frame == 'tablet-landscape' }}
+                  {{ partial src="media-frames/frame-tablet-landscape" }}
                 {{ elseif post_featured_media_frame == 'desktop' }}
                     {{ partial src="media-frames/frame-desktop" }}
                 {{ else }}

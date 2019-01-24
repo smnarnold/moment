@@ -1,0 +1,44 @@
+.frame-tablet-landscape {
+  position: relative;
+  background: #000;
+  max-width: 100%;
+  border-radius: 34px;
+  border: solid 2px #ccc;
+  margin: 0 auto;
+  padding: 8px 45px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 6px;
+    background: rgba(50, 50, 50, 0.7);
+    border-radius: 3px;
+  }
+
+  &::before {
+    right: -4px;
+    width: 60px;
+    transform: rotate(90deg) translateY(-50%);
+  }
+
+  &::after {
+    right: 20px;
+    top: calc(50% + 40px);
+    width: 6px;
+    transform: translateY(-50%);
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  iframe {
+    background-color: #000;
+  }
+}
