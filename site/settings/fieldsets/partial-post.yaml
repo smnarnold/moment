@@ -162,6 +162,27 @@ sections:
         width: 25
         display: 'Media Size'
         default: normal
+      post_featured_text_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Text Background Color'
+      post_featured_text_gradient_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Text Gradient Color'
+      post_featured_text_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Text Text Color'
       post_featured_media_frame:
         options:
           none: None
@@ -187,26 +208,5 @@ sections:
             - desktop
             - tablet-landscape
             - mobile
-      post_featured_text_background_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        width: 25
-        display: 'Text Background Color'
-      post_featured_text_gradient_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        width: 25
-        display: 'Text Gradient Color'
-      post_featured_text_text_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        width: 25
-        display: 'Text Text Color'
 taxonomies: true
 title: 'Partial - Post'
