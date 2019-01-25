@@ -1,0 +1,20 @@
+sections:
+  main:
+    display: Main
+    fields:
+      job_title:
+        type: text
+        instructions: 'Ex: Front-end, Designer, etc.'
+        width: 33
+        display: 'Job Title'
+      persons:
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - persons
+        mode: tags
+        type: collection
+        width: 66
+        display: Person(s)
+taxonomies: true
+title: 'Partial - Workforce'

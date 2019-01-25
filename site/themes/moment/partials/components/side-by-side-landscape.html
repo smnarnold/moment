@@ -18,6 +18,8 @@
             <h2 class="side-by-side__title" itemprop="name" {{ if post_featured_text_text_color }}style="color: {{ post_featured_text_text_color }};"{{ /if }}>{{ title | markdown }}</h2>
             <div class="side-by-side__text" {{ if post_featured_text_text_color }}style="color: {{ post_featured_text_text_color }};"{{ /if }}>
                 <div class="side-by-side__text__wrapper" itemprop="description">{{ post_description | markdown }}</div>
+
+                {{ partial src="components/workforce" }}
             </div>
             <figure class="side-by-side__media" {{ if post_featured_media_text_color }} style="color: {{ post_featured_media_text_color }};"{{ /if }}>
                 {{ if post_featured_media_frame == 'mobile' }}

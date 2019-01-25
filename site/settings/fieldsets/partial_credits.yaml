@@ -15,6 +15,17 @@ sections:
         type: collection
         width: 33
         display: Client
+      post_workforce:
+        type: replicator
+        display: Workforce
+        sets:
+          job:
+            display: Role
+            fields:
+              job:
+                fieldset: partial_workforce
+                type: partial
+                display: Job
 taxonomies: true
 title: 'Partial - Credits'
 hide: true
