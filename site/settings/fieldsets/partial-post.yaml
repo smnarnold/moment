@@ -188,6 +188,7 @@ sections:
           none: None
           desktop: Desktop
           tablet-landscape: 'Tablet Landscape'
+          tablet-portrait: 'Tablet Portrait'
           mobile: Mobile
         type: select
         width: 25
@@ -207,6 +208,7 @@ sections:
           post_featured_media_frame:
             - desktop
             - tablet-landscape
+            - tablet-portrait
             - mobile
 taxonomies: true
 title: 'Partial - Post'

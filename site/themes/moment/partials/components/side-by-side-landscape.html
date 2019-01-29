@@ -23,13 +23,15 @@
             </div>
             <figure class="side-by-side__media" {{ if post_featured_media_text_color }} style="color: {{ post_featured_media_text_color }};"{{ /if }}>
                 {{ if post_featured_media_frame == 'mobile' }}
-                    {{ partial src="media-frames/frame-mobile" }}
+                  {{ partial src="media-frames/frame-mobile" }}
                 {{ elseif post_featured_media_frame == 'tablet-landscape' }}
                   {{ partial src="media-frames/frame-tablet-landscape" }}
+                {{ elseif post_featured_media_frame == 'tablet-portrait' }}
+                  {{ partial src="media-frames/frame-tablet-portrait" }}
                 {{ elseif post_featured_media_frame == 'desktop' }}
-                    {{ partial src="media-frames/frame-desktop" }}
+                  {{ partial src="media-frames/frame-desktop" }}
                 {{ else }}
-                    {{ yield:post_featured_media }}
+                  {{ yield:post_featured_media }}
                 {{ /if }}
 
                 {{ yield:post_metas }}
