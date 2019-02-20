@@ -1,12 +1,11 @@
 .site-header {
   align-items: center;
-  background: palette(white);
+  background-color: palette(white);
   color: palette(black);
   display: flex;
   font-size: 1.8rem;
   font-weight: 400;
-  height: $site-header-height-desktop;
-  padding: 10px 0;
+  height: $site-header-height;
   position: fixed;
   top: 0;
   width: 100%;
@@ -45,31 +44,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__logo {
-    align-items: center;
-    color: inherit;
-    display: flex;
-    font-family: font(serif);
-    font-size: 29px;
-    font-weight: 400;
-    height: 30px;
-    line-height: 30px;
-    position: relative;
-    text-decoration: none;
-    vertical-align: middle;
-    z-index: 4;
-
-    &__svg {
-      height: 30px;
-      margin-right: 1px;
-      width: 39px;
-    }
-
-    &__text {
-      transform: translateY(-1px);
-    }
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   &__toggle {
@@ -102,7 +78,7 @@
   }
 
   &__item {
-    padding: 20px;
+    padding: 0 20px;
   }
 
   &__link {
@@ -156,10 +132,17 @@
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
   .site-header {
+    transition: transform 0.5s ease-out;
+
     &__overlay,
     &__toggle,
     &__bg {
       display: none;
+    }
+
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     &__menu {
@@ -186,6 +169,51 @@
 
       &:last-child {
         padding-right: 0;
+      }
+    }
+
+    .is-scrolling-down & {
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in;
+      transform: translateY(-100%);
+    }
+  }
+
+  // Large devices (desktops, 1380px and up)
+  @media (min-width: 1380px) {
+    .site-header {
+      $steps: 8;
+
+      height: 0;
+      background-color: transparent;
+      padding: 0;
+
+      &__container {
+        width: 100%;
+        max-width: 100000px;
+      }
+
+      &__menu {
+        width: 70px;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 15px;
+        padding: 8.6rem 0 0;
+        text-shadow: 1px 1px 0 #fff;
+      }
+
+      &__list {
+        display: block;
+        text-align: right;
+      }
+
+      &__item {
+        padding: 0;
+      }
+
+      .is-scrolling-down & {
+        transform: translateY(0);
       }
     }
   }

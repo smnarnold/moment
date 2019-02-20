@@ -58,6 +58,10 @@
       @extend %blockquote;
     }
 
+    a {
+      @extend %href;
+    }
+
     &__wrapper {
       @extend %children-margin;
     }

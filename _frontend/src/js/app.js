@@ -1,52 +1,45 @@
-const Modules = {
-  AnchorsMenu: require("./modules/AnchorsMenu").default,
-  Filters: require("./modules/Filters").default,
-  SiteHeader: require("./modules/SiteHeader").default
-};
+import { throttle, debounce } from "throttle-debounce";
 
-const Pages = {
-  Default: require("./pages/Default").default,
-  Home: require("./pages/Home").default
-};
+class Site {
+  constructor() {
+    this.dom = {
+      header: document.querySelector('.site-header'),
+      main: document.querySelector('main'),
+      footer: document.querySelector('.site-footer')
+    };
 
-$(() => {
-  window.dom = {
-    body: $("body"),
-    document: $(document),
-    html: $("html"),
-    window: $(window)
-  };
-
-  initClasses(window.dom.body, "page"); // Pages
-  initClasses(window.dom.body, "module"); // Modules
-  window.dom.window.trigger("app:ready");
-});
-
-window.initClasses = function(context = window.dom.body, selector = "module") {
-  let attr = `data-${selector}`;
-  let classes = selector === "page" ? Pages : Modules;
-  let items = context[0].querySelectorAll(`[${attr}]`);
-  let styles = `background: ${
-    selector === "page" ? "#8bbeb2" : "#18314f"
-  }; color: #fff; padding: 0 0.25em;`;
-
-  for (let i = 0; i < items.length; i++) {
-    // ex: all [data-page]
-    let item = items[i]; // ex: [data-page="Home"]
-    let list = item.getAttribute(attr).split(/\s+/); // ex: Home
-
-    for (let j = 0; j < list.length; j++) {
-      let name = list[j];
-
-      if (classes[name] !== undefined) {
-        console.log(`%c✔️${name}%O`, styles, { el: item });
-        new classes[name]($(item)).init();
-      } else if (classes.Default !== undefined) {
-        console.warn(`%c⚠️${name}%O`, styles, { el: item });
-        new classes.Default($(item)).init();
-      } else {
-        console.error(`%c❌️${name}%O`, styles, { el: item });
-      }
-    }
+    this.previousScrollY = 0;
   }
-};
+
+  /**
+   * Methods
+   */
+  init() {
+    this.bindEvents();
+    this.setFooter();
+  }
+
+  bindEvents() {
+    window.addEventListener(
+      "scroll",
+      throttle(300, () => this.setScrollDirection())
+    );
+    window.addEventListener("resize", debounce(300, () => this.setFooter()));
+  }
+
+  setScrollDirection() {
+    let scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    let isScrollingDown = scrollY > this.previousScrollY ? true : false;
+
+    document.documentElement.classList.toggle('is-scrolling-down', isScrollingDown);
+    document.documentElement.classList.toggle('is-scrolling-up', !isScrollingDown);
+    this.previousScrollY = scrollY <= 0 ? 0 : scrollY;
+  }
+
+  setFooter() {
+    this.dom.main.style.marginBottom = `${this.dom.footer.offsetHeight}px`;
+  }
+}
+
+var site = new Site();
+site.init();

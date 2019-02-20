@@ -67,6 +67,23 @@
   color: currentColor;
 }
 
+%href {
+  color: currentColor;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(100% - 8px),
+    #fffc00 calc(100% - 7px),
+    #fffc00 100%
+  );
+  text-decoration: none;
+  transition: background-image 0.3s linear;
+
+  &:hover {
+    background-image: linear-gradient(to bottom, #fffc00 0, #fffc00 100%);
+  }
+}
+
 @include media-breakpoint-up(sm) {
   %super {
     font-size: calc(2.8rem + 1.75vw);
