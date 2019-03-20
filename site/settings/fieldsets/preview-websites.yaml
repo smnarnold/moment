@@ -4,8 +4,8 @@ sections:
     fields:
       preview-websites_sort:
         options:
-          'picture_date:asc': Newest
-          'picture_date:desc': Oldest
+          'date:desc': Newest
+          'date:asc': Oldest
           'title:asc': 'Name (A-Z)'
           'title:desc': 'Name (Z-A)'
           random: Random

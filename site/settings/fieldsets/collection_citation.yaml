@@ -1,0 +1,11 @@
+sections:
+  main:
+    display: Main
+    fields:
+      citation:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: Citation
+taxonomies: true
+title: 'Collection - Citation'

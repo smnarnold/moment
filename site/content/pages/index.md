@@ -1,10 +1,9 @@
 ---
-hero-title: 'Learn by Doing and Building'
-hero-subtitle: 'Sid Lee Digital Sandbox is a blog for any enthusiastic digital devotee that would like to learn more about the fabulous world wide web or any technological digital advances.'
 components:
   -
     type: preview-websites
-    preview-websites_sort: 'picture_date:desc'
+    preview-websites_sort: 'date:desc'
+    preview-websites_limit: 5
   -
     type: preview-organizations
     preview-organizations_sort: 'title:asc'
@@ -48,5 +47,3 @@ title: Home
 template: page-home
 fieldset: home
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
----
-Sid Lee Digital Sandbox is a blog for any enthusiastic digital devotee that would like to learn more about the fabulous world wide web or any technological digital advances.

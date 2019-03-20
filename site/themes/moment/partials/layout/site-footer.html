@@ -8,7 +8,9 @@
         <meta itemprop="name" content="Sid Lee">
         <a href="http://sidlee.com/fr/" itemprop="url" rel="noopener">Sid&nbsp;Lee</a>
       </span><br>
-      Je fais des trucs que ta grand-mère ne comprendrait probablement&nbsp;pas.
+      {{ collection:citations limit="1" sort="random" }}
+        {{ citation | markdown | strip_tags:p }}
+      {{ /collection:citations }}
 
       <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
         <meta itemprop="addressLocality" content="Montréal">

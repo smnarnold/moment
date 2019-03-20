@@ -4,8 +4,8 @@ sections:
     fields:
       preview-pictures_sort:
         options:
-          'picture_date:desc': Newest
-          'picture_date:asc': Oldest
+          'date:desc': Newest
+          'date:asc': Oldest
           'title:asc': 'Name (A-Z)'
           'title:desc': 'Name (Z-A)'
           random: Random
@@ -21,4 +21,3 @@ sections:
         default: '2'
 taxonomies: false
 title: 'Preview - Pictures'
-create_title: ''
