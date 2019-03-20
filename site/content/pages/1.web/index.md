@@ -6,3 +6,4 @@ components:
 title: Web
 fieldset: page-default
 id: 8de6e824-57fb-4fcc-9232-533d01e25d20
+mount: websites
