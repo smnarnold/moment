@@ -2,7 +2,7 @@ locales:
   fr:
     full: fr_CA
     name: French
-    url: 'http://moment.local/'
+    url: '/'
 timezone: America/Montreal
 date_format: 'F jS, Y'
 default_extension: md
