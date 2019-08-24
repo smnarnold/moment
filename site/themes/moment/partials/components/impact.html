@@ -1,0 +1,44 @@
+<div class="impact" style="
+  {{ if background_color && background_gradient }}
+    background: linear-gradient(to bottom, {{ background_color }} 0%,{{ background_gradient }} 100%);
+  {{ elseif background_color }}
+    background-color: {{ background_color }};
+  {{ /if }}
+  {{ if text_color }} color: {{ text_color }}{{ /if }}
+">
+  <div class="container">
+    <div class="col">
+      <div class="impact__wrapper">
+        {{ if image }}
+          {{ asset:image }}
+            <div class="impact__media">
+              <img src="{{ glide:image width="400" }}" alt="{{ title }}" >
+            </div>
+          {{ /asset:image }}
+        {{ elseif giphy }}
+          <div class="impact__media">
+            <img src="{{ giphy }}" alt="{{ title }}" >
+          </div>
+        {{ /if }}
+
+        <div class="impact__text">
+          {{ if tagline }}
+            <em class="impact__tagline">{{ tagline }}</em>
+          {{ /if }}
+
+          {{ if title }}
+            <h1 class="impact__title">{{ title }}</h1>
+          {{ /if }}
+
+          {{ if subtitle }}
+            <div class="impact__subtitle">{{ subtitle }}</div>
+          {{ /if }}
+
+          {{ if description }}
+            <div class="impact__subtitle">{{ description }}</div>
+          {{ /if }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 collections:
   blog: '/pictures/{year}/{month}/{day}/{slug}'
+  courses: cours
 taxonomies:
   tags: '/pictures/tags/{slug}'
 routes: {  }

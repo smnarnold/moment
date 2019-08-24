@@ -5,12 +5,15 @@ sections:
   main:
     display: Main
     fields:
-      hero:
-        fieldset: partial-hero
-        type: partial
-        display: Hero
       components:
         type: partial
         display: Components
         fieldset: page_components
+  sidebar:
+    display: Sidebar
+    fields:
+      hidden:
+        type: toggle
+        display: 'Hide in menu'
+        default: 'false'
 create_title: page-default

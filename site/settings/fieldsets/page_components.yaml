@@ -27,24 +27,31 @@ sections:
                 type: partial
                 display: Hero
           preview-websites:
-            display: Preview Websites
+            display: 'Preview Websites'
             fields:
               preview-websites:
                 fieldset: preview-websites
                 type: partial
-                display: Preview Websites
+                display: 'Preview Websites'
           preview-pictures:
-            display: Preview Pictures
+            display: 'Preview Pictures'
             fields:
               preview-pictures:
                 fieldset: preview-pictures
                 type: partial
-                display: Preview Pictures
+                display: 'Preview Pictures'
           preview-organizations:
-            display: Preview Organizations
+            display: 'Preview Organizations'
             fields:
               preview-organizations:
                 fieldset: preview-organizations
                 type: partial
-                display: Preview Organizations
+                display: 'Preview Organizations'
+          impact:
+            display: Impact
+            fields:
+              impact:
+                fieldset: partial-impact
+                type: partial
+                display: Impact
 hide: true

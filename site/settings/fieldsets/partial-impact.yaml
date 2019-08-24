@@ -1,0 +1,47 @@
+sections:
+  main:
+    display: Main
+    fields:
+      tagline:
+        type: text
+        display: Tagline
+      title:
+        display: Title
+        type: text
+        localizable: true
+      subtitle:
+        type: text
+        display: Subtitle
+      description:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        type: bard
+        display: Description
+      media:
+        fieldset: partial-media
+        type: partial
+        display: Media
+      theming:
+        fieldset: partial-theming
+        type: partial
+        display: Theming
+taxonomies: true
+hide: true
+title: 'Partial - Impact'

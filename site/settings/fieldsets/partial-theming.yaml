@@ -1,0 +1,31 @@
+sections:
+  main:
+    display: Main
+    fields:
+      theming:
+        type: section
+        display: Theming
+      background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Background Color'
+      background_gradient:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Background Gradient'
+      text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 25
+        display: 'Text Color'
+title: 'Partial - Theming'
+create_title: ''
+hide: true

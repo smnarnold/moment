@@ -1,7 +1,7 @@
 theme: moment
 default_layout: default
-default_page_template: page-default
-default_entry_template: page-post
+default_page_template: default
+default_entry_template: default
 default_taxonomy_template: taxonomy
 error_template_folder: errors
 default_fieldset: page-default

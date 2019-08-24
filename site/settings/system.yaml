@@ -2,7 +2,7 @@ locales:
   fr:
     full: fr_CA
     name: French
-    url: '/'
+    url: /
 timezone: America/Montreal
 date_format: 'F jS, Y'
 default_extension: md
@@ -42,6 +42,7 @@ redactor:
         - bold
         - italic
 csrf_exclude:
+  - '/!/Fetch/*'
   - '/!/Fetch/*'
   - '/!/Fetch/*'
   - '/!/Fetch/*'
