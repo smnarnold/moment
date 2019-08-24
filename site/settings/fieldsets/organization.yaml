@@ -10,15 +10,14 @@ sections:
         display: Description
         width: 66
       logo:
+        container: main
+        folder: organizations/logos
+        restrict: true
+        max_files: 1
         type: assets
         display: Logo
-        container: main
-        folder: /
-        restrict: false
-        width: 33
-      svg:
-        type: textarea
-        display: SVG
+        width: 25
+        mode: grid
       place:
         type: collection
         display: Place
