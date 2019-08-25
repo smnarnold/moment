@@ -12,3 +12,8 @@ sections:
         instructions: 'The name of your website'
         localizable: true
         width: 33
+      google_analytics:
+        type: text
+        width: 25
+        display: 'Google Analytics'
+        instructions: 'Code UA-XXXXXXXX-X'

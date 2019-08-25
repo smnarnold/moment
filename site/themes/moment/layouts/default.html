@@ -8,6 +8,11 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto+Mono:100,300&amp;subset=latin-ext" rel="stylesheet">
 
+  {{ if google_analytics }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics }}"></script>
+  {{ /if }}
+
   <!-- CSS -->
   {{ theme:css src="main" tag="true" }}
   <style>{{ partial:themes }}</style>
@@ -27,5 +32,15 @@
 
   <!-- JS -->
   {{ theme:js src="app" tag="true" }}
+
+  {{ if google_analytics }}
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ google_analytics }}');
+    </script>
+  {{ /if }}
 </body>
 </html>

@@ -1,0 +1,17 @@
+<div class="mediablock">
+  <div class="container">
+    <div class="col">
+      {{ if image }}
+        {{ asset:image }}
+          <div class="mediablock__media">
+            <img src="{{ url }}" alt="{{ title }}" >
+          </div>
+        {{ /asset:image }}
+      {{ elseif giphy }}
+        <div class="mediablock__media">
+          <img src="{{ giphy }}" alt="{{ title }}" >
+        </div>
+      {{ /if }}
+    </div>
+  </div>
+</div>

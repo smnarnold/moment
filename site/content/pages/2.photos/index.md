@@ -3,6 +3,9 @@ components:
     type: impact
     title: Photos
     subtitle: 'Il faut bien avoir des loisirs!'
+    image: /assets/content/images/clotus.gif
+    background_color: '#bb74ff'
+    background_gradient: '#a044ff'
   -
     type: preview-pictures
     preview-pictures_sort: 'date:desc'

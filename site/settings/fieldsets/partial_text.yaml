@@ -1,0 +1,75 @@
+sections:
+  main:
+    display: Main
+    fields:
+      tagline:
+        type: text
+        display: Tagline
+        width: 66
+      title:
+        display: Title
+        type: text
+        localizable: true
+        width: 66
+      subtitle:
+        type: text
+        display: Subtitle
+        width: 66
+      description:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: false
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        container: main
+        folder: content/images
+        restrict_assets: true
+        type: bard
+        display: Description
+        width: 75
+      description_columns:
+        options:
+          automatic: Automatic
+          single-column: 'Single column'
+        type: select
+        width: 25
+        display: 'Description columns'
+        default: automatic
+      caption:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        type: bard
+        display: Caption
+taxonomies: true
+hide: true
+title: 'Partial - Text'

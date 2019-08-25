@@ -1,0 +1,10 @@
+sections:
+  main:
+    display: Main
+    fields:
+      text:
+        fieldset: partial_text
+        type: partial
+        display: Text
+taxonomies: true
+title: 'Component - Textblock'

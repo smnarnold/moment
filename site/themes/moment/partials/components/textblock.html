@@ -1,0 +1,41 @@
+<div class="textblock">
+  <div class="container">
+    <div class="col">
+      <div class="textblock__wrapper">
+        {{ if image }}
+          {{ asset:image }}
+            <div class="textblock__media">
+              <img src="{{ url }}" alt="{{ title }}" >
+            </div>
+          {{ /asset:image }}
+        {{ elseif giphy }}
+          <div class="textblock__media">
+            <img src="{{ giphy }}" alt="{{ title }}" >
+          </div>
+        {{ /if }}
+
+        <div class="text">
+          {{ if tagline }}
+            <em class="text__tagline">{{ tagline }}</em>
+          {{ /if }}
+
+          {{ if title }}
+            <h1 class="text__title">{{ title }}</h1>
+          {{ /if }}
+
+          {{ if subtitle }}
+            <div class="text__subtitle">{{ subtitle }}</div>
+          {{ /if }}
+
+          {{ if description }}
+            <div class="text__description">{{ description }}</div>
+          {{ /if }}
+
+          {{ if caption }}
+            <div class="text__caption">{{ caption }}</div>
+          {{ /if }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,27 +5,10 @@ sections:
   main:
     display: Main
     fields:
-      '':
-        type: section
-        display: Components
       components:
         type: replicator
         display: Components
         sets:
-          section:
-            display: Section
-            fields:
-              section:
-                fieldset: partial-section
-                type: partial
-                display: Section
-          hero:
-            display: Hero
-            fields:
-              hero:
-                fieldset: partial-hero
-                type: partial
-                display: Hero
           preview-websites:
             display: 'Preview Websites'
             fields:
@@ -54,4 +37,18 @@ sections:
                 fieldset: partial-impact
                 type: partial
                 display: Impact
+          textblock:
+            display: Textblock
+            fields:
+              textblock:
+                fieldset: partial_textblock
+                type: partial
+                display: Textblock
+          mediablock:
+            display: Mediablock
+            fields:
+              mediablock:
+                fieldset: component_media
+                type: partial
+                display: Mediablock
 hide: true
