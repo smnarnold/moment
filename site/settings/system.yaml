@@ -47,8 +47,9 @@ csrf_exclude:
   - '/!/Fetch/*'
   - '/!/Fetch/*'
   - '/!/Fetch/*'
+  - '/!/Fetch/*'
 yaml_parser: symfony
 send_powered_by_header: true
 ensure_unique_ids: true
-license_key: ''
+license_key: 4d9ffd6c-f94d-4fdf-aebd-02224ce4fad8
 php_max_memory_limit: null
