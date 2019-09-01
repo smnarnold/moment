@@ -36,7 +36,7 @@
     .text-body {
       > *:first-child {
         &::before {
-          content: '⚠️';
+          content: "⚠️";
         }
       }
     }
@@ -50,7 +50,7 @@
     .text-body {
       > *:first-child {
         &::before {
-          content: '👍';
+          content: "👍";
         }
       }
     }
@@ -64,7 +64,7 @@
     .text-body {
       > *:first-child {
         &::before {
-          content: '👎';
+          content: "👎";
         }
       }
     }
@@ -76,7 +76,7 @@
     border-color: palette(grey, light);
 
     &::before {
-      content: 'Source: ';
+      content: "Source: ";
       font-weight: bold;
     }
 
