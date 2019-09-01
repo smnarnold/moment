@@ -1,0 +1,14 @@
+sections:
+  main:
+    display: Main
+    fields:
+      firstname:
+        type: text
+        width: 33
+        display: 'First name'
+      lastname:
+        type: text
+        width: 33
+        display: 'Last name'
+taxonomies: true
+title: 'Partial - Name'

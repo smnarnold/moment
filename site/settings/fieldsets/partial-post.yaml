@@ -21,6 +21,7 @@ sections:
           photography: Photography
           video: Video
           codepen: Codepen
+          iframe: iFrame
         type: select
         width: 50
         display: 'Media Type'
@@ -129,6 +130,13 @@ sections:
         default: light
         show_when:
           post_featured_media: codepen
+      post_featured_iframe:
+        type: section
+        display: iFrame
+      post_featured_iframe_url:
+        type: text
+        display: Url
+        validate: URL
       theming:
         type: section
         display: Theming

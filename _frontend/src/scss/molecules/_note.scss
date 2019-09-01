@@ -1,0 +1,92 @@
+.note {
+  display: block;
+  position: relative;
+  font-size: 0.85em;
+  font-family: font(sans-serif);
+  padding: 1em;
+  background-color: palette(blue, light);
+  border: solid 1px palette(blue);
+  color: palette(blue, dark);
+  border-radius: var(--radius);
+  margin: 1em 0;
+
+  .text-body {
+    @extend %children-margin;
+  }
+
+  &--warning,
+  &--good,
+  &--bad {
+    .text-body {
+      > *:first-child {
+        &:first-letter {
+          font-size: 1.5em;
+          float: left;
+          margin: -0.2em 0.5em 0 0;
+        }
+      }
+    }
+  }
+
+  &--warning {
+    background-color: palette(yellow, light);
+    border: solid 1px palette(yellow);
+    color: palette(yellow, dark);
+
+    .text-body {
+      > *:first-child {
+        &::before {
+          content: '⚠️';
+        }
+      }
+    }
+  }
+
+  &--good {
+    background-color: palette(green, light);
+    border: solid 1px palette(green);
+    color: palette(green, dark);
+
+    .text-body {
+      > *:first-child {
+        &::before {
+          content: '👍';
+        }
+      }
+    }
+  }
+
+  &--bad {
+    background-color: palette(red, light);
+    border: solid 1px palette(red);
+    color: palette(red, dark);
+
+    .text-body {
+      > *:first-child {
+        &::before {
+          content: '👎';
+        }
+      }
+    }
+  }
+
+  &--source {
+    background-color: palette(grey, x-light);
+    color: palette(grey);
+    border-color: palette(grey, light);
+
+    &::before {
+      content: 'Source: ';
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: currentColor;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

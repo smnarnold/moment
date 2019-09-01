@@ -8,6 +8,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   font: 300 10px/1.4 font(serif);
 }
 
@@ -22,6 +23,10 @@ main {
   min-height: 100vh;
   z-index: 1;
   background-color: #fff;
+}
+
+.container {
+  padding: 0 30px !important;
 }
 
 .sr-only {

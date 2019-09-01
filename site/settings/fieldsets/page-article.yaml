@@ -1,0 +1,114 @@
+sections:
+  main:
+    display: Main
+    fields:
+      body:
+        sets:
+          text:
+            display: Text
+            fields:
+              title:
+                type: text
+                width: 66
+                display: Title
+              level:
+                options:
+                  h2: H2
+                  h3: H3
+                  h4: H4
+                  h5: H5
+                type: select
+                width: 33
+                display: Level
+              body:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                display: Body
+          image:
+            display: Image
+            fields:
+              image:
+                container: main
+                folder: articles
+                restrict: true
+                max_files: 1
+                mode: grid
+                type: assets
+                width: 33
+                display: Image
+              source:
+                type: text
+                width: 66
+                display: Source
+                validate: URL
+          quote:
+            display: Quote
+            fields:
+              body:
+                cheatsheet: true
+                restrict_assets: false
+                type: markdown
+                display: Body
+              author:
+                type: section
+                display: Author
+              name:
+                fieldset: partial_name
+                type: partial
+                width: 66
+                display: Name
+              title:
+                type: text
+                width: 33
+                display: Title
+              gravatar:
+                type: text
+                width: 33
+                display: Gravatar
+                validate: URL
+              picture:
+                container: main
+                folder: persons
+                restrict: true
+                max_files: 1
+                mode: grid
+                type: assets
+                width: 33
+                display: Picture
+              source:
+                type: text
+                width: 33
+                display: Source
+                validate: URL
+          note:
+            display: Note
+            fields:
+              intent:
+                options:
+                  generic: Generic
+                  warning: Warning
+                  good: Good
+                  bad: Bad
+                  source: Source
+                type: select
+                width: 25
+                display: Intent
+                default: generic
+              body:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                display: Body
+          codepen:
+            display: Codepen
+            fields:
+              codepen:
+                fieldset: partial_codepen
+                type: partial
+                display: CodePen
+        type: replicator
+        display: Body
+taxonomies: false
+template: page-article
+title: 'Page - Article'

@@ -1,0 +1,24 @@
+<blockquote class="quote">
+  {{ partial src="atoms/text/body" }}
+
+  <div class="quote__picture">
+    {{ if part:picture }}
+      {{ assets:part:picture }}
+        <img src="{{ url }}" alt="{{ alt }}" class="quote__image">
+      {{ /assets:part:picture }}
+    {{ /if }}
+  </div>
+
+  <footer class="quote__footer">
+    <cite class="quote__author">
+      {{ if part:firstname }}
+        <span class="quote__author__firstname">{{ part:firstname }}</span>
+      {{ /if}}
+      {{ if part:lastname }}
+        <span class="quote__author__lastname">{{ part:lastname }}</span>{{ /if}}{{#
+      #}}{{ if part:title }},
+        <span class="quote__author__title">{{ part:title }}</span>
+      {{ /if }}
+    </cite>
+  </footer>
+</blockquote>

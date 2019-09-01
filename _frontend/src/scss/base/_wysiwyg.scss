@@ -1,0 +1,45 @@
+.wysiwyg {
+  h1 {
+    font-size: var(--h1);
+  }
+
+  h2 {
+    font-size: var(--h2);
+  }
+
+  h3 {
+    font-size: var(--h3);
+  }
+
+  h4 {
+    font-size: var(--h4);
+  }
+
+  a {
+    @extend %href;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  ul,
+  ol {
+    @extend %list;
+  }
+
+  blockquote {
+    color: #858585;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 var(--gutter);
+    font-style: italic;
+    border-left: solid 4px rgba(125, 125, 125, 0.5);
+  }
+
+  code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+  }
+}

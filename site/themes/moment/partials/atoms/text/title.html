@@ -1,0 +1,6 @@
+{{ if part:title }}
+  <{{ part:level or "h2" }} class="text-title">
+    <a href="#{{ part:title | slugify }}" id="{{ part:title | slugify }}" aria-hidden="true" class="text-title__anchor">#</a>
+    {{ part:title }}
+  </{{ part:level or "h2" }}>
+{{ /if }}

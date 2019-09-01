@@ -14,7 +14,7 @@
           </div>
         {{ /if }}
 
-        <div class="text">
+        <div class="text wysiwyg">
           {{ if tagline }}
             <em class="text__tagline">{{ tagline }}</em>
           {{ /if }}
@@ -28,7 +28,7 @@
           {{ /if }}
 
           {{ if description }}
-            <div class="text__description">{{ description }}</div>
+            <div class="text__description text__description--{{ description_columns }}">{{ description | markdown }}</div>
           {{ /if }}
 
           {{ if caption }}

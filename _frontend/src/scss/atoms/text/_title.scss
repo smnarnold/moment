@@ -1,0 +1,19 @@
+.text-title {
+  position: relative;
+  display: block;
+  margin: 1.75em 0 0.8em;
+
+  &__anchor {
+    margin-left: -0.89em;
+    font-size: 1em;
+    font-weight: 100;
+    visibility: hidden;
+    text-decoration: none;
+  }
+
+  &:hover & {
+    &__anchor {
+      visibility: visible;
+    }
+  }
+}

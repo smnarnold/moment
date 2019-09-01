@@ -7,6 +7,15 @@ $s: 0.3s;
 $containerWidth: 1200px;
 $gutter: 25px;
 
+:root {
+  --radius: 4px;
+  --gutter: 25px;
+  --h1: calc(30px + 1vw);
+  --h2: calc(25px + 0.8vw);
+  --h3: calc(20px + 0.6vw);
+  --h4: calc(15px + 0.4vw);
+}
+
 $palettes: (
   black: (
     base: #000,
@@ -21,10 +30,26 @@ $palettes: (
   white: (
     base: #fff,
   ),
-  pink: (
-    base: #eac7c2,
-    highlight: #f694c1,
+  blue: (
+    light: #cce5ff,
+    base: #b8daff,
+    dark: #004085,
   ),
+  yellow: (
+    light: #fff3cd,
+    base: #ffeeba,
+    dark: #856404
+  ),
+  green: (
+    light: #d4edda,
+    base: #c3e6cb,
+    dark: #155724,
+  ),
+  red: (
+    light: #f8d7da,
+    base: #f5c6cb,
+    dark: #721c24,
+  )
 );
 
 $fonts: (
@@ -36,5 +61,9 @@ $fonts: (
 $site-header-height: calc(46px + 0.9vw);
 
 @include media-breakpoint-up(lg) {
+  :root {
+    --gutter: 40px;
+  }
+
   $gutter: 40px;
 }

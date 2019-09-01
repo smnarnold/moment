@@ -2,7 +2,7 @@
   display: block;
   font: normal 400 1.2rem font(sans-serif);
   margin: 20px 0;
-  text-transform: uppercase;
+  text-transform: uppercazse;
 
   + %h1,
   + %h2 {
@@ -42,7 +42,7 @@
 %creation-title {
   letter-spacing: -2px;
   line-height: 1;
-  font-size: 6rem;
+  font-size: calc(20px + 2vw);
   font-weight: 400;
   margin: 0 0 6rem;
 }

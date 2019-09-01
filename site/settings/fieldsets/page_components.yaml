@@ -51,4 +51,14 @@ sections:
                 fieldset: component_media
                 type: partial
                 display: Mediablock
+          split:
+            display: Split
+            fields:
+              title:
+                type: text
+                display: Title
+              split:
+                fieldset: partial-post
+                type: partial
+                display: Split
 hide: true

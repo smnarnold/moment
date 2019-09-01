@@ -16,30 +16,11 @@ sections:
         display: Subtitle
         width: 66
       description:
-        buttons:
-          - h2
-          - h3
-          - bold
-          - italic
-          - unorderedlist
-          - orderedlist
-          - removeformat
-          - quote
-          - anchor
-        style: sans
-        spellcheck: false
-        allow_source: true
-        allow_internal_links: true
-        link_noopener: false
-        link_noreferrer: false
-        target_blank: false
-        semantic_elements: false
-        container: main
-        folder: content/images
-        restrict_assets: true
-        type: bard
-        display: Description
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
         width: 75
+        display: Description
       description_columns:
         options:
           automatic: Automatic

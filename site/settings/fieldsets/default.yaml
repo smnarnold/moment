@@ -1,0 +1,10 @@
+title: Default
+sections:
+  main:
+    display: Main
+    fields:
+      components:
+        fieldset: page_components
+        type: partial
+        display: Components
+taxonomies: true

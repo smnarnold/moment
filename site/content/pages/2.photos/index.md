@@ -2,10 +2,10 @@ components:
   -
     type: impact
     title: Photos
-    subtitle: 'Il faut bien avoir des loisirs!'
-    image: /assets/content/images/clotus.gif
-    background_color: '#bb74ff'
-    background_gradient: '#a044ff'
+    subtitle: 'Quand je fais semblant que je sais ce que je fais avec mon appareil'
+    image: /assets/content/images/broken-image.png
+    background_color: '#db36a4'
+    background_gradient: '#f7ff00'
   -
     type: preview-pictures
     preview-pictures_sort: 'date:desc'

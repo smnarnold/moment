@@ -1,0 +1,23 @@
+sections:
+  main:
+    display: Main
+    fields:
+      id:
+        type: text
+        width: 25
+        display: ID
+      theme:
+        options:
+          light: Light
+          dark: Dark
+        type: select
+        width: 25
+        display: Theme
+        default: light
+      ratio:
+        fieldset: partial_ratio
+        type: partial
+        width: 50
+        display: Ratio
+taxonomies: true
+title: 'Partial - CodePen'

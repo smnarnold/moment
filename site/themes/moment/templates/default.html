@@ -1,3 +1,5 @@
-{{ components }}
-  {{ partial src="components/{type}" }}
-{{ /components }}
+{{ if type == 'article'}}<article class="article">{{ /if }}
+  {{ components scope="post" }}
+    {{ partial src="components/{type}" }}
+  {{ /components }}
+{{ if type == 'article'}}</article>{{ /if }}

@@ -1,0 +1,64 @@
+.quote {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 2em auto;
+  padding: 0;
+
+  .text-body {
+    position: relative;
+    font-size: 1.17em;
+    font-style: italic;
+    font-weight: 700;
+    flex: 0 0 100%;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    margin-bottom: 1em;
+
+    &::after {
+      position: absolute;
+      content: '”';
+      color: currentColor;
+      font-size: 6em;
+      line-height: 0;
+      bottom: -0.25em;
+      right: 20px;
+      font-family: font(serif);
+      font-weight: 100;
+    }
+  }
+
+  &__picture {
+    flex: 0 1 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__footer {
+    font-family: font(sans-serif);
+    font-weight: bold;
+    flex: 0 0 calc(100% - 60px);
+    display: flex;
+    align-self: center;
+    font-size: 0.8em;
+  }
+
+  &__author {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 20px;
+
+    &__title {
+      display: block;
+    }
+  }
+}
