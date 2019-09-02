@@ -220,3 +220,4 @@ sections:
             - mobile
 taxonomies: true
 title: 'Partial - Post'
+hide: true

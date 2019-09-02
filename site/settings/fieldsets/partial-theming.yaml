@@ -5,27 +5,27 @@ sections:
       theming:
         type: section
         display: Theming
-      background_color:
+      primary_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 25
-        display: 'Background Color'
-      background_gradient:
+        display: 'Primary Color'
+      secondary_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 25
-        display: 'Background Gradient'
-      text_color:
+        display: 'Secondary Color'
+      tertiary_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 25
-        display: 'Text Color'
+        display: 'Tertiary Color'
 title: 'Partial - Theming'
-create_title: ''
 hide: true
+taxonomies: true

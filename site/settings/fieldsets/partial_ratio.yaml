@@ -21,3 +21,4 @@ sections:
         display: 'Custom ratio'
 taxonomies: true
 title: 'Partial - Ratio'
+hide: true

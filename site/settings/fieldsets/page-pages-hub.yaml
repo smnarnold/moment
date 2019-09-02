@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+      body:
+        sets:
+          text:
+            display: Text
+            fields:
+              title:
+                type: text
+                width: 66
+                display: Title
+              level:
+                options:
+                  h2: H2
+                  h3: H3
+                  h4: H4
+                  h5: H5
+                type: select
+                width: 33
+                display: Level
+              body:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                display: Body
+          subpages_listing:
+            display: 'Subpages listing'
+            fields: {  }
+        type: replicator
+        display: Body
+taxonomies: false
+template: page-pages-hub
+title: 'Page - Pages hub'

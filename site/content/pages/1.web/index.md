@@ -12,6 +12,6 @@ components:
     preview-websites_limit: 0
 hidden: false
 title: Web
-fieldset: page-default
+fieldset: default
 mount: websites
 id: 8de6e824-57fb-4fcc-9232-533d01e25d20

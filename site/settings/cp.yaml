@@ -4,15 +4,11 @@ pagination_size: 50
 widgets:
   -
     type: collection
-    collection: blog
+    collection: websites
     limit: 5
     width: full
   -
-    type: form
-    form: contact
+    type: collection
+    collection: courses
     limit: 5
-    title: 'Recent Submissions'
     width: full
-    fields:
-      - name
-      - email

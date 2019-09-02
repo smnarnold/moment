@@ -1,4 +1,7 @@
-hidden: true
+body:
+  -
+    type: subpages_listing
 title: Cours
-fieldset: page-default
-id: 29fc6747-694b-4ee2-8a9e-305435526965
+fieldset: page-pages-hub
+template: page-pages-hub
+id: d5e63d5e-1fe1-494d-a511-31e40b7296f4

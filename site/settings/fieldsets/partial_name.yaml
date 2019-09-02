@@ -12,3 +12,4 @@ sections:
         display: 'Last name'
 taxonomies: true
 title: 'Partial - Name'
+hide: true

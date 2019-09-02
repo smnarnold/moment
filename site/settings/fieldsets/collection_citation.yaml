@@ -9,3 +9,4 @@ sections:
         display: Citation
 taxonomies: true
 title: 'Collection - Citation'
+hide: true

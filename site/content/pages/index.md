@@ -41,8 +41,7 @@ components:
     type: preview-pictures
     preview-pictures_limit: 2
     preview-pictures_sort: random
-hero-theme: 22ac4f65-e17a-4d1e-b609-c63b7cbb9d3b
 posts: 3
 title: Home
-fieldset: home
+fieldset: default
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7

@@ -36,5 +36,5 @@ components:
     description_columns: automatic
 hidden: true
 title: Présentation
-fieldset: page-default
+fieldset: default
 id: b4e9130b-3519-403e-99a4-6c8dfa27e2bc
