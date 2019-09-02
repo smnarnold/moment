@@ -21,3 +21,4 @@ sections:
         default: '2'
 taxonomies: true
 title: 'Preview - Websites'
+hide: true

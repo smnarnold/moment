@@ -3,13 +3,44 @@
   line-height: 1.5;
   max-width: calc(720px + var(--gutter) * 2);
 
+  &__header {
+    margin: 0 0 2em;
+
+    + .text-body {
+      > p:first-child {
+        text-indent: 2.5em;
+      }
+    }
+  }
+
   &__title {
     text-align: center;
-    margin-bottom: 1.6em;
+    margin-bottom: 0.4em;
+  }
+
+  &__read-time {
+    font-family: font(sans-serif);
+    font-size: 0.85em;
+    opacity: 0.75;
+    text-align: center;
+
+    &::before {
+      content: 'Durée: ~';
+    }
+
+    &::after {
+      content: ' min(s)';
+    }
   }
 
   .text-title {
     font-weight: 700;
+  }
+
+  .text-body {
+    em {
+      opacity: 0.65;
+    }
   }
 }
 

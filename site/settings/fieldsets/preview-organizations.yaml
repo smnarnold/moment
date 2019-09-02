@@ -40,5 +40,6 @@ sections:
         mode: tags
         type: collection
         display: List
-taxonomies: true
+taxonomies: false
 title: 'Preview - Organizations'
+hide: true

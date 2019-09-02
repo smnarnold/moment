@@ -1,9 +1,13 @@
 <article class="page page-article">
   <div class="page__wrapper">
-    <h1 class="page-article__title">{{ title }}</h1>
-    
+    <header class="page-article__header">
+      <h1 class="page-article__title">{{ title }}</h1>
+      <div class="page-article__read-time">{{ body|flatten|collapse|join|read_time }}</div>
+    </header>
+
     {{ body scope="part"}}
       {{ partial src="molecules/{type}" items="part" }}
     {{ /body }}
   </div>
 </article>
+<script async src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>

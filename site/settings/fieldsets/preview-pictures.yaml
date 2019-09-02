@@ -21,3 +21,4 @@ sections:
         default: '2'
 taxonomies: false
 title: 'Preview - Pictures'
+hide: true

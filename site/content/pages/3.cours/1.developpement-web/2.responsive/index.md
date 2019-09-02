@@ -1,3 +1,5 @@
+title: Responsive
+template: page-article
 body:
   -
     type: text
@@ -25,8 +27,8 @@ body:
   -
     type: quote
     body: |
-      You put water in a cup, it becomes the cup;<br>
-      You put water into a bottle, it becomes the bottle;<br>
+      You put water in a cup, it becomes the cup;
+      You put water into a bottle, it becomes the bottle;
       You put it in a teapot, it becomes the teapot.
     firstname: Bruce
     lastname: Lee
@@ -39,15 +41,6 @@ body:
     body: 'Un peu moins flexible que l''approche responsive, l''approche adaptive utilise plusieurs mises en page prédéfinies *(ex: mobile, tablette, grand écran, etc)*. En fonction de la dimension du navigateur, la mise en page la mieux adaptée est affichée.'
   -
     type: text
-    title: Breakpoints
-    level: h2
-    body: 'Afin d''éviter que la dimensions de certains éléments deviennent un enjeux sur certains écrans, il est parfois souhaitable de leur allouer plus ou moins d''espace à partir d''un certain point prédéfini *(Breakpoint)*.'
-  -
-    type: image
-    image: /assets/articles/breakpoints.gif
-    source: 'http://blog.froont.com/9-basic-principles-of-responsive-web-design/'
-  -
-    type: text
     title: 'Définir des dimensions maximales'
     level: h2
     body: 'Il est parfois pratique de combiner approche responsive et dimensions maximales. Par exemple, une image sans limite de largeur pourrait devenir pixelisé sur un grand écran.'
@@ -55,7 +48,5 @@ body:
     type: image
     image: /assets/articles/max-width-vs-no-max-width.gif
     source: 'http://blog.froont.com/9-basic-principles-of-responsive-web-design/'
-title: Responsive
-template: page-article
 fieldset: page-article
 id: 808243a0-7dc6-41f1-92d6-7e1adb27dafd

@@ -8,3 +8,4 @@ sections:
         display: Text
 taxonomies: true
 title: 'Component - Textblock'
+hide: true

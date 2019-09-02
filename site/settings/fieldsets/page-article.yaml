@@ -2,6 +2,15 @@ sections:
   main:
     display: Main
     fields:
+      title:
+        width: 66
+        type: text
+        localizable: true
+      template:
+        type: template
+        width: 33
+        display: Template
+        default: page-article
       body:
         sets:
           text:
@@ -107,8 +116,15 @@ sections:
                 fieldset: partial_codepen
                 type: partial
                 display: CodePen
+          code:
+            display: Code
+            fields:
+              body:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                display: Body
         type: replicator
         display: Body
 taxonomies: false
-template: page-article
 title: 'Page - Article'
