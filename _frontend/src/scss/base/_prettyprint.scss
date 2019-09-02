@@ -4,6 +4,8 @@ code {
 }
 
 pre.prettyprint {
+  width: calc(100% + var(--gutter)*2);
+  margin-left: calc(var(--gutter) * -1);
   overflow-x: auto;
   padding: 20px !important;
   background-color: palette(grey, x-light);
