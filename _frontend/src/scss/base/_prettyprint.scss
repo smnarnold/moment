@@ -11,4 +11,5 @@ pre.prettyprint {
   background-color: palette(grey, x-light);
   border: solid 1px palette(grey, light) !important;
   border-radius: var(--radius);
+  -webkit-overflow-scrolling: auto;
 }
