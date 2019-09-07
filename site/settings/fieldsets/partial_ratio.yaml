@@ -11,6 +11,7 @@ sections:
           125: '3:4'
           133: '2:3'
           178: '9:16'
+          34: Devices
         type: select
         width: 25
         display: Ratio

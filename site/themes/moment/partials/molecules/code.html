@@ -1,3 +1,3 @@
 {{ if part:body }}
-  <pre class="prettyprint"><code>{{ part:body | entities  }}</code></pre>
+  <pre class="prettyprint{{ if part:lang}} lang-{{ part:lang }}{{ /if }}"><code {{ if part:lang}}class="language-{{ part:lang }}"{{ /if }}>{{ part:body | entities  }}</code></pre>
 {{ /if }}

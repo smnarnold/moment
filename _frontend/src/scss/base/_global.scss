@@ -15,7 +15,7 @@ html {
 body {
   font-size: 1.6rem; // 16px
   line-height: 1.5;
-  padding-top: $site-header-height;
+  padding-top: var(--headerHeight);
 }
 
 main {

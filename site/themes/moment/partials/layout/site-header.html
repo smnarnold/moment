@@ -1,7 +1,7 @@
 <header class="site-header" data-module="SiteHeader">
-  <span class="site-header__overlay"></span>
+
   <span class="site-header__bg"></span>
-  <div class="site-header__container container">
+  <div class="site-header__container">
     <a href="/" class="site-logo">
       <span class="site-logo__bg"></span>
       <span class="site-logo__text">
@@ -9,13 +9,17 @@
       </span>
     </a>
 
-    <button class="site-header__toggle hamburger">
+    <input id="site-header__toggle" type="checkbox">
+
+    <label for="site-header__toggle" class="site-header__toggle hamburger">
       <span class="hamburger__box">
           <span class="hamburger__icon">
             <span class="sr-only">Menu</span>
           </span>
       </span>
-    </button>
+    </label>
+
+    <label for="site-header__toggle" class="site-header__overlay"></label>
 
     <nav class="site-header__menu" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <ul class="site-header__list">

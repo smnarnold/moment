@@ -2,6 +2,10 @@ sections:
   main:
     display: Main
     fields:
+      impact:
+        fieldset: partial-impact
+        type: partial
+        display: Impact
       body:
         sets:
           text:

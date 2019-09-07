@@ -1,0 +1,14 @@
+.subpages-listing {
+  @extend %reset-list;
+
+  &__item {
+    // Code
+  }
+
+  &__link {
+    display: block;
+    color: currentColor;
+    text-decoration: none;
+    padding: 0.15em 0;
+  }
+}

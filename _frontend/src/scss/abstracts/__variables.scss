@@ -9,6 +9,7 @@ $gutter: 25px;
 $assets: '../../../../assets/';
 
 :root {
+  --headerHeight: 50px;
   --radius: 4px;
   --gutter: 25px;
   --h1: calc(30px + 1vw);
@@ -58,8 +59,6 @@ $fonts: (
   serif: #{ 'Roboto Slab', serif },
   alt: #{ 'Roboto Mono', helvetica, arial, sans-serif },
 );
-
-$site-header-height: calc(46px + 0.9vw);
 
 @include media-breakpoint-up(lg) {
   :root {

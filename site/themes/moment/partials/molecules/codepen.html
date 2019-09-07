@@ -1,0 +1,14 @@
+<div class="codepen ratio-wrapper">
+  <span class="ratio-wrapper__push" style="padding-bottom: calc({{ ratio}}% + 50px);"></span>
+  <p data-height="400"
+      {{ if part:theme }}data-theme-id="{{ part:theme }}" {{ /if }}
+      {{ if part:id }}data-slug-hash="{{ part:id }}"{{ /if }}
+      data-default-tab="result"
+      data-user="{{ codepen_account }}"
+      class="codepen">Voir le <a href="https://codepen.io">CodePen</a>
+      {{ if part:id }}
+          <a href="https://codepen.io/{{ codepen_account }}/pen/{{ part:id }}/">{{ part:title }}</a>
+      {{ /if }}
+      de Simon Arnold (<a href="https://codepen.io/{{ codepen_account }}">{{ codepen_account insert="@|0"}}</a>).
+  </p>
+</div>

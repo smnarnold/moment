@@ -17,3 +17,8 @@ sections:
         width: 25
         display: 'Google Analytics'
         instructions: 'Code UA-XXXXXXXX-X'
+      codepen_account:
+        type: text
+        width: 25
+        display: 'CodePen Account'
+        default: smnarnold

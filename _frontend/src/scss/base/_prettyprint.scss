@@ -1,15 +1,22 @@
 code {
+  color: #000;
   font-size: 0.85em;
   vertical-align: text-bottom;
 }
 
 pre.prettyprint {
-  width: calc(100% + var(--gutter)*2);
-  margin-left: calc(var(--gutter) * -1);
   overflow-x: auto;
+  line-height: 1;
   padding: 20px !important;
-  background-color: palette(grey, x-light);
-  border: solid 1px palette(grey, light) !important;
-  border-radius: var(--radius);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 0 !important;
   -webkit-overflow-scrolling: auto;
+}
+
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+.prettyprint {
+  background: #f1efee;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco,
+    Consolas, monospace;
+  border: 0 !important;
 }

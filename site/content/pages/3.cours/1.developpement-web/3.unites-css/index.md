@@ -1,3 +1,5 @@
+title: 'Unités CSS'
+template: page-article
 body:
   -
     type: text
@@ -93,7 +95,7 @@ body:
   -
     type: text
     body: |
-      **ex **`.title { line-height: 2ex; }`
+      **ex** `.title { line-height: 2ex; }`
       Par exemple, si nous voulons un interlignage équivalent à 2x la hauteur de la lettre minuscule "x".
   -
     type: note
@@ -115,6 +117,21 @@ body:
       Pour qu'un élément aillant la classe `.picture` aille une hauteur équivalente à la plus **grande** dimension entre le **vh** et **vw**.
   -
     type: text
+    title: Calc
+    level: h2
+    body: |
+      La fonction `calc()` nous permet de calculer des valeurs.
+      
+      Par exemple, Si nous voudrions qu'un élément prenne toute la hauteur _(100%)_ moins celle d'un élément précédent ayant une hauteur absolue _(40px)_. Nous pourrions donner une valeur de hauteur à `height: calc(100% - 40px);` à notre deuxième élément.
+      
+      Sans ce calcul, notre deuxième élément dépasserait de notre zone.
+  -
+    type: codepen
+    id: oNvEzrE
+    theme: light
+    ratio: 34
+  -
+    type: text
     title: 'En résumé'
     level: h2
     body: |
@@ -126,7 +143,5 @@ body:
     type: note
     intent: good
     body: 'Big up à **Jess Mitchell** et son article sur [Alligator.io](https://alligator.io/css/css-units-explained/) qui ont fortement inspirés cet article.'
-title: 'Unités CSS'
-template: page-article
 fieldset: page-article
 id: 6b88ecf4-f8ec-4fab-8004-6155c7c5903f

@@ -11,6 +11,11 @@
         text-indent: 2.5em;
       }
     }
+
+    + .text-title {
+      padding-top: 0;
+      border-top: 0;
+    }
   }
 
   &__title {
@@ -25,16 +30,33 @@
     text-align: center;
 
     &::before {
-      content: 'Durée: ~';
+      content: "Durée: ~";
     }
 
     &::after {
-      content: ' min(s)';
+      content: " min(s)";
     }
   }
 
   .text-title {
     font-weight: 400;
+  }
+
+  h2.text-title {
+    &:not(:first-of-type) {
+      padding-top: 1.75em;
+
+      &::before {
+        content: "………";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: serif;
+        opacity: 0.25;
+      }
+    }
   }
 
   .text-body {

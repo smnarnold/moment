@@ -42,8 +42,15 @@ body:
       - **min-height/max-height**	Basé sur l'hauteur du viewport _(de la fenêtre)_. Ex: `(max-height: 600px)`
       - **min-aspect-ratio/max-aspect-ratio** Le rapport largeur/hauteur du viewport _(de la fenêtre)_. Ex: `(min-aspect-ratio: 16/9)`
       - **orientation** `portrait` ou `landscape`
-      - **prefers-color-scheme** `light` ou `dark` ◻️/◼️
       - **prefers-reduced-motion** `no-preference` ou `reduce`. Certaines personnes sont sensibles aux animations 🤮. D'où pourquoi de plus en plus d'appareils laissent indiquer à l'utilisateur si il préfère un niveau d'animation normal ou réduit.
+      - **prefers-color-scheme** `light` ou `dark` ◻️/◼️
+  -
+    type: image
+    image: /assets/articles/prefer-color-scheme.gif
+  -
+    type: note
+    intent: good
+    body: 'Par exemple le nouveau [Apple Music](https://www.apple.com/ca/fr/apple-music/) se base sur une media query pour ajuster son theme on fonction de la préférence de l''usager.'
   -
     type: note
     intent: generic
@@ -84,7 +91,7 @@ body:
       
       - Dans les **feuilles de styles**.
       - Directement sur une balise `<link>`. ex: <samp>print.css</samp> ne devrait s'appliquer que lorsque l'utilisateur souhaite imprimer `<link href="print.css" rel="stylesheet" media="print">`
-      - Sur la balise enfant `<source>` de certaines balises.
+      - Sur la balise enfant `<source>` de certaines balises. Notamment&nbsp;`<picture>`.
   -
     type: code
     body: |

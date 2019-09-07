@@ -119,6 +119,16 @@ sections:
           code:
             display: Code
             fields:
+              lang:
+                options:
+                  html: HTML
+                  css: CSS
+                  js: JS
+                  php: PHP
+                type: select
+                width: 33
+                display: Lang
+                default: html
               body:
                 cheatsheet: false
                 restrict_assets: false

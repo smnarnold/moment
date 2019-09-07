@@ -11,6 +11,9 @@ body:
       - 🚫 Canvas prédéterminé
       - 🚫 Unités de mesure absolues
   -
+    type: image
+    image: /assets/articles/css-responsive.gif
+  -
     type: text
     title: 'Responsive vs Adaptive'
     level: h2
