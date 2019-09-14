@@ -45,7 +45,7 @@
     &__text {
       position: relative;
       background: transparent;
-      text-shadow: 1px 1px 0 #fff;
+      text-shadow: 1px 1px 0 var(--primary);
     }
 
     &__break {

@@ -2,8 +2,8 @@
   $block: &;
 
   align-items: center;
-  background-color: palette(white);
-  color: palette(black);
+  background-color: var(--primary);
+  color: var(--secondary);
   display: flex;
   font-size: 1.8rem;
   font-weight: 400;
@@ -15,7 +15,7 @@
 
   // elements
   &__overlay {
-    background: palette(black);
+    background: var(--secondary);
     display: block;
     height: 100vh;
     left: 0;
@@ -30,7 +30,7 @@
   }
 
   &__bg {
-    background: palette(white);
+    background: var(--primary);
     display: block;
     height: 100%;
     left: 0;
@@ -206,7 +206,7 @@
         left: auto;
         right: 15px;
         padding: 8.6rem 0 0;
-        text-shadow: 1px 1px 0 #fff;
+        text-shadow: 1px 1px 0 var(--primary);
       }
 
       &__list {

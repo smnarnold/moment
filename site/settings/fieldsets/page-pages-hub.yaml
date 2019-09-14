@@ -2,6 +2,15 @@ sections:
   main:
     display: Main
     fields:
+      color_scheme:
+        options:
+          auto: Auto
+          light: Light
+          dark: Dark
+        type: select
+        width: 25
+        display: 'Color scheme'
+        default: auto
       impact:
         fieldset: partial-impact
         type: partial

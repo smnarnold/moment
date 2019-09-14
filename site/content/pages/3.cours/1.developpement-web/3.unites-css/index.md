@@ -1,5 +1,6 @@
 title: 'Unités CSS'
 template: page-article
+color_scheme: auto
 body:
   -
     type: text

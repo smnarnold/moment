@@ -4,11 +4,11 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: var(--primary);
-  color: var(--secondary);
 }
 
 html {
+  background: var(--primary);
+  color: var(--secondary);
   scroll-behavior: smooth;
   font: 300 10px/1.4 font(serif);
 }
@@ -16,14 +16,14 @@ html {
 body {
   font-size: 1.6rem; // 16px
   line-height: 1.5;
-  padding-top: var(--headerHeight);
 }
 
 main {
   position: relative;
+  padding-top: var(--headerHeight);
   min-height: 100vh;
   z-index: 1;
-  background: var(--primary);
+  background-color: var(--primary);
   color: var(--secondary);
 }
 
@@ -37,7 +37,7 @@ main {
 
 // Large devices (desktops, 1380px and up)
 @media (min-width: 1380px) {
-  body {
+  main {
     padding-top: 0;
   }
 }

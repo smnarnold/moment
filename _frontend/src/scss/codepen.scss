@@ -92,3 +92,18 @@ body {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #111;
+  }
+
+  .frame {
+    background: #fff;
+    color: #111;
+
+    > * {
+      background: #111;
+    }
+  }
+}

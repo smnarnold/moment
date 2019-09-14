@@ -1,5 +1,6 @@
 title: Display
 template: page-article
+color_scheme: auto
 body:
   -
     type: text
@@ -12,8 +13,10 @@ body:
     title: 'Block vs inline'
     level: h2
   -
-    type: image
-    image: /assets/articles/block-vs-inline.png
+    type: codepen
+    id: VwZQKVQ
+    theme: light
+    ratio: 34
   -
     type: text
     title: Block

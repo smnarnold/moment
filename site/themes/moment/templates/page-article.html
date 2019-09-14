@@ -10,5 +10,17 @@
     {{ /body }}
   </div>
 </article>
-<script async src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+<script>
+  var url = 'https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=';
+  var theme = 'default';
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    theme = 'desert';
+  }
+
+  var script = document.createElement('script');
+  script.src = url + theme;
+  document.head.appendChild(script);
+</script>
+
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

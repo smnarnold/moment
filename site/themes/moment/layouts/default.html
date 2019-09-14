@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}">
+<html lang="{{ locale }}" {{ if color_scheme }}class="color-scheme-{{ color_scheme }}"{{ /if }}>
 <head>
   <!-- Metas -->
   {{ partial:metas/page }}
@@ -17,7 +17,7 @@
   {{ theme:css src="main" tag="true" }}
   <style>{{ partial:themes }}</style>
 </head>
-<body itemscope="" itemtype="http://schema.org/WebPage" class="prefers-color-scheme">
+<body itemscope="" itemtype="http://schema.org/WebPage">
 
   <!-- Site Header -->
   {{ partial:layout/site-header }}

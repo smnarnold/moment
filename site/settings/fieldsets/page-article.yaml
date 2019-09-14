@@ -3,14 +3,23 @@ sections:
     display: Main
     fields:
       title:
-        width: 66
+        width: 50
         type: text
         localizable: true
       template:
         type: template
-        width: 33
+        width: 25
         display: Template
         default: page-article
+      color_scheme:
+        options:
+          auto: Auto
+          light: Light
+          dark: Dark
+        type: select
+        width: 25
+        display: 'Color scheme'
+        default: auto
       body:
         sets:
           text:

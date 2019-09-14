@@ -30,7 +30,7 @@
   }
 
   blockquote {
-    color: #858585;
+    color: var(--secondary-light);
     margin-left: 0;
     margin-right: 0;
     padding: 0 var(--gutter);
@@ -40,6 +40,6 @@
 
   code {
     padding: 2px 4px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--secondary-light);
   }
 }

@@ -1,3 +1,4 @@
+color_scheme: auto
 title: 'Développement web'
 description_columns: automatic
 primary_color: '#f953c6'

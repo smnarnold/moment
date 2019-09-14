@@ -12,7 +12,7 @@ const tildeImporter = require('node-sass-tilde-importer');
 const isDev = process.env.NODE_ENV === 'development';
 
 const paths = {
-  src: 'src/scss/main.scss',
+  src: 'src/scss/*.scss',
   dest: `${global.paths.dist}/css`,
 };
 

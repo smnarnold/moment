@@ -1,5 +1,6 @@
 title: 'Media queries (Requêtes média)'
 template: page-article
+color_scheme: auto
 body:
   -
     type: text
