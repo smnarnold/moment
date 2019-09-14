@@ -47,14 +47,16 @@
       padding-top: 1.75em;
 
       &::before {
-        content: "………";
+        content: "...";
         display: block;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
         font-family: serif;
-        opacity: 0.25;
+        opacity: 0.8;
+        font-size: 28px;
+        letter-spacing: 1em;
       }
     }
   }

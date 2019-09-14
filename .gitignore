@@ -46,7 +46,7 @@ ehthumbs_vista.db
 _frontend/node_modules/
 _frontend/fractal/build/
 site/themes/sidlee/css/main.css
-site/themes/sidlee/js/app.js
+site/themes/sidlee/js/main.js
 
 ################################
 ###  Statamic                ###

@@ -4,14 +4,14 @@ body:
   -
     type: text
     body: |
-      Les appareils mobiles prennent de plus en plus de place dans nos vie. Il est donc impossible de faire fi de leurs multiples dimensions d'écrans lors de la conception d'un site web. D'où l'importance d'embrasser l'approche responsive.
+      Les appareils mobiles prennent de plus en plus de place dans nos vie. Il est donc impossible de faire fi de leurs multiples dimensions d'écrans lors de la conception d'un site web. D'où&nbsp;l'importance d'embrasser l'approche&nbsp;responsive.
       
-      Pour ce faire, il faut abandonner nos idées rigides:
+      Pour ce faire, il faut abandonner nos idées&nbsp;rigides:
       
       - 🚫 Canvas prédéterminé
       - 🚫 Unités de mesure absolues
       
-      Ça peut paraître difficile, mais croyez-moi, on vas y arriver!
+      Ça peut paraître compliquer à première vue, mais si on pend le temps d'analyser le tout calmement, nous verrons que ce n'est pas&nbsp;sorcier!
   -
     type: image
     image: /assets/articles/css-responsive.gif
@@ -19,7 +19,7 @@ body:
     type: text
     title: 'Responsive vs Adaptive'
     level: h2
-    body: 'Les sites responsives et adaptives sont similaires, en ce sens où ils s''ajustent à leur environnement *(Généralement la largeur du navigateur)*.'
+    body: 'Les sites responsives et adaptives sont similaires, en ce sens où ils s''ajustent à leur environnement *(Généralement la largeur du&nbsp;navigateur)*.'
   -
     type: image
     image: /assets/articles/responsive-vs-adaptive.gif
@@ -44,14 +44,5 @@ body:
     title: Adaptive
     level: h3
     body: 'Un peu moins flexible que l''approche responsive, l''approche adaptive utilise plusieurs mises en page prédéfinies *(ex: mobile, tablette, grand écran, etc)*. En fonction de la dimension du navigateur, la mise en page la mieux adaptée est affichée.'
-  -
-    type: text
-    title: 'Définir des dimensions maximales'
-    level: h2
-    body: 'Il est parfois pratique de combiner approche responsive et dimensions maximales. Par exemple, une image sans limite de largeur pourrait devenir pixelisé sur un grand écran.'
-  -
-    type: image
-    image: /assets/articles/max-width-vs-no-max-width.gif
-    source: 'http://blog.froont.com/9-basic-principles-of-responsive-web-design/'
 fieldset: page-article
 id: 808243a0-7dc6-41f1-92d6-7e1adb27dafd

@@ -15,12 +15,11 @@ const requireDir = require('require-dir');
 
 // Globally expose config objects
 global.paths = {
-  assets: {
-    src: './src',
-    dest: '../site/themes/moment',
-  },
-  views: '../site/themes/moment',
+  src: './src',
+  dist: '../site/themes/moment',
 };
 
+global.debug = false;
+
 // Require all tasks in gulp/tasks, including subfolders
-requireDir('./gulp/tasks', {recurse: true});
+requireDir('./gulp', {recurse: true});

@@ -45,7 +45,7 @@ body:
   -
     type: text
     body: |
-      Les pixels *(px)* sont l'unité absolut la plus répandue, ce qui fait du sens puisque la majorité des codes CSS sont écrit pour gérer l'affichage sur un écran. Néanmoins ils existe plusieurs autres valeurs absolut:
+      Les pixels *(px)* sont l'unité absolue la plus répandue, ce qui fait du sens puisque la majorité des codes CSS sont écrit pour gérer l'affichage sur un écran. Néanmoins ils existe plusieurs autres valeurs absolut:
       
       - **cm** - Centimères
       - **mm** - Millimètres
@@ -122,7 +122,7 @@ body:
     body: |
       La fonction `calc()` nous permet de calculer des valeurs.
       
-      Par exemple, Si nous voudrions qu'un élément prenne toute la hauteur _(100%)_ moins celle d'un élément précédent ayant une hauteur absolue _(40px)_. Nous pourrions donner une valeur de hauteur `height: calc(100% - 40px);` à notre deuxième élément pour éviter qu'il dépasse de 40px.
+      Par exemple, Si nous voudrions qu'un élément prenne toute la hauteur _(100%)_ moins celle d'un élément précédent ayant une hauteur absolue _(40px)_. Nous pourrions donner une valeur de hauteur à `height: calc(100% - 40px);` à notre deuxième élément.
       
       Sans ce calcul, notre deuxième élément dépasserait de notre zone.
   -
