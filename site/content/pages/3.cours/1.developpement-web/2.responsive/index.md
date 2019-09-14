@@ -10,6 +10,8 @@ body:
       
       - 🚫 Canvas prédéterminé
       - 🚫 Unités de mesure absolues
+      
+      Ça peut paraître difficile, mais croyez-moi, on vas y arriver!
   -
     type: image
     image: /assets/articles/css-responsive.gif
