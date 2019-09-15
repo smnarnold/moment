@@ -70,18 +70,15 @@
 
 %href {
   color: currentColor;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent calc(100% - 8px),
-    #fffc00 calc(100% - 7px),
-    #fffc00 100%
-  );
+  background-image: linear-gradient(0deg,var(--highlight), var(--highlight));
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
   text-decoration: none;
-  transition: background-image 0.3s linear;
+  transition: background-size 0.1s cubic-bezier(.455,.03,.515,.955) 75ms;
 
   &:hover {
-    background-image: linear-gradient(to bottom, #fffc00 0, #fffc00 100%);
+    background-size: 100% 100%;
   }
 }
 
