@@ -14,6 +14,10 @@
     @extend %children-margin;
   }
 
+  code {
+    color: currentColor;
+  }
+
   &--warning,
   &--good,
   &--bad {
