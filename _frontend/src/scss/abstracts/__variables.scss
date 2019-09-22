@@ -13,6 +13,7 @@ $assets: '../../../../assets/';
   --primary-light: rgba(255, 255, 255, 0.05);
   --secondary: rgb(17, 17, 17);
   --secondary-light: rgba(17, 17, 17, 0.05);
+  --highlight: #fffc00;
   --headerHeight: 50px;
   --radius: 4px;
   --gutter: 25px;
@@ -42,7 +43,7 @@ $palettes: (
     dark: #004085,
   ),
   yellow: (
-    light: #fff3cd,
+    light: rgba(255, 186, 0, 0.15),
     base: #ffeeba,
     dark: #856404
   ),
@@ -78,6 +79,7 @@ html {
     --primary-light: rgba(17, 17, 17, 0.05);
     --secondary: rgb(255, 255, 255);
     --secondary-light: rgba(255, 255, 255, 0.15);
+    --highlight: #bb86fc;
   }
 }
 
@@ -88,6 +90,7 @@ html {
       --primary-light: rgba(17, 17, 17, 0.05);
       --secondary: rgb(238, 238, 238);
       --secondary-light: rgba(238, 238, 238, 0.15);
+      --highlight: #bb86fc;
     }
   }
 }
