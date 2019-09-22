@@ -4,6 +4,7 @@
   position: relative;
   margin: 2em auto;
   padding: 0;
+  width: calc(100% - #{$grid-gutter-width*2});
 
   .text-body {
     position: relative;
@@ -60,5 +61,11 @@
     &__title {
       display: block;
     }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .quote {
+    width: calc(100% - #{$gruid-gutter-width*4});
   }
 }
