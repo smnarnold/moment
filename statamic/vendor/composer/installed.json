@@ -2053,7 +2053,7 @@
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/mustangostang/spyc.git",
+            "url": "git@github.com:mustangostang/spyc.git",
             "reference": "dfd9aadc1f5224065d55b42b712c7e99a50a3f4d"
         },
         "dist": {
