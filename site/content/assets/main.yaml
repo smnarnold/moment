@@ -23,3 +23,6 @@ assets:
   content/images/comme-dans-un-compte-1546473842.jpg:
     title: 'Comme dans un compte'
     alt: 'Comme dans un compte'
+  articles/javascripts-events.jpeg:
+    title: 'Events, events everywhere'
+    alt: 'Events, events everywhere'

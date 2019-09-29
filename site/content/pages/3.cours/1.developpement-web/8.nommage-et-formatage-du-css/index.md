@@ -8,8 +8,8 @@ body:
     firstname: Phil
     lastname: Karlton
     title: 'Développeur chez Netscape et solide moustachu'
-    picture: /assets/persons/karlton.jpg
     source: 'http://www.karlton.org/2017/12/naming-things-hard/'
+    picture: /assets/persons/karlton.jpg
   -
     type: text
     body: |
@@ -140,5 +140,9 @@ body:
       width: 100%;
           padding: 20px;
       }
+  -
+    type: note
+    intent: good
+    body: 'Plusieurs outils en ligne peuvent corriger le formatage d''un fichier pour vous. Par exemple: [codebeautify.org/css-beautify-minify](https://codebeautify.org/css-beautify-minify)'
 fieldset: page-article
 id: 8224978b-3efa-4386-a85e-9b7fdff4605d
