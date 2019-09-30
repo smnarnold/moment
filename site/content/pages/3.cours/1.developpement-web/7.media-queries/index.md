@@ -100,6 +100,10 @@ body:
         <source srcset="image-landscape.jpg" media="(orientation: landscape)">
         <img src="image-portrait.jpg">
       </picture>
+  -
+    type: note
+    intent: generic
+    body: 'Les pages d''articles de ce site ont une média query sensible à votre **prefers-color-scheme**  si vous désirez tester cette fonctionnalité sur un site.'
 page_template: page-article
 fieldset: page-article
 id: 72623d91-1b0d-4de1-9bf1-a01953a6f7ea
