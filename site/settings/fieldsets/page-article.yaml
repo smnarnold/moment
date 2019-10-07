@@ -108,6 +108,7 @@ sections:
                   warning: Warning
                   good: Good
                   bad: Bad
+                  exercice: Exercice
                   source: Source
                 type: select
                 width: 25

@@ -47,13 +47,16 @@ body:
       var nomDeLaFonction = function() { ... };
       document.addEventListener('click', nomDeLaFonction);
   -
+    type: note
+    intent: exercice
+    body: '[https://codepen.io/smnarnold/pen/LYYYMNj](https://codepen.io/smnarnold/pen/LYYYMNj)'
+  -
     type: text
     title: Évènements
     level: h2
     body: 'Il existe plusieurs type d''évènement. Voyons les plus courants:'
   -
     type: image
-    image: /assets/articles/javascripts-events.jpeg
   -
     type: text
     title: Souris

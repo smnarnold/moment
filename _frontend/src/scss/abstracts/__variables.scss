@@ -54,6 +54,9 @@ $assets: '../../../../assets/';
   --grey: #ddd;
   --greyShade: #e9e9e9;
   --greyContrast: #878787;
+  --purple: #ecc7fd;
+  --purpleShade: #f0d3fe;
+  --purpleContrast: #654187;
 }
 
 $palettes: (
@@ -109,6 +112,9 @@ $fonts: (
   --grey: #a0a0a0;
   --greyShade: #878787;
   --greyContrast: #ddd;
+  --purple: #7b4ea0;
+  --purpleShade: #654187;
+  --purpleContrast: #f0d3fe;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -135,5 +141,8 @@ $fonts: (
     --grey: #a0a0a0;
     --greyShade: #878787;
     --greyContrast: #ddd;
+    --purple: #7b4ea0;
+    --purpleShade: #654187;
+    --purpleContrast: #f0d3fe;
   }
 }

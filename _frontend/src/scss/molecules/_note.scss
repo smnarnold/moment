@@ -20,7 +20,8 @@
 
   &--warning,
   &--good,
-  &--bad {
+  &--bad,
+  &--exercice {
     .text-body {
       > *:first-child {
         &:first-letter {
@@ -69,6 +70,20 @@
       > *:first-child {
         &::before {
           content: "👎";
+        }
+      }
+    }
+  }
+
+  &--exercice {
+    background-color: var(--purpleShade);
+    border: solid 1px var(--purple);
+    color: var(--purpleContrast);
+
+    .text-body {
+      > *:first-child {
+        &::before {
+          content: "✍️ Exercice: ";
         }
       }
     }

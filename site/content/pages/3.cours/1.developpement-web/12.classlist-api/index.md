@@ -18,6 +18,10 @@ body:
       `element.classList.add('nomDeMaClasse')`
       `element.classList.add('premiereClasse', 'deuxiemeClasse')`
   -
+    type: note
+    intent: exercice
+    body: '[https://codepen.io/smnarnold/pen/MWWWZdp](https://codepen.io/smnarnold/pen/MWWWZdp)'
+  -
     type: text
     title: remove
     level: h2

@@ -43,6 +43,10 @@ body:
         console.log(element);
       });
   -
+    type: note
+    intent: exercice
+    body: '[https://codepen.io/smnarnold/pen/vYYBRMj](https://codepen.io/smnarnold/pen/vYYBRMj)'
+  -
     type: text
     title: querySelector
     level: h3
@@ -51,5 +55,9 @@ body:
     type: code
     lang: js
     body: 'document.querySelector(''.exemple'');'
+  -
+    type: note
+    intent: exercice
+    body: '[https://codepen.io/smnarnold/pen/RwbXOvw](https://codepen.io/smnarnold/pen/RwbXOvw)'
 fieldset: page-article
 id: 5b3c8a95-bbe1-496e-bd71-3b59f2224685
