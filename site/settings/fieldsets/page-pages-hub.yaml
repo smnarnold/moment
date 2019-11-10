@@ -2,6 +2,15 @@ sections:
   main:
     display: Main
     fields:
+      title:
+        width: 50
+        type: text
+        localizable: true
+      template:
+        type: template
+        width: 25
+        display: Template
+        default: page-pages-hub
       color_scheme:
         options:
           auto: Auto
@@ -11,10 +20,6 @@ sections:
         width: 25
         display: 'Color scheme'
         default: auto
-      impact:
-        fieldset: partial-impact
-        type: partial
-        display: Impact
       body:
         sets:
           text:

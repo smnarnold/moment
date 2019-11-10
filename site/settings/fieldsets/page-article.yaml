@@ -105,10 +105,11 @@ sections:
               intent:
                 options:
                   generic: Generic
-                  warning: Warning
                   good: Good
+                  warning: Warning
                   bad: Bad
                   exercice: Exercice
+                  tool: Outils
                   source: Source
                 type: select
                 width: 25
