@@ -27,6 +27,11 @@
   ul,
   ol {
     @extend %list;
+
+    ul,
+    ol {
+      padding-left: 1em;
+    }
   }
 
   blockquote {

@@ -57,6 +57,9 @@ $assets: '../../../../assets/';
   --purple: #ecc7fd;
   --purpleShade: #f0d3fe;
   --purpleContrast: #654187;
+  --pink: #fdc7da;
+  --pinkShade: #fed3e2;
+  --pinkContrast: #874159;
 }
 
 $palettes: (
@@ -115,6 +118,9 @@ $fonts: (
   --purple: #7b4ea0;
   --purpleShade: #654187;
   --purpleContrast: #f0d3fe;
+  --pink: #a04e6b;
+  --pinkShade: #874159;
+  --pinkContrast: #fed3e2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -144,5 +150,8 @@ $fonts: (
     --purple: #7b4ea0;
     --purpleShade: #654187;
     --purpleContrast: #f0d3fe;
+    --pink: #a04e6b;
+    --pinkShade: #874159;
+    --pinkContrast: #fed3e2;
   }
 }

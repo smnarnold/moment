@@ -89,6 +89,20 @@
     }
   }
 
+  &--tool {
+    background-color: var(--pinkShade);
+    border: solid 1px var(--pink);
+    color: var(--pinkContrast);
+
+    .text-body {
+      > *:first-child {
+        &::before {
+          content: "🛠️ Outil: ";
+        }
+      }
+    }
+  }
+
   &--source {
     background-color: var(--greyShade);
     color: var(--greyContrast);
