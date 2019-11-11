@@ -77,8 +77,8 @@ body:
           .then(response => response.json())
           .then(result => {
             const index = Math.round(Math.random() * result.length);
-            document.documentElement.style.setProperty('--primary', result[index][0]);
-            document.documentElement.style.setProperty('--secondary', result[index][1]);
+            document.documentElement.style.setProperty('--primary', `#${result[index][0]}`);
+            document.documentElement.style.setProperty('--secondary', `#${result[index][1]}`);
           }); 
         }
       </script>

@@ -11,7 +11,7 @@ sections:
         display: 'Website Name'
         instructions: 'The name of your website'
         localizable: true
-        width: 33
+        width: 25
       google_analytics:
         type: text
         width: 25
@@ -22,3 +22,7 @@ sections:
         width: 25
         display: 'CodePen Account'
         default: smnarnold
+      vimeo_account:
+        type: text
+        width: 25
+        display: 'Vimeo Account'

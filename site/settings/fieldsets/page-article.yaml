@@ -145,6 +145,18 @@ sections:
                 restrict_assets: false
                 type: markdown
                 display: Body
+          vimeo:
+            display: Vimeo
+            fields:
+              video:
+                type: video
+                display: Video
+                width: 50
+              ratio:
+                fieldset: partial_ratio
+                type: partial
+                width: 50
+                display: Ratio
         type: replicator
         display: Body
 taxonomies: false

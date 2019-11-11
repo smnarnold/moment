@@ -1,0 +1,4 @@
+<div class="vimeo ratio-wrapper">
+  <span class="ratio-wrapper__push" style="padding-bottom: {{ if custom_ratio }}{{ custom_ratio }}{{ elseif ratio }}{{ ratio }}{{ else }}56.25{{ /if }}%;"></span>
+  <iframe src="{{ part:video | embed_url }}?title=0&byline=0&portrait=0"></iframe>
+</div>
