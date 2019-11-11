@@ -1,4 +1,4 @@
-title: 'Installation - ICD Soft'
+title: 'Installation via ICD Soft'
 template: page-article
 color_scheme: auto
 body:

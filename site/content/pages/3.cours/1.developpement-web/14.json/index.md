@@ -44,7 +44,7 @@ body:
     title: 'Règles de base'
     level: h3
     body: |
-      - Il doit y avoir un objet ou un tableau à la racine du document qui englobe l'ensemble des&nbsp;définitions.
+      - Il doit y avoir un objet ou un tableau à la racine du document qui englobe l'ensemble des&nbsp;définitions ([Il ne peut n'y en avoir qu'un](https://www.youtube.com/watch?v=sqcLjcSloXs)).
       - Chaque clé doit-être en guillemets doubles. _(ex:&nbsp;"firstname")_
       - Un double point `:` doit séparer chaque clé de sa définition. _(ex:&nbsp;"firstname":&nbsp;"Ryan")_
       - Les valeurs peuvent avoir les forme&nbsp;suivantes:
