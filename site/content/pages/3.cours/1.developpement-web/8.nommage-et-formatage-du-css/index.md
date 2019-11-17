@@ -142,7 +142,7 @@ body:
       }
   -
     type: note
-    intent: good
-    body: 'Plusieurs outils en ligne peuvent corriger le formatage d''un fichier pour vous. Par exemple: [codebeautify.org/css-beautify-minify](https://codebeautify.org/css-beautify-minify)'
+    intent: tool
+    body: '[codebeautify.org/css-beautify-minify](https://codebeautify.org/css-beautify-minify) ainsi que plusieurs outils en ligne peuvent corriger le formatage d''un fichier pour vous.'
 fieldset: page-article
 id: 8224978b-3efa-4386-a85e-9b7fdff4605d

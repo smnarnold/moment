@@ -1,4 +1,4 @@
-title: 'Installation de thèmes et extensions'
+title: 'Thèmes et extensions'
 template: page-article
 color_scheme: auto
 body:
