@@ -18,7 +18,7 @@ body:
       - Une propriété: `margin`
       - Une valeur: `20px`
             
-      Cette valeur est à son tour composer de deux éléments: Une taille&nbsp;`20` et une unité CSS&nbsp;`px`. Combiné, ce code permet de dire au navigateur d'appliquer une marge de 20px à tous mes paragraphes. Bien que l'unité `px` soit la plus fréquente, elle n'est pas toujours la mieux adaptée à toutes les situations.
+      Cette valeur est à son tour composé de deux éléments: Une taille&nbsp;`20` et une unité CSS&nbsp;`px`. Combiné, ce code permet de dire au navigateur d'appliquer une marge de 20px à tous mes paragraphes. Bien que l'unité `px` soit la plus fréquente, elle n'est pas toujours la mieux adaptée à toutes les situations.
       
       Voyons voir pourquoi ✨
   -
@@ -48,7 +48,7 @@ body:
     body: |
       Les pixels *(px)* sont l'unité absolue la plus répandue, ce qui fait du sens puisque la majorité des codes CSS sont écrit pour gérer l'affichage sur un écran. Néanmoins ils existe plusieurs autres valeurs absolut:
       
-      - **cm** - Centimères
+      - **cm** - Centimètres
       - **mm** - Millimètres
       - **in** - Pouces
   -
@@ -56,9 +56,9 @@ body:
     title: Relatives
     level: h3
     body: |
-      Contrairement aux unités absolues, les unités relatives se basent sur la dimension d'un parent ou de l'écran pour déterminer leur dimenssion, ce qui les rend particulièrement utiles pour créer un site web responsive.
+      Contrairement aux unités absolues, les unités relatives se basent sur la dimension d'un parent ou de l'écran pour déterminer leur dimension, ce qui les rend particulièrement utiles pour créer un site web responsive.
       
-      Ces unités peuvent paraîtrent plus complexe à prime abord, mais leur utilisation permet souvent d'éviter de redéfinir des valeurs en fonctions des multiples résolutions d'écrans supportés.
+      Ces unités peuvent paraitrent plus complexe à prime abord, mais leur utilisation permet souvent d'éviter de re-définir des valeurs en fonctions des multiples résolutions d'écrans supportés.
       
       - **%** -&nbsp;Relatif au parent
       - **em** - Relatif à la taille fonte courante
@@ -74,21 +74,21 @@ body:
     title: 'Quand utiliser quelle unité?'
     level: h2
     body: |
-      Il n'est pas toujours facile de s'y retrouver et de choisir la bonne unité. Pourtant, elles ont toutes une raison d'être et s'avèrent particulièrement utiles dans certains cas précis.&nbsp;
+      Il n'est pas toujours facile de s'y retrouver et de choisir la bonne unité. Pourtant, elles ont toutes une raison d'être et s'avèrent particulièrement utiles dans certains cas&nbsp;précis.
       
-      En voici quelques un:
+      En voici quelques&nbsp;un:
       
       **%** `.element { width: 50%; }`
-      Pour qu'un élément prenne la moitié de la largeur de son parent.
+      Pour qu'un élément prenne la moitié de la largeur de son&nbsp;parent.
       
       **em** `.small { font-size: 0.5em; }`
-      Pour qu'un texte aillant la classe `.small` aille une taille équivalente à la moitié du texte courant.
+      Pour qu'un texte ayant la classe `.small` ait une taille équivalente à la moitié du texte&nbsp;courant.
       
       **rem** `.title { font-size: 2rem; }`
-      Pour que nos éléments de titre affichent toujours de la même taille, soit 2x celle de notre texte de base, peu importe la taille du texte courant.
+      Pour que nos éléments de titre affichent toujours de la même taille, soit 2x celle de notre texte de base, peu importe la taille du texte&nbsp;courant.
       
       **ch** `.serial-number { width: 10ch; }`
-      Permet qu'un élément aille la largeur de 10 caratères précisement.&nbsp;
+      Permet qu'un élément aille la largeur de 10 caractères&nbsp;précisément.
   -
     type: note
     intent: warning
@@ -106,16 +106,16 @@ body:
     type: text
     body: |
       **vh** `.slide { height: 100vh; }`
-      Pour qu'un élément aillant la classe `.slide` couvre toute la hauteur du viewport&nbsp;*(de la fenêtre)*.
+      Pour qu'un élément ayant la classe `.slide` couvre toute la hauteur du viewport&nbsp;*(de la fenêtre)*.
       
       **vw** `.slide { width: 50vw; }`
-      Pour qu'un élément aillant la classe `.slide` couvre une demi largeur du viewport&nbsp;*(de la fenêtre)*.
+      Pour qu'un élément ayant la classe `.slide` couvre une demi largeur du viewport&nbsp;*(de la fenêtre)*.
       
       **vmin** `.picture { height: 100vmin; }`
-      Pour qu'un élément aillant la classe `.picture` aille une hauteur équivalente à la plus **petite** dimension entre le **vh** et le **vw**.&nbsp;
+      Pour qu'un élément ayant la classe `.picture` aille une hauteur équivalente à la plus **petite** dimension entre le **vh** et le **vw**.&nbsp;
       
       **vmax** `.picture { height: 100vmax; }`
-      Pour qu'un élément aillant la classe `.picture` aille une hauteur équivalente à la plus **grande** dimension entre le **vh** et **vw**.
+      Pour qu'un élément ayant la classe `.picture` aille une hauteur équivalente à la plus **grande** dimension entre le **vh** et **vw**.
   -
     type: text
     title: Calc

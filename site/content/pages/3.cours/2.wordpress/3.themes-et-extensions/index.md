@@ -7,7 +7,7 @@ body:
     body: |
       Wordpress propose une interface simple et efficace, permettant facilement l'ajout de thèmes et&nbsp;d'extensions. 
       
-      Pour ce faire, il faut premièrement se connecter au tableau de bord. Normallement, il suffit d'ajouter `/wp-admin` à l'url du site en question pour être redirriger vers&nbsp;l'admin et ensuite d'entrer ses informations de connection: _(nom d'utilisateur/mot de&nbsp;passe)_.
+      Pour ce faire, il faut premièrement se connecter au tableau de bord. Normalement, il suffit d'ajouter `/wp-admin` à l'url du site en question pour être redirigé vers&nbsp;l'admin et ensuite d'entrer ses informations de connection: _(nom d'utilisateur/mot de&nbsp;passe)_.
   -
     type: text
     title: Thèmes
@@ -17,11 +17,11 @@ body:
       
       **Apparence** ➡️ **Thèmes**
       
-      Certain thèmes par défauts seront disponibles. Il est néanmoins possible d'en ajouter plus. Pour ce faire, cliquer sur le bouton _Ajouter_ se trouvant à la droite du titre de la&nbsp;page. 
+      Certain thèmes par défauts seront disponibles. Il est néanmoins possible d'en ajouter plus. Pour ce faire, cliquez sur le bouton _Ajouter_ se trouvant à la droite du titre de la&nbsp;page. 
       
       Plusieurs thèmes réalisés par d'autres développeurs seront alors proposés. Si l'un d'entre eux correspond à vos besoins, il suffit de cliquer sur _Installer_ et ensuite _Activer_ pour qu'il devienne le thème&nbsp;courant.
       
-      Il est aussi possible d'ajouter un thème via un fichier _.zip_ en appuyant sur _téléverser un thème_. Cette option est favorisée par les thèmes payants afin de restreindre l'accès au code, mais surtout, elle permet de téléverser un thème crée par&nbsp;soi-même!
+      Il est aussi possible d'ajouter un thème via un fichier _.zip_ en appuyant sur _téléverser un thème_. Cette option est favorisée par les thèmes payants afin de restreindre l'accès au code, mais surtout, elle permet de téléverser un thème créé par&nbsp;soi-même!
       
       Installons un [thème de base](https://i.smnarnold.com/wp/theme-de-base.zip) à partir de cette dernière méthode afin de bien comprendre le fonctionnement de&nbsp;Wordpress.
   -

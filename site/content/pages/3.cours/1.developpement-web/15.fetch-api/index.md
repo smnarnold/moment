@@ -4,7 +4,7 @@ color_scheme: auto
 body:
   -
     type: text
-    body: 'Le Fetch API va chercher une ressource se trouvant sur un autre serveur et nous la ramène afin que l''on puisse y accèder.'
+    body: 'Le Fetch API va chercher une ressource se trouvant sur un autre serveur et nous la ramène afin que l''on puisse y accéder.'
   -
     type: note
     intent: generic
@@ -16,7 +16,7 @@ body:
     type: code
     lang: js
     body: |
-      fetch(url) // L'url de la ressource à allez chercher
+      fetch(url) // L'url de la ressource à aller chercher
       .then(function() { // Attendre que la ressource soit reçue
           // Traiter la ressource
       })
@@ -50,13 +50,13 @@ body:
     body: |
       Dans cet exemple, nous avons:
       
-      - `fetch(...)` déclare que nous souhaitons utiliser le fecth API pour aller chercher le fichier json à l'adresse fournie entre parenthèses.
-      - `.then` ou en français _"ensuite"_ attend que le serveur nous réponde.
-      - `reponse` nom donné à l'objet retourné par fetch _(Ce nom est arbitraire, nous aurions pu lui en donner un autre nom si nous le souhations)_.
-      - `return` indique qu'un élément sera retourné à un prochain `.then`.
-      - `.json()` indique que nous souhaitons appeler la méthode _.json()_ de l'objet `reponse`, afin de convertir son contenu en Json.
-      - `.then` attend que la conversion soit terminée
-      - `data` indique le nom donné au Json reçu. _(Encore une fois, ce nom est arbitraire)_.
+      - `fetch(...)` déclare que nous souhaitons utiliser le fecth API pour aller chercher le fichier json à l'adresse fournie entre&nbsp;parenthèses.
+      - `.then` ou en français _"ensuite"_ attend que le serveur nous&nbsp;réponde.
+      - `response` nom donné à l'objet retourné par fetch _(Ce nom est arbitraire, nous aurions pu lui en donner un autre nom si nous le&nbsp;souhaitions)_.
+      - `return` indique qu'un élément sera retourné à un prochain&nbsp;`.then`.
+      - `.json()` indique que nous souhaitons appeler la méthode _.json()_ de l'objet `response`, afin de convertir son contenu en&nbsp;Json.
+      - `.then` attend que la conversion soit&nbsp;terminée
+      - `data` indique le nom donné au Json reçu. _(Encore une fois, ce nom est&nbsp;arbitraire)_.
   -
     type: text
     title: Exemples

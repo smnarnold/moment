@@ -59,13 +59,13 @@ body:
   -
     type: text
     body: |
-      `classList.toggle` accepte aussi un deuxième paramêtre pouvant être passé après le nom de la classe, forçant ainsi l'ajout ou le retrait de la dite classe. 
+      `classList.toggle` accepte aussi un deuxième paramètre pouvant être passé après le nom de la classe, forçant ainsi l'ajout ou le retrait de ladite classe. 
       
       Par exemple:
       
       `element.classList.toggle('element', true)` 
       force l'ajoute la classe _element_, tandis que
       `element.classList.toggle('element', false)` 
-      force sont retrait.
+      force son retrait.
 fieldset: page-article
 id: ec427edb-f6d3-4cfe-9266-d79343104ca7

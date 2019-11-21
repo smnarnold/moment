@@ -38,7 +38,7 @@ body:
     type: text
     title: Structure
     level: h2
-    body: 'Le JSON s''écrit sour forme de définitions contenant chacune une _clés_ et une _valeurs_.'
+    body: 'Le JSON s''écrit sous forme de définitions contenant chacune une _clés_ et une _valeurs_.'
   -
     type: text
     title: 'Règles de base'
@@ -53,7 +53,7 @@ body:
           - Un boolean: _(true/false)_
           - Un objet: _{ ... }_
       	- Un tableau _[ ... ]_
-      - Chaque déclaration doit se terminé par une virgule `,`, sauf si cette déclaration est la dernière de son&nbsp;bloc.
+      - Chaque déclaration doit se terminer par une virgule `,`, sauf si cette déclaration est la dernière de son&nbsp;bloc.
   -
     type: note
     intent: tool

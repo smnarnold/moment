@@ -42,7 +42,7 @@ body:
     type: text
     title: 'Absolute vs Fixed'
     level: h2
-    body: 'Dans l''exemple ci-dessous, si nous donnons la propriété `top: 0;` à l''élément no.2. Nous remarquons que lorsqu''il est en `position: absolute;` comme dans la partie de gauche, il se positionne en fonctionn de son parent no.1. Tandis qu''à droite, alors qu''il est en `position: fixed;`, il ignore complêtement son parent et se positionne en fonction du viewport _(de la fenêtre)_.'
+    body: 'Dans l''exemple ci-dessous, si nous donnons la propriété `top: 0;` à l''élément no.2. Nous remarquons que lorsqu''il est en `position: absolute;` comme dans la partie de gauche, il se positionne en fonction de son parent no.1. Tandis qu''à droite, alors qu''il est en `position: fixed;`, il ignore complètement son parent et se positionne en fonction du viewport _(de la fenêtre)_.'
   -
     type: codepen
     id: JjPmoGp

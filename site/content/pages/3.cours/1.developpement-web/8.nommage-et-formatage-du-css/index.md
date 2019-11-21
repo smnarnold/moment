@@ -15,9 +15,9 @@ body:
     body: |
       À priori, nommer des éléments peut sembler facile. Par exemple, voici trois noms de classes: `.truc`, `.patente` et `.chose`. Pourquoi c'est noms? 🤷‍♂️
       
-      Théoriquement, nous pouvons donner n'importe quel nom à nos classes sans affecter le fonctionnement de notre code. 
+      Théoriquement, nous pouvons donner n'importe quel nom à nos classes sans affecter le fonctionnement de notre&nbsp;code. 
       
-      Cependant, imaginez si vous deviez embarquer sur un projet. _(Écrit par quelqu'un d'autre ou par vous-même il y a lontemps.)_ Vous fait un surevole du CSS et vous voyez ces classes `.truc`, `.patente`, `.chose`...
+      Cependant, imaginez si vous deviez embarquer sur un projet. _(Écrit par quelqu'un d'autre ou par vous-même il y a longtemps.)_ Vous fait un survole du CSS et vous voyez ces classes `.truc`, `.patente`,&nbsp;`.chose`...
   -
     type: image
     image: /assets/articles/what-happened.gif
@@ -26,7 +26,7 @@ body:
     body: |
       Bonne chance pour comprendre! 
       
-      Si à l'opposé ces classes étaient nommées: `.grille`, `.carte` et `.titre` leur rôle et relation, serait soudaiement plus évident. D'où l'importance de donner des noms représentatifs de qualité.
+      Si à l'opposé ces classes étaient nommées: `.grille`, `.carte` et `.titre` leur rôle et relation, serait soudainement plus évident. D'où l'importance de donner des noms représentatifs de&nbsp;qualité.
   -
     type: text
     title: Cohérence
@@ -54,7 +54,7 @@ body:
     title: Formatage
     level: h2
     body: |
-      Un code bien formaté est un code facile à lire et surtout facile à&nbsp;débuguer!
+      Un code bien formaté est un code facile à lire et surtout facile à&nbsp;déboguer!
       
       Voici quelques règles de base.
   -
@@ -62,9 +62,9 @@ body:
     title: Accolades
     level: h3
     body: |
-      Un espace entre le sélecteur et l'accolade ouvrante devrait toujours être présent et elle devrait être suivi d'un retour de chariot _(Enter&nbsp;↵)_ afin de simplifier la lisibilité du code. 
+      Un espace entre le sélecteur et l'accolade ouvrante devrait toujours être présent et elle devrait être suivi d'un retour de chariot _(Enter&nbsp;↵)_ afin de simplifier la lisibilité du&nbsp;code. 
       
-      Qu'en t'a elle, l'accolade fermante devrait être seule sur la ligne suivant la dernière propriété et sont indentation devrait correspondre à celle de son selecteur. Une ligne vide devrait ensuite la suivre afin de délimiter proprement chaque block.
+      Qu'en t'a elle, l'accolade fermante devrait être seule sur la ligne suivant la dernière propriété et sont indentation devrait correspondre à celle de son sélecteur. Une ligne vide devrait ensuite la suivre afin de délimiter proprement chaque&nbsp;bloc.
       
       👌
   -
@@ -89,14 +89,14 @@ body:
     title: Espaces
     level: h3
     body: |
-      Lorsque vous écrivez vos propriétés elles devraient normallement êtres indentés à l'intérieurs de vos accolades
+      Lorsque vous écrivez vos propriétés elles devraient normalement êtres indentés à l'intérieurs de vos accolades
       
       👌
   -
     type: code
     lang: css
     body: |
-      selecteur {
+      sélecteur {
         propriété: valeur;
       }
   -
@@ -106,13 +106,13 @@ body:
     type: code
     lang: css
     body: |
-      selecteur {
+      sélecteur {
       propriété: valeur;
       }
   -
     type: note
     intent: good
-    body: 'Acutellement, deux espaces est l''indentation la plus répandue.'
+    body: 'Actuellement, deux espaces est l''indentation la plus&nbsp;répandue.'
   -
     type: text
     body: |
@@ -143,6 +143,6 @@ body:
   -
     type: note
     intent: tool
-    body: '[codebeautify.org/css-beautify-minify](https://codebeautify.org/css-beautify-minify) ainsi que plusieurs outils en ligne peuvent corriger le formatage d''un fichier pour vous.'
+    body: '[codebeautify.org/css-beautify-minify](https://codebeautify.org/css-beautify-minify) ainsi que plusieurs outils en ligne peuvent corriger le formatage d''un fichier pour&nbsp;vous.'
 fieldset: page-article
 id: 8224978b-3efa-4386-a85e-9b7fdff4605d

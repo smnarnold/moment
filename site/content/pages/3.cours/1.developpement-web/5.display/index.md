@@ -35,7 +35,7 @@ body:
     body: |
       Les éléments `display: inline;`  par&nbsp;défaut
       
-      - Ne prennent strictemment que l'espace&nbsp;nécessaire
+      - Ne prennent strictement que l'espace&nbsp;nécessaire
       - S'affichent un à la suite de&nbsp;l'autre
       - N'acceptent pas d'avoir une largeur/hauteur _(width/height)_ ou de marges verticales _(margin-top/margin-bottom)_
       - Peuvent contenir d'autres éléments inline, mais pas&nbsp;block.

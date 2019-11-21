@@ -24,7 +24,7 @@ body:
     lang: php
     body: |
       register_sidebar(array(
-        'name' => __('Barre laterale principale', 'Barre latérale principale du site'), 
+        'name' => __('Barre latérale principale', 'Barre latérale principale du site'), 
       ));
   -
     type: text
@@ -32,7 +32,7 @@ body:
       Dans cet exemple, il n'y a qu'une barre latérale de déclarée.
       
       - `name` indique que nous allons déclarer un nom.
-      - `'Barre laterale principale'` nom affiché dans le tableau de&nbsp;bord.
+      - `'Barre latérale principale'` nom affiché dans le tableau de&nbsp;bord.
       - `'Barre latérale principale du site'` description affichée dans le tableau de&nbsp;bord.
       
       Après cette déclaration, la barre latérale devrait être visible dans le tableau de&nbsp;bord.

@@ -12,7 +12,7 @@ body:
       - 🚫 Canvas prédéterminé
       - 🚫 Unités de mesure absolues
       
-      Ça peut paraître compliquer à première vue, mais si on pend le temps d'analyser le tout calmement, nous verrons que ce n'est pas&nbsp;sorcier!
+      Ça peut paraître compliqué à première vue, mais si on prend le temps d'analyser le tout calmement, nous verrons que ce n'est pas&nbsp;sorcier!
   -
     type: image
     image: /assets/articles/css-responsive.gif
@@ -20,7 +20,7 @@ body:
     type: text
     title: 'Responsive vs Adaptive'
     level: h2
-    body: 'Les sites responsives et adaptives sont similaires, en ce sens où ils s''ajustent à leur environnement *(Généralement la largeur du&nbsp;navigateur)*.'
+    body: 'Les sites _responsives_ et _adaptives_ sont similaires, en ce sens où ils s''ajustent à leur environnement *(Généralement la largeur du&nbsp;navigateur)*.'
   -
     type: image
     image: /assets/articles/responsive-vs-adaptive.gif
@@ -44,6 +44,6 @@ body:
     type: text
     title: Adaptive
     level: h3
-    body: 'Un peu moins flexible que l''approche responsive, l''approche adaptive utilise plusieurs mises en page prédéfinies *(ex: mobile, tablette, grand écran, etc)*. En fonction de la dimension du navigateur, la mise en page la mieux adaptée est affichée.'
+    body: 'Un peu moins flexible que l''approche responsive, l''approche _adaptive_ utilise plusieurs mises en page prédéfinies *(ex: mobile, tablette, grand écran, etc)*. En fonction de la dimension du navigateur, la mise en page la mieux adaptée est affichée.'
 fieldset: page-article
 id: 808243a0-7dc6-41f1-92d6-7e1adb27dafd

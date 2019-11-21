@@ -5,7 +5,7 @@ body:
   -
     type: text
     body: |
-      Il existe une multitude d'évènements qui peuvent se produires sur une page&nbsp;web.
+      Il existe une multitude d'évènements qui peuvent se produire sur une page&nbsp;web.
       
       **Par exemple:**
       
@@ -31,12 +31,12 @@ body:
     body: |
       Dans ce cas-ci, nous&nbsp;avons:
       
-      - `document` soit l'élément sur lequel nous désions écouter un&nbsp;évènement.
-      - `addEventListener` la commande qui indique que nous désirons ajouter un écouteur d'évènement au précédent&nbsp;élément.
-      - `'click'` le nom de l'évènement que nous désirons&nbsp;écouter.
-      - `function() { ... }` une function, _dans ce cas-ci anonyme_, devant être exécutée lorsque l'évènement est&nbsp;déclenché.
+      - `document` soit l'élément sur lequel nous désirons écouter un&nbsp;évènement.
+      - `addEventListener` la commande qui indique que nous désirons ajouter un écouteur d'événement au précédent&nbsp;élément.
+      - `'click'` le nom de l'événement que nous désirons&nbsp;écouter.
+      - `function() { ... }` une fonction, _dans ce cas-ci anonyme_, devant être exécutée lorsque l'évènement est&nbsp;déclenché.
       
-      Il aurait aussi été possible d'appeler directement une fonction plutôt qu'une fonction anonyme, en lui passant le nom de la dite fonction.
+      Il aurait aussi été possible d'appeler directement une fonction plutôt qu'une fonction anonyme, en lui passant le nom de ladite fonction.
       
       **Par exemple:**
     level: h2
@@ -54,7 +54,7 @@ body:
     type: text
     title: Évènements
     level: h2
-    body: 'Il existe plusieurs type d''évènement. Voyons les plus courants:'
+    body: 'Il existe plusieurs types d''événement. Voyons les plus&nbsp;courants:'
   -
     type: image
   -
@@ -65,20 +65,20 @@ body:
       - **click** se déclenche au clique gauche de la&nbsp;souris
       - **contextmenu** se déclenche au clique droit de la&nbsp;souris
       - **dblclick** se déclenche au double clique gauche de la&nbsp;souris
-      - **mouseup** se déclenche lorsque le clique de la souris est&nbsp;relaché
+      - **mouseup** se déclenche lorsque le clique de la souris est&nbsp;relâché
       - **mouseover** se déclenche dès que la souris commence à survoler un&nbsp;élément
       - **mousemove** se déclenche à chaque fois que la souris bouge et qu'elle survole&nbsp;l'élément
       - **mouseout** se déclenche quand la souris arrête de survoler un&nbsp;élément
   -
     type: note
     intent: generic
-    body: 'Notez que les évènement de souris sont aussi déclencher sur les appareils à écran tactiles qui non pas de&nbsp;souris.'
+    body: 'Notez que les événements de souris sont aussi déclencher sur les appareils à écrans tactiles qui non pas de&nbsp;souris.'
   -
     type: text
     title: Touche
     level: h3
     body: |
-      Pour les appareils tacticles, _sans souris_, tel que les cellulaire et&nbsp;tablettes. 
+      Pour les appareils tactiles, _sans souris_, tel que les cellulaire et&nbsp;tablettes. 
       
       - **touchstart** se déclenche lors du contact initial avec&nbsp;l'écran 
       - **touchmove** se déclenche à chaque fois qu'un doigt se déplace sur&nbsp;l'écran
@@ -112,7 +112,7 @@ body:
   -
     type: note
     intent: good
-    body: 'Pour une liste plus exaustive des **évènements**, je vous suggère de voir la liste officielle de [MDN 🦖](https://developer.mozilla.org/fr/docs/Web/Events)'
+    body: 'Pour une liste plus exhaustive des **évènements**, je vous suggère de voir la liste officielle de [MDN 🦖](https://developer.mozilla.org/fr/docs/Web/Events)'
   -
     type: text
     title: removeEventListener

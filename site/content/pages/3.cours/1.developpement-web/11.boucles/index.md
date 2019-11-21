@@ -61,7 +61,7 @@ body:
     body: |
       Dans cet exemple, la limite à atteindre correspond au nombre d'éléments dans notre collection `elements.length`. 
       
-      Puisque la variable `i` est incrémenté par la boucle à chaque tour, nous accèdons à chaque élément de la collection via sa position entre crochets `elements[i]`.
+      Puisque la variable `i` est incrémenté par la boucle à chaque tour, nous accédons à chaque élément de la collection via sa position entre crochets&nbsp;`elements[i]`.
   -
     type: note
     intent: exercice
@@ -85,7 +85,7 @@ body:
     body: |
       - `elements` indique la collection à laquelle nous souhaitons&nbsp;accéder.
       - `forEach` déclare que nous souhaitons accéder à chaque élément de la dite&nbsp;collection.
-      - `function(element) { ... }` déclare une fonction callback avec un paramêtre correspondant au nom que nous aimerions donner à l'item courant dans la&nbsp;boucle _(ce nom est arbitraire)_.
+      - `function(element) { ... }` déclare une fonction callback avec un paramètre correspondant au nom que nous aimerions donner à l'item courant dans la&nbsp;boucle _(ce nom est arbitraire)_.
   -
     type: note
     intent: exercice

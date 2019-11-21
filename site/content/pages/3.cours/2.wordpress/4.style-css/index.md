@@ -38,7 +38,7 @@ body:
       */
   -
     type: text
-    body: 'L''image d''aperçu provient du fichier `screenshot.png` se trouvant à la racine du thème. Ce fichier doit obligatoirement s''appeler `screenshot`, être en format `.png` et idéallement avoir une résolution de&nbsp;1200&nbsp;x&nbsp;900px.'
+    body: 'L''image d''aperçu provient du fichier `screenshot.png` se trouvant à la racine du thème. Ce fichier doit obligatoirement s''appeler `screenshot`, être en format `.png` et idéalement avoir une résolution de&nbsp;1200&nbsp;x&nbsp;900px.'
   -
     type: note
     intent: good

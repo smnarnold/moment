@@ -5,7 +5,7 @@ body:
   -
     type: text
     level: h2
-    body: 'L''API Selectors permet d''accèder aux différents éléments d''une page HTML.'
+    body: 'L''API Selectors permet d''accéder aux différents éléments d''une page&nbsp;HTML.'
   -
     type: text
     title: 'querySelectorAll vs querySelector'
@@ -27,14 +27,14 @@ body:
       
       - `document` indiquant le contexte _(incluant ses enfants)_ à partir du quel commencer la recherche. 
       - `querySelectorAll` le type de requête que nous désirons effectuer.
-      - `('.exemple')` le selecteur indiquant les éléments que nous désirons voir nous être retournés.
+      - `('.exemple')` le sélecteur indiquant les éléments que nous désirons voir nous être retournés.
   -
     type: note
     intent: warning
-    body: 'Si aucun élément n''est trouvé, un NodeList vide sera retourné.'
+    body: 'Si aucun élément n''est trouvé, un NodeList vide sera&nbsp;retourné.'
   -
     type: text
-    body: 'Pour accèder aux différents éléments retournés, nous utiliserons ensuite une boucle. Par exemple une boucle [forEach](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach):'
+    body: 'Pour accéder aux différents éléments retournés, nous utiliserons ensuite une boucle. Par exemple une boucle [forEach](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach):'
   -
     type: code
     lang: js

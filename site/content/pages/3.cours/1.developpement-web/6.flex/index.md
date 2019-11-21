@@ -32,7 +32,7 @@ body:
     title: Flex-wrap
     level: h2
     body: |
-      Par défault, flex essait de tout afficher sur une même ligne. Cependant, il est possible de lui dire d'afficher sur plus d'une ligne au besoin grâce à la propriété wrap.
+      Par défault, flex essaie de tout afficher sur une même ligne. Cependant, il est possible de lui dire d'afficher sur plus d'une ligne au besoin grâce à la propriété wrap.
       
       Possibilités:
       
@@ -122,7 +122,7 @@ body:
     title: Order
     level: h2
     body: |
-      Défini l'ordre d'affichage d'un enfant dans un parent étant à `display: flex;`.
+      Définit l'ordre d'affichage d'un enfant dans un parent étant à `display: flex;`.
       La valeur par défaut, est 0.
   -
     type: codepen
@@ -153,7 +153,7 @@ body:
     title: Flex-shrink
     level: h2
     body: |
-      Propriété pouvant être appliquée à un enfant d'on le parent est en `display: flex;`. 
+      Propriété pouvant être appliquée à un enfant dont le parent est en `display: flex;`. 
       
       Cette propriété accepte une valeur sans unité indiquant la proportion avec laquelle l'élément devrait rétrécir en cas de besoin, si flex l'oblige. Bref, elle agit à l'inverse de flex-grow;
       
@@ -172,7 +172,7 @@ body:
     title: Flex-basis
     level: h2
     body: |
-      Propriété pouvant être appliquée à un enfant d'on le parent est en `display: flex;`. 
+      Propriété pouvant être appliquée à un enfant dont le parent est en `display: flex;`. 
       
       Cette propriété accepte une valeur _(ex: 100px, 20%, 5rem, etc.)_ pour indiquer la dimension que devrait prendre un élément avant que l'espace restant soit redistribué.
       

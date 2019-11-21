@@ -28,7 +28,7 @@ body:
       - `Menu principal` nom affiché dans le tableau de&nbsp;bord.
       - `Menu principal du site` description affichée dans le tableau de&nbsp;bord.
       
-      Pour en déclarer un deuxième, il suffit d'ajouter une ligne à la suite de la première. Par exemple, si nous désirions créer un menu de commenditaires, il serait possible de faire:
+      Pour en déclarer un deuxième, il suffit d'ajouter une ligne à la suite de la première. Par exemple, si nous désirions créer un menu de commanditaires, il serait possible de faire:
   -
     type: code
     lang: php
@@ -44,9 +44,9 @@ body:
     title: Emplacement
     level: h2
     body: |
-      Il faut ensuite indiquer l'endroit où ce menu peut être affiché. Pour ce faire, il faut aller dans un [modèle](./templates) ou [partiel](./parts) et ajouter un script permettant de l'inclure.
+      Il faut ensuite indiquer l'endroit où ce menu peut être affiché. Pour ce faire, il faut aller dans un [modèle](./templates) ou [partiel](./parts) et ajouter un script permettant de&nbsp;l'inclure.
       
-      Par exemple, pour inclure le menu des commenditaires, il faudra faire:
+      Par exemple, pour inclure le menu des commanditaires, il faudra&nbsp;faire:
   -
     type: code
     lang: php

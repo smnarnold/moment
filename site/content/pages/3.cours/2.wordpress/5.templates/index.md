@@ -30,19 +30,19 @@ body:
       
       _Attributs de page_ ➡️ _Modèle_ 
       
-      Le nom donné au modèle dans le commentaire apparaitra comme option de modèle dans le menu&nbsp;déroulant.
+      Le nom donné au modèle dans le commentaire apparaîtra comme option de modèle dans le menu&nbsp;déroulant.
   -
     type: image
     image: /assets/articles/attributs-de-page.png
   -
     type: note
     intent: generic
-    body: 'Idéalement, un nom similaire entre le modèle et le fichier `.php` permet de simplifier le&nbsp;débuggage.'
+    body: 'Idéalement, un nom similaire entre le modèle et le fichier `.php` permet de simplifier le&nbsp;débogage.'
   -
     type: text
     title: Hiérarchie
     level: h2
-    body: 'Wordpress tente de déterminer quel modèle afficher lors de l''appel d''une page en suivant une hierarchie particulière 👑.'
+    body: 'Wordpress tente de déterminer quel modèle afficher lors de l''appel d''une page en suivant une hiérarchie particulière&nbsp;👑.'
   -
     type: text
     title: 'Pages 📄'
@@ -63,7 +63,7 @@ body:
     title: Accueil
     level: h4
     body: |
-      La page d'accueil est particulière. Par défaut, WordPress lui attribut son propre modèle affichant normallement les plus récents articles. Il est néanmoins possible de changer cette configuration dans le tableau de bord via: 
+      La page d'accueil est particulière. Par défaut, WordPress lui attribue son propre modèle affichant normalement les plus récents articles. Il est néanmoins possible de changer cette configuration dans le tableau de bord via: 
       
       _Réglage_&nbsp;➡️&nbsp;_Lecture_
       
@@ -88,8 +88,8 @@ body:
       Wordpress tente de valider en ordre&nbsp;si:
       
       1. `single-post-bonjour-tout-le-monde.php` existe. <br>Ce nom de fichier&nbsp;provient:
-      	- du prefix `single`.
-          - du **type de post**, dans cet exemple celui par défault&nbsp;`post`.
+      	- du préfixe `single`.
+          - du **type de post**, dans cet exemple celui par défaut&nbsp;`post`.
           - et du slug de l'article `bonjour-tout-le-monde`
       2. `single-post.php` existe. Ce nom, comme le précédent, provient du préfix `single` et du type de post. Par exemple: si ce type avait été `superhero`, le fichier appelé aurait été&nbsp;`single-superhero.php`.
       3. `single.php` si aucun modèle spécifique n'est&nbsp;trouvé.

@@ -26,13 +26,13 @@ body:
     title: 'Création d''un sous-domaine'
     level: h2
     body: |
-      Une fois connecté, vous devriez voir une collection d'outils _(Tools)_. 
+      Une fois connecté, vous devriez voir une collection d'outils&nbsp;_(Tools)_. 
       
-      - Sélectionné **Subdomains**.
-      - Donnez un nom à votre sous-domaine
-      - Appuyé sur _Create_
+      - Sélectionner **Subdomains**.
+      - Donner un nom à votre sous-domaine
+      - Appuyer sur _Create_
       
-      Voilà, votre sous-domaine est créée. Retourner maintenant sur la page d'accueil via le menu principal en appuyant sur&nbsp;_Home_.
+      Voilà, votre sous-domaine est créée. Retournez maintenant sur la page d'accueil via le menu principal en appuyant sur&nbsp;_Home_.
   -
     type: text
     title: 'Installation Wordpress'
@@ -50,7 +50,7 @@ body:
   -
     type: note
     intent: generic
-    body: 'Si vous recevez un avertissement à propos de fichiers qui pourrait-être effacés, ne vous inquiété pas, il s''agit des fichiers par défaut. Vous pouvez sélectionner _Continue_.'
+    body: 'Si vous recevez un avertissement à propos de fichiers qui pourrait-être effacés, ne vous inquiétez pas, il s''agit des fichiers par défaut. Vous pouvez sélectionner _Continue_.'
   -
     type: image
     image: /assets/articles/congrats.webp
@@ -59,6 +59,6 @@ body:
     body: |
       Voilà votre site Wordpress est créer!&nbsp;💪
       
-      Vous n'avez qu'à cliquer sur le lien qui vous est fournis pour y&nbsp;accèder.
+      Vous n'avez qu'à cliquer sur le lien qui vous est fournis pour y&nbsp;accéder.
 fieldset: page-article
 id: 01283a17-2127-4b6f-8a13-05836b5a4293

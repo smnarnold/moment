@@ -22,7 +22,7 @@ body:
     body: |
       **Valeur par défaut**. 
       
-      Si on définit une largeur à un élément comme si-dessus ⬆️, la largeur de la bordure et du padding sera alors ajoutée pour constituer la largeur réelle de l'élément. Dans ce cas, puisqu'il y a un padding de 4% sur l'élément, sa largeur réelle est de 4% + 33.33% + 4% = 41.33%.
+      Si on définit une largeur à un élément comme ci-dessus ⬆️, la largeur de la bordure et du padding sera alors ajoutée pour constituer la largeur réelle de l'élément. Dans ce cas, puisqu'il y a un padding de 4% sur l'élément, sa largeur réelle est de 4% + 33.33% + 4% = 41.33%.
   -
     type: text
     title: Border-box
