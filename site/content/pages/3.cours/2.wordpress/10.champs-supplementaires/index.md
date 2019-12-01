@@ -1,4 +1,4 @@
-title: 'Champs supplémentaires'
+title: 'Champs supplémentaires (ACF)'
 template: page-article
 color_scheme: auto
 body:
@@ -13,7 +13,7 @@ body:
   -
     type: text
     title: 'Tableau de bord'
-    level: h3
+    level: h2
     body: |
       Une fois installée, un onglet _ACF_ devrait être visible dans la barre latérale servant de menu au tableau de bord. À partir de cet onglet, il est possible de créer de nouveau _groupe de champs_ en cliquant sur&nbsp;_Ajouter_.
       
@@ -29,10 +29,13 @@ body:
     type: text
     title: 'Dans le code'
     level: h2
+    body: 'Pour faire référence au champs créé dans le code, il suffit de faire les bons&nbsp;appels.'
+  -
+    type: text
+    title: Texte
+    level: h3
     body: |
-      Pour faire référence au champs créer dans le code, il suffit d'appeler les fonctions 
-      
-      - _the_field()_ pour afficher directement la valeur d'un champs.
+      - _the_field()_ pour afficher directement la valeur d'un champs&nbsp;texte.
       - _get_field()_ pour obtenir la valeur d'un champs prêt à être stocker dans une&nbsp;variable.
       
       Par exemple:
@@ -43,6 +46,20 @@ body:
   -
     type: text
     body: 'Dans dans le contexte d''un post, si le champs _super_power_ existe, sa valeur sera affiché à l''endroit où ce code est&nbsp;inscrit.'
+  -
+    type: text
+    title: Image
+    level: h3
+    body: |
+      Pour afficher un champ de type image, il faut premièrement aller chercher l'objet image et le stocker dans une variable. Une fois cet objet en main, il est possible d'accèder à ses propriétés: largeur _(width)_, hauteur _(height)_, etc. mais surtout à sa propriété&nbsp;url.
+      
+      Par exemple:
+  -
+    type: code
+    lang: php
+    body: |
+      <?php $image = get_field('nomDuChamps'); ?>
+      <img src="<?php echo $image['url']; ?>">
   -
     type: note
     intent: good

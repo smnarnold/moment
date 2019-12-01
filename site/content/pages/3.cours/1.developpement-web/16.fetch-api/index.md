@@ -77,11 +77,12 @@ body:
       
       L'utilisation d'un objet, nous permet de ne pas exposer directement dans l'url certaines informations plus sensible. Par exemple, une clé&nbsp;d'identification.
       
-      Par exemple:
+      Exemple:
   -
     type: code
     lang: js
     body: |
+      var token = '123456';
       var request = { ... }
       
       var settings = {
@@ -89,6 +90,7 @@ body:
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
+          'Authorization': 'Bearer ' + token,
         },
         body: JSON.stringify({ query: request })
       }
