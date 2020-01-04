@@ -19,6 +19,16 @@ sections:
         type: partial
         width: 50
         display: Ratio
+      tabs:
+        options:
+          'html,result': HTML
+          'css,result': CSS
+          'js,result': JS
+          result: 'Result only'
+        inline: true
+        type: radio
+        display: Tabs
+        default: result
 taxonomies: true
 title: 'Partial - CodePen'
 hide: true

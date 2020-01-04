@@ -26,3 +26,10 @@ sections:
         type: text
         width: 25
         display: 'Vimeo Account'
+      owner:
+        max_items: '1'
+        collection:
+          - persons
+        type: collection
+        width: 25
+        display: Owner

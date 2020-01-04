@@ -82,6 +82,7 @@ $fonts: (
   sans-serif: #{ helvetica, arial, sans-serif },
   serif: #{ 'Roboto Slab', serif },
   alt: #{ 'Roboto Mono', helvetica, arial, sans-serif },
+  cursive: #{ 'Reenie Beanie', cursive },
 );
 
 @include media-breakpoint-up(lg) {

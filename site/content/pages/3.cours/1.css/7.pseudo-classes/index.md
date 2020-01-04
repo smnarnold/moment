@@ -16,6 +16,7 @@ body:
     id: xxbPWMv
     theme: light
     ratio: 34
+    tabs: 'css,result'
   -
     type: note
     intent: generic
@@ -56,6 +57,7 @@ body:
     id: XWJzYpM
     theme: light
     ratio: 34
+    tabs: result
   -
     type: text
     title: 'First-of-type vs Last-of-type'
@@ -69,6 +71,7 @@ body:
     id: abzVKLV
     theme: light
     ratio: 34
+    tabs: result
   -
     type: text
     title: Nth-child
@@ -85,6 +88,7 @@ body:
     id: vYEWayB
     theme: light
     ratio: 34
+    tabs: result
   -
     type: text
     body: 'Il est aussi possible de faire des sélections plus avancées. Par exemple, sélectionner un élément sur 3 <em>(3, 6, 9)</em> avec `.element:nth-child(3n)`. Dans ce cas, `n` indique que le chiffre précédent est un interval et `3` l''interval en&nbsp;question.'
@@ -93,6 +97,7 @@ body:
     id: JjoOZmZ
     theme: light
     ratio: 34
+    tabs: result
   -
     type: note
     intent: warning
@@ -105,6 +110,7 @@ body:
     id: eYmeKae
     theme: light
     ratio: 34
+    tabs: result
   -
     type: note
     intent: tool

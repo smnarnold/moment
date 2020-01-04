@@ -8,10 +8,12 @@
 
   .text-body {
     position: relative;
-    font-size: 1.17em;
-    font-style: italic;
-    font-weight: 700;
+    font-family: font(cursive);
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
     flex: 0 0 100%;
+    line-height: 1.2;
     border-top: solid 1px currentColor;
     border-bottom: solid 1px currentColor;
     margin-bottom: 1em;
@@ -20,7 +22,7 @@
       position: absolute;
       content: "”";
       color: currentColor;
-      font-size: 6em;
+      font-size: 5em;
       line-height: 0;
       bottom: -0.25em;
       right: 20px;
@@ -60,6 +62,7 @@
 
     &__title {
       display: block;
+      font-weight: 400;
     }
   }
 }

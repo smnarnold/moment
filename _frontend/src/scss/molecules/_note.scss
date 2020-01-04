@@ -12,25 +12,19 @@
 
   .text-body {
     @extend %children-margin;
+
+    > *:first-child {
+      &::before {
+        display: inline-block;
+        font-size: 1.5em;
+        vertical-align: text-bottom;
+        margin: -0.3em 0.4em -0.3em 0;
+      }
+    }
   }
 
   code {
     color: currentColor;
-  }
-
-  &--warning,
-  &--good,
-  &--bad,
-  &--exercice {
-    .text-body {
-      > *:first-child {
-        &:first-letter {
-          font-size: 1.5em;
-          float: left;
-          margin: -0.2em 0.5em 0 0;
-        }
-      }
-    }
   }
 
   &--warning {
@@ -39,10 +33,9 @@
     color: var(--yellowContrast);
 
     .text-body {
-      > *:first-child {
-        &::before {
-          content: "⚠️";
-        }
+      > *:first-child::before {
+        content: "⚠️";
+        margin-bottom: -0.4em;
       }
     }
   }
@@ -53,10 +46,8 @@
     color: var(--greenContrast);
 
     .text-body {
-      > *:first-child {
-        &::before {
-          content: "👍";
-        }
+      > *:first-child::before {
+        content: "👍";
       }
     }
   }
@@ -67,10 +58,8 @@
     color: var(--redContrast);
 
     .text-body {
-      > *:first-child {
-        &::before {
-          content: "👎";
-        }
+      > *:first-child::before {
+        content: "👎";
       }
     }
   }
@@ -81,10 +70,9 @@
     color: var(--purpleContrast);
 
     .text-body {
-      > *:first-child {
-        &::before {
-          content: "✍️ Exercice: ";
-        }
+      > *:first-child::before {
+        content: "✍️";
+        margin-bottom: -0.35em;
       }
     }
   }
@@ -97,7 +85,7 @@
     .text-body {
       > *:first-child {
         &::before {
-          content: "🛠️ Outil: ";
+          content: "🛠️";
         }
       }
     }

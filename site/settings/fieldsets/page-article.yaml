@@ -43,6 +43,8 @@ sections:
                 restrict_assets: false
                 type: markdown
                 display: Body
+                container: main
+                folder: articles
           image:
             display: Image
             fields:
