@@ -52,6 +52,7 @@ site/themes/sidlee/js/main.js
 ###  Statamic                ###
 ################################
 .env
+statamic/
 local/cache/*
 local/storage/*
 local/temp/*
