@@ -11,7 +11,7 @@ body:
   -
     type: text
     body: |
-      Ainsi, vous pouvez modifier/casser/améliorer votre projet l'esprit tranquille, puisqu'il vous permet de revenir en arrière en cas de&nbsp;besoin.
+      Ainsi, vous pouvez modifier/briser/améliorer votre projet l'esprit tranquille, puisqu'il vous permet de revenir en arrière en cas de&nbsp;besoin.
       
       Pour ce faire, git monitore tous les changements effectués dans le dossier&thinsp;📂 de votre projet. À tout moment, vous pouvez choisir de faire une sauvegarde de son état actuel. Cette étape est appelé un&nbsp;`commit`. 
       
@@ -28,7 +28,7 @@ body:
   -
     type: note
     intent: generic
-    body: 'Pour continuer la métaphore du jeux vidéo, l''équivalent serait de faire une sauvegarde en ligne. Ainsi, même si votre console brise ou si vous êtes en visite chez un ami, vous pouvez néanmoins continuer votre&nbsp;partie.'
+    body: 'Pour continuer la métaphore du jeux vidéo, l''équivalent serait de faire une sauvegarde en ligne. Ainsi, même si votre console brise ou si vous êtes en visite chez un ami, vous pouvez continuer votre&nbsp;partie.'
   -
     type: text
     title: 'Travail d''équipe'
@@ -46,6 +46,10 @@ body:
       2. Il pousse ensuite ses changements en ligne avec la commande&nbsp;`push`.
       3. De son côté, le deuxième sauvegarde aussi ses changements en effectuant un&nbsp;`commit`.
       4. Lorsqu'il tente de pousser ses changements via la commande `push`, Git l'avise qu'il doit préalablement tirer une sauvegarde plus récente. Pour se faire, il effectue un&nbsp;`pull`.
-      5. Dès lors, Git compare les modifications des fichiers. Si elles affectent des zones différentes, elles sont automatiquement combinées par Git. Dans le cas plus complexe où des zones identiques ont étés modifiés, Git signalera un _conflit_ au deuxième développeur. Ce dernier devra alors sélectionner quels changements il souhaite&nbsp;conserver.
+      5. Dès lors, Git compare les modifications des fichiers. Si elles affectent des zones différentes, elles sont automatiquement combinées ensemble. Dans le cas plus complexe où des zones identiques ont étés modifiés, Git signalera alors un _conflit_ au deuxième développeur. Ce dernier se verra attribué la tâche de sélectionner les changements à&nbsp;garder.
+  -
+    type: note
+    intent: good
+    body: 'Dans le but d''éviter autant que possible les conflits, ou du moins de les simplifier, il est conseillé de commiter régulièrement. Minimalement 1x par&nbsp;jour.'
 fieldset: page-article
 id: 5ad59fd5-9022-42d2-a6bc-2d468e795c12

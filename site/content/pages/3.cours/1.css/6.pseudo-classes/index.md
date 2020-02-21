@@ -37,6 +37,10 @@ body:
       - `:focus` lorsque le lien reçoit le focus ![](/assets/articles/pseudo-focus.png)
   -
     type: note
+    intent: exercice
+    body: '[codepen.io/smnarnold/pen/BaNygVz](https://codepen.io/smnarnold/pen/BaNygVz)'
+  -
+    type: note
     intent: good
     body: 'Pour en savoir plus, voir cet article sur&nbsp;[MDN🦖](https://developer.mozilla.org/fr/docs/Learn/CSS/Styling_text/Mise_en_forme_des_liens)'
   -

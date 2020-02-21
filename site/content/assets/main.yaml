@@ -26,3 +26,6 @@ assets:
   articles/javascripts-events.jpeg:
     title: 'Events, events everywhere'
     alt: 'Events, events everywhere'
+  content/images/tour-mcgill.jpg:
+    title: 'Tour McGill'
+    alt: 'Tour McGill'

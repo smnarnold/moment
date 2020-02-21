@@ -23,6 +23,7 @@ body:
     id: yLyPqmR
     theme: light
     ratio: 34
+    tabs: result
   -
     type: note
     intent: generic
@@ -42,6 +43,7 @@ body:
     id: YzPEOwp
     theme: light
     ratio: 34
+    tabs: result
   -
     type: text
     title: 'Autres pseudo-éléments'
@@ -53,7 +55,7 @@ body:
     body: 'Pour connaitres l''ensemble des pseudo-éléments, voir:&nbsp;[MDN🦖](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments#Liste_des_pseudo-%C3%A9l%C3%A9ments)'
   -
     type: note
-    intent: good
+    intent: generic
     body: 'Psssst! Tous les émojis affichés au début des boites de texte comme celle-ci sont ajoutés via le pseudo-élément `::before`'
 fieldset: page-article
 id: 8274b16d-5d23-4978-a3c8-73183f9a94ad
