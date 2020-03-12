@@ -28,9 +28,9 @@ body:
   -
     type: text
     body: |
-      Pour une animation plus élaboré, il est possible de spécifier plusieurs états avec des 
+      Une interpolation sera effectué entre ces deux&nbsp;états.
       
-      Une interpolation sera effectué entre ces deux états
+      Pour une animation plus élaboré, il est possible de spécifier plusieurs états avec des&nbsp;pourcentages.
   -
     type: code
     lang: css
@@ -47,6 +47,10 @@ body:
     theme: light
     ratio: 34
     tabs: result
+  -
+    type: note
+    intent: exercice
+    body: 'Recréer cette animation de yo-yo [codepen.io/smnarnold/pen/GRJZvao](https://codepen.io/smnarnold/pen/GRJZvao)'
   -
     type: note
     intent: good
@@ -69,6 +73,10 @@ body:
     theme: light
     ratio: 34
     tabs: result
+  -
+    type: note
+    intent: exercice
+    body: 'Animer le fantôme&thinsp;👻 [codepen.io/smnarnold/pen/jOPqvvB](https://codepen.io/smnarnold/pen/jOPqvvB)'
   -
     type: note
     intent: good
@@ -224,6 +232,10 @@ body:
     theme: light
     ratio: 34
     tabs: result
+  -
+    type: note
+    intent: exercice
+    body: 'Animer le fantôme&thinsp;👻 avec Mario [codepen.io/smnarnold/pen/LYVNJeX](https://codepen.io/smnarnold/pen/LYVNJeX)'
   -
     type: note
     intent: good

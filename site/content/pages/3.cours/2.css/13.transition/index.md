@@ -34,6 +34,10 @@ body:
     body: '[Lea Verou&thinsp;👩‍💻](http://lea.verou.me/) à mis sur pied une page permettant de visualiser rapidement les  différentes [propriétés&nbsp;animables](http://leaverou.github.io/animatable/)'
   -
     type: note
+    intent: exercice
+    body: 'Effectuer une transition sur le bouton au focus [codepen.io/smnarnold/pen/VwLaBOd](https://codepen.io/smnarnold/pen/VwLaBOd)'
+  -
+    type: note
     intent: good
     body: 'Pour en savoir plus sur transition-property, voir [MDN🦖](https://developer.mozilla.org/fr/docs/Web/CSS/transition-property)'
   -
@@ -84,6 +88,10 @@ body:
     type: note
     intent: tool
     body: 'Pour créer et visualiser facilement des courbes de bézier [cubic-bezier.com](https://cubic-bezier.com/)'
+  -
+    type: note
+    intent: exercice
+    body: 'Animer la boussole&thinsp;🧭 [codepen.io/smnarnold/pen/mdJPBNB](https://codepen.io/smnarnold/pen/mdJPBNB)'
   -
     type: note
     intent: good
@@ -146,5 +154,13 @@ body:
     type: code
     lang: css
     body: 'transition: transform 1s 0.5s linear;'
+  -
+    type: note
+    intent: exercice
+    body: 'Recréer cette transition de cartes&thinsp;🃏 [codepen.io/smnarnold/pen/XWbdzGM](https://codepen.io/smnarnold/pen/XWbdzGM)'
+  -
+    type: note
+    intent: exercice
+    body: 'Combiner transitions et animations sur ces boutons au focus [codepen.io/smnarnold/pen/wvaGEwV](https://codepen.io/smnarnold/pen/wvaGEwV)'
 fieldset: page-article
 id: 956ff1ab-2c61-40de-beb6-4ba4a56da6d4
