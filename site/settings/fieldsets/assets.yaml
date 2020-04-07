@@ -1,0 +1,14 @@
+sections:
+  main:
+    display: Main
+    fields:
+      alt:
+        type: text
+        display: Alt
+      caption:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Caption
+taxonomies: false
+title: Assets

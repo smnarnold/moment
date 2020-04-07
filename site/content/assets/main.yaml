@@ -1,6 +1,7 @@
 title: 'Main Assets'
 path: assets
 url: /assets
+fieldset: assets
 assets:
   content/images/img_3962.jpg:
     title: 'Réflexion humaine'
@@ -29,3 +30,7 @@ assets:
   content/images/tour-mcgill.jpg:
     title: 'Tour McGill'
     alt: 'Tour McGill'
+  articles/css-responsive.gif:
+    caption: 'Crédit: Family Guys'
+  articles/responsive-vs-adaptive.gif:
+    caption: 'Crédit: [Froont.com](https://blog.froont.com/9-basic-principles-of-responsive-web-design/)'

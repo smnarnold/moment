@@ -1,9 +1,12 @@
-{{ if source }}
-  {{ partial src="atoms/figure" }}
-{{ else }}
-  {{ assets:part:image }}
-    <div class="media">
+{{ assets:part:image }}
+  <figure class="media{{ if caption }} media--caption{{ /if }}">
+    <div class="media__element">
       <img src="{{ url }}" alt="{{ alt }}" class="media__image">
     </div>
-  {{ /assets:part:image }}
-{{ /if }}
+
+    {{ if caption }}
+      <figcaption class="media__caption">{{ caption | markdown }}</figcaption>
+    {{ /if }}
+  </figure>
+{{ /assets:part:image }}
+

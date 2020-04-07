@@ -57,11 +57,6 @@ sections:
                 type: assets
                 width: 33
                 display: Image
-              source:
-                type: text
-                width: 66
-                display: Source
-                validate: URL
           quote:
             display: Quote
             fields:
