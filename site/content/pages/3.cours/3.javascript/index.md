@@ -1,4 +1,4 @@
-title: Javascript
+title: JavaScript
 template: page-pages-hub
 color_scheme: auto
 body:

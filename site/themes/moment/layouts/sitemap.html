@@ -1,0 +1,23 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ nav from="/" include_home="true" max_depth="3" }}
+    <url>
+      <loc>{{ permalink }}</loc>
+      <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
+      <changefreq>monthly</changefreq>
+      {{ if depth }}
+        {{ if depth == 1}}
+          <priority>0.7</priority>
+        {{ elseif depth == 2 }}
+          <priority>0.6</priority>
+        {{ else }}
+          <priority>0.5</priority>
+        {{ /if }}
+      {{ else }}
+        <priority>0.8</priority>
+      {{ /if }}
+    </url>
+    {{ if children }}
+        {{ *recursive children* }}
+    {{ /if }}
+  {{ /nav }}
+</urlset>

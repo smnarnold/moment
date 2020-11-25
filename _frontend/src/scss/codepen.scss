@@ -125,7 +125,8 @@ video {
   object-fit: cover;
 }
 
-button {
+button,
+select {
   width: 64%;
   margin: 0 auto;
   border-radius: 6px;
@@ -136,11 +137,18 @@ button {
   background: var(--secondary);
   color: var(--primary);
   transition: border-width 0.3s;
-  border-width: 0px;
+  border-width: 0;
   border-style: solid;
   border-color: var(--secondary);
 
-  &:hover { border-width: 4px; }
+  &:hover { 
+    border-top-width: 4px; 
+    border-bottom-width: 4px;
+  }
+}
+
+select {
+  appearance: none;
 }
 
 .txt { font-size: 4vw; }
@@ -152,7 +160,8 @@ button {
     > * { font-size: 21px; }
   }
 
-  button { font-size: 16px; }
+  button,
+  select { font-size: 16px; }
 }
 
 @media (prefers-color-scheme: dark) {
