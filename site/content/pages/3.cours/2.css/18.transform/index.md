@@ -59,7 +59,7 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice: [codepen.io/smnarnold/pen/ExjaMGG](https://codepen.io/smnarnold/pen/ExjaMGG?editors=110)'
+    body: 'Exercice&thinsp;🔺 [codepen.io/smnarnold/pen/ExjaMGG](https://codepen.io/smnarnold/pen/ExjaMGG?editors=110)'
   -
     type: text
     title: 'Rotate 🔄'
@@ -89,7 +89,7 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice: [codepen.io/smnarnold/pen/XWbWoNr](https://codepen.io/smnarnold/pen/XWbWoNr?editors=110)'
+    body: 'Exercice&thinsp;🌼 [codepen.io/smnarnold/pen/XWbWoNr](https://codepen.io/smnarnold/pen/XWbWoNr?editors=110)'
   -
     type: text
     body: |
@@ -113,7 +113,7 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice: [codepen.io/smnarnold/pen/jOPEoPo](https://codepen.io/smnarnold/pen/jOPEoPo?editors=110)'
+    body: 'Exercice&thinsp;🎗️ [codepen.io/smnarnold/pen/jOPEoPo](https://codepen.io/smnarnold/pen/jOPEoPo?editors=110)'
   -
     type: text
     title: Scale
@@ -135,7 +135,7 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice: [codepen.io/smnarnold/pen/BaNyejq](https://codepen.io/smnarnold/pen/BaNyejq?editors=110)'
+    body: 'Exercice&thinsp;🌊 [codepen.io/smnarnold/pen/BaNyejq](https://codepen.io/smnarnold/pen/BaNyejq?editors=110)'
   -
     type: text
     title: Skew
@@ -169,7 +169,7 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice: [codepen.io/smnarnold/pen/BaNyEvx](https://codepen.io/smnarnold/pen/BaNyEvx?editors=110)'
+    body: 'Exercice&thinsp;🔰 [codepen.io/smnarnold/pen/BaNyEvx](https://codepen.io/smnarnold/pen/BaNyEvx?editors=110)'
   -
     type: text
     title: Transform-origin
@@ -196,6 +196,6 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice: [codepen.io/smnarnold/pen/poJvmRo](https://codepen.io/smnarnold/pen/poJvmRo?editors=110)'
+    body: 'Exercice&thinsp;🦋 [codepen.io/smnarnold/pen/poJvmRo](https://codepen.io/smnarnold/pen/poJvmRo?editors=110)'
 fieldset: page-article
 id: 5af20d93-a337-4a45-87f5-4fc026885f68

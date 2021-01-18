@@ -51,6 +51,42 @@ body:
     type: image
     image: /assets/articles/wpm-us-flag.jpg
   -
+    type: text
+    title: 'Compatibilité avec les post personnalisés'
+    level: h2
+    body: |
+      Si un site offre l'option de traduire ses publications de base, il est généralement souhaitable que les posts personnalisés offrent la même option. Cependant, il est possible que WordPress n'affiche pas l'option par&nbsp;défaut.
+      
+      Pour remédier à ce problème, il suffit de créer un fichier _wpm-config.json_ à la racine de son thème. Ce fichier devra contenir un objet JavaScript indiquant les posts personnalisés qui devraient-êtres&nbsp;traduit.
+      
+      Par exemple, si un seul type de posts personnalisés intitulé _projet_ devait-être traduit, le contenu de ce fichier ressemblerait à&nbsp;ceci:
+  -
+    type: code
+    lang: js
+    body: |
+      {
+        "post_types": {
+          "projet": {}
+        }
+      }
+  -
+    type: text
+    body: 'Si vous avez plusieurs types de posts personnalisés, par exemple: _projet_ et _personne_, le fichier aurait alors l''air de&nbsp;ceci:'
+  -
+    type: code
+    lang: js
+    body: |
+      {
+        "post_types": {
+          "projet": {},
+          "personne": {}
+        }
+      }
+  -
+    type: note
+    intent: warning
+    body: 'Attention de ne pas faire d''erreur dans votre JSON, sinon il ne sera pas pris en compte. Pour vous assurer qu''il est bien formaté, vous pouvez le valider avec un&nbsp;[linter](https://jsonlint.com/).'
+  -
     type: note
     intent: good
     body: 'Pour en savoir plus, voir la [page officielle de l''extension WP&nbsp;Multilang](https://wordpress.org/plugins/wp-multilang/)'

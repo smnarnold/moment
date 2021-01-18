@@ -172,7 +172,7 @@ body:
     body: 'Pour en savoir, voir cet [article de GreenSock à propos de&nbsp;fromTo](https://greensock.com/docs/v3/GSAP/gsap.fromTo()).'
   -
     type: text
-    title: Timming
+    title: Timing
     level: h2
     body: 'En plus des propriétés CSS de base, il est possible d''utiliser des propriétés&nbsp;spéciales.'
   -
@@ -282,7 +282,7 @@ body:
     type: text
     title: Ease
     level: h3
-    body: 'Permet de dicter le rythme de l''animation, de la même façon que la [animation-timming-function](../css/animation#animation-timing-function) permet de le faire pour les animations/transitions&nbsp;CSS.'
+    body: 'Permet de dicter le rythme de l''animation, de la même façon que la [animation-timing-function](../css/animation#animation-timing-function) permet de le faire pour les animations/transitions&nbsp;CSS.'
   -
     type: codepen
     id: Bajevbp

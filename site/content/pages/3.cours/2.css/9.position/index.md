@@ -74,6 +74,10 @@ body:
     ratio: 34
     tabs: result
   -
+    type: note
+    intent: exercice
+    body: 'Hot Space&thinsp;👑 [codepen.io/smnarnold/pen/abmbEaO](https://codepen.io/smnarnold/pen/abmbEaO?editors=0100)'
+  -
     type: text
     title: 'Absolute vs Fixed'
     level: h2

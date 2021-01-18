@@ -10,52 +10,54 @@ body:
       De plus, cette extension est disponible sur la majorité des éditeurs de texte et vient même préinstallée sur [CodePen](https://codepen.io/) et&nbsp;[VsCode](https://code.visualstudio.com/).
   -
     type: text
-    title: HTML
+    title: 'Gabarit HTML'
     level: h2
+    body: 'Une page HTML est toujours constituée d''un doctype, des balises `<html>`, `<head>`, `<body>`, etc. Plutôt que de mémoriser ce gabarit _(boilerplate)_, Emmet propose l''abbréviation `!`&nbsp;+&nbsp;<kbd>tab</kbd> afin d''obtenir un gabarit de base prêt à être&nbsp;utilisé.'
+  -
+    type: image
+    image: /assets/articles/emmet-boilerplate.webp
   -
     type: text
-    title: 'Déclaration de balise automatique'
-    level: h3
+    title: Balise
+    level: h2
     body: 'Par exemple, plutôt que de taper au long:'
   -
     type: image
     image: /assets/articles/emmet-strong-1.gif
   -
     type: text
-    body: |
-      Il est possible de simplement taper le nom de la balise désirée, suivi de la touche&nbsp;<kbd>tab</kbd>.
-      Dans ce cas _strong_ + <kbd>tab</kbd>
+    body: 'Il est possible de simplement taper le nom de la balise désirée, suivi de la touche&nbsp;<kbd>tab</kbd>. Dans ce cas _strong_&nbsp;+&nbsp;<kbd>tab</kbd>'
   -
     type: image
     image: /assets/articles/emmet-strong-2.gif
   -
     type: text
-    title: 'Balise avec un ID'
-    level: h3
+    title: ID
+    level: h2
     body: 'Il est aussi possible d''écrire une balise avec un id en préfixant ce dernier par un `#`, comme en CSS, suivi de la touche&nbsp;<kbd>tab</kbd>.'
   -
     type: image
     image: /assets/articles/emmet-id.gif
   -
     type: text
-    title: 'Balise avec une classe'
-    level: h3
+    title: Classe
+    level: h2
     body: 'L''équivalent est aussi possible avec une classe, comme&nbsp;suit:'
   -
     type: image
     image: /assets/articles/emmet-classe.gif
   -
     type: text
-    title: 'ID ou classe sans balise'
-    level: h3
+    title: 'Sans balise'
+    level: h2
     body: 'Il est possible d''allez encore plus rapidement en omettant de spécifier une balise. Dans ce scénario, Emmet se basera sur le contexte pour déterminer le type de balise le plus&nbsp;approprié.'
   -
     type: image
     image: /assets/articles/emmet-sans-balise.gif
   -
     type: text
-    title: 'Contenu texte'
-    level: h3
+    title: Texte
+    level: h2
     body: 'Il est possible de spécifier le contenu texte d''une balise en l''incluant entre&nbsp;`{}`.'
   -
     type: image
@@ -63,7 +65,7 @@ body:
   -
     type: text
     title: 'Balise enfant'
-    level: h3
+    level: h2
     body: 'Il est possible d''ajouter une balise enfant à une balise parent en les séparant par le&nbsp;caractère `>`.'
   -
     type: image
@@ -74,8 +76,8 @@ body:
     body: 'Emmet se charge même de&nbsp;l''indentation!'
   -
     type: text
-    title: 'Symbole multiplicateur (*)'
-    level: h3
+    title: Multiplicateur
+    level: h2
     body: |
       Pourquoi copier/coller plusieurs lignes, quand Emmet offre d'utiliser le symbole `*` suivi d'un chiffre pour indiquer le nombre de lignes&nbsp;souhaitées.
       
@@ -85,8 +87,8 @@ body:
     image: /assets/articles/emmet-multiplicateur.gif
   -
     type: text
-    title: 'Symbole dollar ($)'
-    level: h3
+    title: Index
+    level: h2
     body: |
       Le symbole dollar `$` représente l'index courant. Lorsqu'il est combiné avec le symbole multiplicateur `*`, il est remplacé par l'index de l'élément&nbsp;généré.
       

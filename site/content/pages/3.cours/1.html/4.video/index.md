@@ -37,7 +37,7 @@ body:
       </video>
   -
     type: note
-    intent: good
+    intent: generic
     body: 'Si vous ne désirez pas avoir à fournir plusieurs sources, les **mp4** sont maintenant supportés sur tous les navigateurs majeurs. [caniuse.com/mp4](https://caniuse.com/mp4)'
   -
     type: text
@@ -109,6 +109,6 @@ body:
   -
     type: note
     intent: good
-    body: 'Pour en savoir plus sur la balise vidéo et ses attributs, voir&nbsp;[MDN🦖](https://developer.mozilla.org/fr/docs/Web/HTML/Element/video)'
+    body: 'Pour en savoir plus, voir cet [article de MDN🦖 sur la balise vidéo et ses&nbsp;attributs](https://developer.mozilla.org/fr/docs/Web/HTML/Element/video)'
 fieldset: page-article
 id: 796deda2-cc69-454c-a8e4-95b6c48f0185

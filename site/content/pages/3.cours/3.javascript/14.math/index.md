@@ -93,7 +93,7 @@ body:
   -
     type: note
     intent: generic
-    body: 'Rappelez vous qu''en anglais, le terme _"floor"_ veut dire plancher et _"ceil"_&nbsp;plafond.'
+    body: 'Rappelez vous qu''en anglais, le terme _"floor"_ veut dire plancher et _"ceiling"_&nbsp;plafond.'
   -
     type: note
     intent: good

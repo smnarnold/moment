@@ -166,7 +166,7 @@ body:
   -
     type: note
     intent: exercice
-    body: 'Exercice TMNT&thinsp;🐢 [codepen.io/smnarnold/pen/XWdOdaP](https://codepen.io/smnarnold/pen/XWdOdaP?editors=110)'
+    body: 'Let it be&thinsp;🎸 [codepen.io/smnarnold/pen/WNGNXRG](https://codepen.io/smnarnold/pen/WNGNXRG?editors=0100)'
   -
     type: note
     intent: tool
@@ -185,6 +185,10 @@ body:
     theme: light
     ratio: 34
     tabs: 'css,result'
+  -
+    type: note
+    intent: exercice
+    body: 'Exercice TMNT&thinsp;🐢 [codepen.io/smnarnold/pen/XWdOdaP](https://codepen.io/smnarnold/pen/XWdOdaP?editors=110)'
   -
     type: note
     intent: good

@@ -41,7 +41,7 @@ body:
   -
     type: note
     intent: warning
-    body: 'Une transition CSS n''est jamais réellement cancellée, car lorsqu''une transition est entamée, peut importe ce qui ce produit, elle transitionnera soit vers son objectif où son point de&nbsp;départ.'
+    body: 'Une transition CSS n''est jamais réellement cancellée, car lorsqu''une transition est entamée, peu importe ce qui ce produit, elle transitionnera soit vers son objectif où son point de&nbsp;départ.'
   -
     type: codepen
     id: GRpJLrd
@@ -73,7 +73,12 @@ body:
     type: text
     title: 'animationcancel & transitioncancel'
     level: h2
-    body: 'Déclenché lorsqu’une animation/transition est annulée avant sa fin. Par exemple, si un élément est animé lorsqu’il est survolé et que l’utilisateur cesse de survoler l’élément avant la fin de l’animation. Malheureusement, sur certains navigateurs, cet événement se déclenche aussi lorsqu’une animation/transition se termine. Il est donc conseillé de comparer la propriété elapsedTime de l’objet event retourné et de ne déclencher l’action que si elapsedTime est inférieur à la durée normale de&nbsp;l’animation.'
+    body: |
+      Déclenché lorsqu’une animation/transition est annulée avant sa&nbsp;fin. 
+      
+      Par exemple, si un élément est animé lorsqu’il est survolé et que l’utilisateur cesse de survoler l’élément avant la fin de&nbsp;l’animation. 
+      
+      Malheureusement, sur certains navigateurs, cet événement se déclenche aussi lorsqu’une animation/transition se termine. Il est donc conseillé de comparer la propriété `elapsedTime` de l’objet event retourné et de ne déclencher l’action que si `elapsedTime` est inférieur à la durée normale de&nbsp;l’animation.
   -
     type: note
     intent: good

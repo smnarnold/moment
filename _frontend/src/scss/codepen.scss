@@ -88,32 +88,38 @@ body { margin: 0; }
   padding: 4%;
   text-align: center;
 
-  &.no1 {
+  &.no1,
+  &#no1 {
     background-color: var(--green);
     color: var(--green-dark);
   }
 
-  &.no2 {
+  &.no2,
+  &#no2 {
     background-color: var(--blue);
     color: var(--blue-dark);
   }
 
-  &.no3 {
+  &.no3,
+  &#no3 {
     background-color: var(--red);
     color: var(--red-dark);
   }
 
-  &.no4 {
+  &.no4,
+  &#no4 {
     background-color: var(--cyan);
     color: var(--cyan-dark);
   }
 
-  &.no5 {
+  &.no5,
+  &#no5 {
     background-color: var(--yellow);
     color: var(--yellow-dark);
   }
 
-  &.no6 {
+  &.no6,
+  &#no6 {
     background-color: var(--purple);
     color: var(--purple-dark);
   }

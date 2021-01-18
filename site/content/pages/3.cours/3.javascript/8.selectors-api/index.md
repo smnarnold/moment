@@ -14,7 +14,7 @@ body:
   -
     type: text
     title: querySelector
-    level: h3
+    level: h2
     body: 'Retourne le premier élément correspondant au sélecteur ou encore `null` si aucun élément n''a pu être&nbsp;trouvé.'
   -
     type: code
@@ -39,7 +39,7 @@ body:
   -
     type: text
     title: querySelectorAll
-    level: h3
+    level: h2
     body: 'Retourne tous les éléments correspondant au sélecteur, dans l''ordre qu''ils apparaissent, sous forme de [NodeList](https://developer.mozilla.org/fr/docs/Web/API/NodeList) _(similaire à un tableau)_.'
   -
     type: code
@@ -79,5 +79,15 @@ body:
     type: note
     intent: good
     body: 'Pour en savoir plus, voir cet [article sur MDN🦖 à propos de querySelectorAll()](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelectorAll).'
+  -
+    type: text
+    title: 'Erreur courante ❌'
+    level: h2
+    body: |
+      Un élément est présent dans la page, mais `querySelector()` retourne&nbsp;`null`. Cette erreur se produit généralement lorsque le navigateur tente d'accéder à un élément avant même de savoir que l'élément&nbsp;existe. 
+      
+      Puisque le navigateur exécute le code de haut en bas&thinsp;⬇️, si une balise `<script>` se trouve dans le `<head>` et qu'elle contient une référence à un élément se trouvant dans le `<body>`, le navigateur cherchera parmi le code qu'il a déjà exécuté, soit le `<head>`, et ne trouvera pas l'élément demandé, puisqu'il n'a pas encore pris conscience du `<body>` et de son&nbsp;contenu.
+      
+      Par contre, si la balise `<script>` est déplacée juste avant la fermeture du `</body>`, le navigateur pourra alors chercher à l'intérieur de celui-ci et donc, sera en mesure de trouver l'élément&nbsp;demandé.
 fieldset: page-article
 id: 5b3c8a95-bbe1-496e-bd71-3b59f2224685

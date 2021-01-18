@@ -33,7 +33,7 @@ body:
   -
     type: note
     intent: good
-    body: 'Pour en savoir plus, voir cet [article MDN🦖 sur les&nbsp;`HTMLMediaElement`](https://developer.mozilla.org/fr/docs/Web/API/HTMLMediaElement)'
+    body: 'Pour en savoir plus, voir cet [article MDN🦖 sur les&nbsp;HTMLMediaElement](https://developer.mozilla.org/fr/docs/Web/API/HTMLMediaElement)'
   -
     type: text
     title: 'Play/Pause ⏯️'
@@ -125,6 +125,28 @@ body:
     body: 'Diviser le [currentTime](#currenttime) par la `duration` est particulièrement utile afin d''obtenir une fraction correspondant à l''avancement de la vidéo. Ainsi, il est possible de synchroniser des animations, par exemple une barre de progrès, avec la&nbsp;vidéo.'
   -
     type: text
+    title: PlaybackRate
+    level: h2
+    body: |
+      Utilisé simplement `video.playbackRate` retourne le vitesse de lecture de la vidéo sous forme d’un chiffre allant de 0 à 16. Par exemple, si l’utilisateur écoute sa vidéo à la vitesse normale, son playback rate est des&nbsp;`1`.
+      
+      Si une valeur lui est attribuée `video.playbackRate = 5` elle ajustera la vitesse de lecture en fonction de cette nouvelle valeur. Dans ce cas-ci, la vidéo jouera 5x plus&nbsp;rapidement.
+  -
+    type: codepen
+    id: wvzwZKP
+    theme: light
+    ratio: 34
+    tabs: result
+  -
+    type: note
+    intent: exercice
+    body: 'Numéro&thinsp;8️⃣&thinsp;🦅 [codepen.io/smnarnold/pen/MWjgReZ](https://codepen.io/smnarnold/pen/MWjgReZ?editors=0010)'
+  -
+    type: note
+    intent: good
+    body: 'Pour en savoir plus, voir cet [article de MDN🦖 sur playbackRate](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/playbackRate)'
+  -
+    type: text
     title: 'Volume 🎚️'
     level: h2
     body: |
@@ -140,7 +162,7 @@ body:
   -
     type: note
     intent: good
-    body: 'Pour en savoir, plus voir cet [article MDN🦖 sur l''option&nbsp;`volume`](https://developer.mozilla.org/fr/docs/Web/API/HTMLMediaElement/volume)'
+    body: 'Pour en savoir plus, voir cet [article MDN🦖 sur l''option&nbsp;volume](https://developer.mozilla.org/fr/docs/Web/API/HTMLMediaElement/volume)'
   -
     type: text
     title: Événements
@@ -154,6 +176,7 @@ body:
       - `pause` déclenché lorsque le lecteur arrête de&nbsp;jouer.
       - `play` déclenché lorsque le lecteur commence à&nbsp;jouer.
       - `timeupdate` déclenché à chaque fois que la valeur de currentTime&nbsp;change.
+      - `ended` déclenché lorsque la lecture du média est&nbsp;complétée.
   -
     type: note
     intent: generic

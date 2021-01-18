@@ -64,7 +64,7 @@ body:
     title: Object-position
     level: h2
     body: |
-      Indique comment positionner sur les X et les Y le contenu d'un media ayant la propriété&nbsp;`object-fit`.
+      Indique comment positionner sur les X et Y le contenu d'un media ayant la propriété&nbsp;`object-fit`.
       
       Par défaut, le contenu du média est centré `object-position: 50% 50%;`, comme dans les exemples&nbsp;précédents.
       
@@ -78,7 +78,7 @@ body:
   -
     type: text
     body: |
-      Dans le cadre d'un media ayant la propriété `object-fit: contain;` ceci déplace horizontalement&thinsp;↔️ l'élément dans la zone&nbsp;définie.
+      Dans le cadre d'un media ayant la propriété `object-fit: contain;` ceci déplace le contenu de notre image horizontalement&thinsp;↔️ dans la zone&nbsp;définie.
       
       Ou encore, d'aligner le contenu du média en haut avec `object-position: 50% 0%;` ou en bas avec `object-position: 50% 100%;`.
   -
@@ -89,7 +89,7 @@ body:
     tabs: result
   -
     type: text
-    body: 'Dans le cadre d''un media ayant la propriété `object-fit: cover;` ceci indique quelle partie devrait avoir le focus et donc éviter d''être&nbsp;rognée.'
+    body: 'Dans le cadre d''un media ayant la propriété `object-fit: cover;` ceci indique quelle partie devrait garder le focus et donc éviter d''être&nbsp;rognée.'
   -
     type: note
     intent: good

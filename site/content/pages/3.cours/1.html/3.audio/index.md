@@ -27,7 +27,7 @@ body:
       </audio>
   -
     type: note
-    intent: good
+    intent: generic
     body: 'Si vous ne désirez pas avoir à fournir plusieurs sources, les **mp3** sont supportés sur tous les navigateurs modernes.&nbsp;[caniuse.com/mp3](https://caniuse.com/#feat=mp3)'
   -
     type: text
@@ -74,6 +74,6 @@ body:
   -
     type: note
     intent: good
-    body: 'Pour en savoir plus sur la balise audio et ses attributs, voir&nbsp;[MDN🦖](https://developer.mozilla.org/fr/docs/Web/HTML/Element/audio)'
+    body: 'Pour en savoir plus, voir cet [article MDN🦖 sur la balise audio et ses&nbsp;attributs](https://developer.mozilla.org/fr/docs/Web/HTML/Element/audio)'
 fieldset: page-article
 id: a0b65bee-9dc1-481f-ad46-aa5bef461b89

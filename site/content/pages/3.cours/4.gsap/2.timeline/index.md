@@ -136,6 +136,6 @@ body:
   -
     type: note
     intent: generic
-    body: 'Créer une animation peut se faire rapidement. Cependant, la peaufiner pour que tous les _timmings_ soient parfaits requière du temps. Prenez le temps d''observer vos _timmings_ et de les&nbsp;ajuster.'
+    body: 'Créer une animation peut se faire rapidement. Cependant, la peaufiner pour que tous les _timings_ soient parfaits requière du temps. Prenez le temps d''observer vos _timings_ et de les&nbsp;ajuster.'
 fieldset: page-article
 id: 285a6559-47d8-4cda-ab36-6d4e49276065
