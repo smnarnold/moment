@@ -1,1 +1,4 @@
 /* Custom Control Panel styles... */
+.form-group {
+  padding: 12px 24px;
+}

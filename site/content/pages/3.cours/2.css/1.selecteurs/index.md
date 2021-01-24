@@ -1,6 +1,3 @@
-title: Sélecteurs
-template: page-article
-color_scheme: auto
 body:
   -
     type: text
@@ -141,5 +138,10 @@ body:
     type: note
     intent: exercice
     body: 'Complétez les 8 premiers niveaux de [CSS Diner&thinsp;🍎](https://flukeout.github.io/)'
+title: Sélecteurs
+template: page-article
+color_scheme: auto
+preview_color: '#000'
+preview: /assets/img/smnarnold.jpg
 fieldset: page-article
 id: 4ad471d7-d09e-4f29-b525-027ff2c8faf7

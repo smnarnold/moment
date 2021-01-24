@@ -8,6 +8,10 @@
     {{ body scope="part"}}
       {{ partial src="molecules/{type}" items="part" }}
     {{ /body }}
+
+    <footer class="page-article__footer">
+      {{ partial:molecules/vote }}
+    </footer>
   </div>
 </article>
 

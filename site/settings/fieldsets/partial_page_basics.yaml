@@ -1,0 +1,62 @@
+sections:
+  main:
+    display: Sidebar
+    fields:
+      slug:
+        type: text
+        display: Slug
+        width: 66
+      is_hidden: 
+        type: toggle
+        display: Masquer
+        width: 33
+      title:
+        display: Title
+        type: text
+        localizable: true
+      subtitle:
+        type: text
+        localizable: true
+        display: Subtitle
+        instructions: 'Visible sur les pages de Hub et sur les réseaux sociaux'
+      template:
+        type: template
+        display: Template
+        default: page-article
+      color_scheme:
+        options:
+          auto: Auto
+          light: Light
+          dark: Dark
+        type: select
+        display: 'Color scheme'
+        default: auto
+      description:
+        restrict_assets: false
+        type: redactor
+        localizable: true
+        display: Description
+        instructions: 'Visible sur les réseaux sociaux'
+      preview_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 50
+        display: 'Preview color'
+        default: '#000'
+      preview_abbr:
+        type: text
+        width: 50
+        display: 'Preview Abbr'
+      preview:
+        container: main
+        folder: img
+        restrict: false
+        max_files: 1
+        type: assets
+        display: Preview
+        instructions: 'Visible sur les pages de Hub et sur les réseaux sociaux'
+taxonomies: false
+title: 'Partial - Page basics'
+hide: true

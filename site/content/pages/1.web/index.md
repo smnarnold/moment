@@ -10,8 +10,12 @@ components:
     type: preview-websites
     preview-websites_sort: 'date:desc'
     preview-websites_limit: 0
-hidden: false
 title: Web
+template: default
+color_scheme: light
+preview_color: '#000'
+preview: /assets/img/smnarnold2.jpg
+hidden: false
 fieldset: default
 mount: websites
 id: 8de6e824-57fb-4fcc-9232-533d01e25d20

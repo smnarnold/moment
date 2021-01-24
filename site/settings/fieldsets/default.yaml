@@ -7,4 +7,12 @@ sections:
         fieldset: page_components
         type: partial
         display: Components
+  sidebar:
+      display: Sidebar
+      fields:
+        basics:
+          fieldset: partial_page_basics
+          type: partial
+          localizable: true
+          display: Basic
 taxonomies: true

@@ -159,6 +159,22 @@ select {
 
 .txt { font-size: 4vw; }
 
+@media (max-aspect-ratio: 3/2) and (max-width: 400px) {
+  .layout {
+    > * {
+      &:only-child { 
+        flex: 0 0 95%;
+        
+        .frame {
+          font-size: calc(10px + 7vw);
+      
+          > * { font-size: 6vw; }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 720px) {
   .frame {
     font-size: 40px;

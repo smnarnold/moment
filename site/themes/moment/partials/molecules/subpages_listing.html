@@ -1,7 +1,33 @@
 <ol class="subpages-listing">
-  {{ pages }}
+  {{ pages scope="page" }}
     <li class="subpages-listing__item">
-      <a href="{{ url }}" class="subpages-listing__link">{{ title }}</a>
+      <a href="{{ url }}" class="subpages-listing__link">
+        <span class="subpages-listing__preview"{{ if page:preview_color }} style="background-color: {{ page:preview_color }};"{{ /if }}>
+          <span class="subpages-listing__abbr">
+            {{ if page:preview_abbr }}
+              {{ page:preview_abbr }}
+            {{ else }}
+              {{ page:title | substr:0:1 }}
+            {{ /if }}
+          </span>
+          {{ if page:preview }}
+            {{ assets:page:preview }}
+              <img 
+                src="{{ glide:url width='80' }}" 
+                alt="{{ page:title }}" 
+                data-loading="lazy"
+                class="subpages-listing__image">
+            {{ /assets:page:preview }}
+          {{ /if }}
+        </span>
+        
+        <span class="subpages-listing__content">
+          <span class="subpages-listing__title">{{ page:title }}</span>
+          {{ if page:subtitle }}
+            <em class="subpages-listing__subtitle">{{ page:subtitle }}</em>
+          {{ /if }}
+        </span>
+      </a>
     </li>
   {{ /pages }}
 </ol>

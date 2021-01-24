@@ -43,7 +43,14 @@ components:
     type: preview-pictures
     preview-pictures_limit: 2
     preview-pictures_sort: random
-posts: 3
 title: Home
+template: default
+color_scheme: light
+description: |
+  <p>Développeur web, professeur, amateur de rhum
+  </p>
+preview_color: '#000'
+preview: /assets/img/home-preview.jpg
+posts: 3
 fieldset: default
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7

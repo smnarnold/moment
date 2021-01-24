@@ -20,3 +20,16 @@
     padding-bottom: 140%; // 5/7
   }
 }
+
+.codepen {
+  &--chromeless {
+    &.ratio-wrapper {
+      > .cp_embed_wrapper {
+        iframe {
+          top: -52px;
+          height: calc(100% + 84px);
+        }
+      }
+    }
+  }
+}

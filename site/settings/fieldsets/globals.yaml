@@ -12,6 +12,13 @@ sections:
         instructions: 'The name of your website'
         localizable: true
         width: 25
+      owner:
+        max_items: '1'
+        collection:
+          - persons
+        type: collection
+        width: 25
+        display: Owner
       google_analytics:
         type: text
         width: 25
@@ -22,14 +29,19 @@ sections:
         width: 25
         display: 'CodePen Account'
         default: smnarnold
+      twitter_account:
+        type: text
+        width: 25
+        display: 'Twitter Account'
+      facebook_profile:
+        type: text
+        width: 25
+        display: 'Facebook Profile'
+      facebook_app_id:
+        type: text
+        width: 25
+        display: 'Facebook App ID'
       vimeo_account:
         type: text
         width: 25
         display: 'Vimeo Account'
-      owner:
-        max_items: '1'
-        collection:
-          - persons
-        type: collection
-        width: 25
-        display: Owner

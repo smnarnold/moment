@@ -1,6 +1,3 @@
-title: Var
-template: page-article
-color_scheme: auto
 body:
   -
     type: text
@@ -152,5 +149,10 @@ body:
     type: note
     intent: good
     body: 'Pour en savoir plus, voir cet [article MDN🦖 portant sur les variables](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/var)'
+title: Var
+template: page-article
+color_scheme: auto
+preview_color: '#de26eb'
+preview_abbr: Var
 fieldset: page-article
 id: 569f62ef-2051-4c49-ab67-cec2509b5350

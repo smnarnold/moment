@@ -25,6 +25,7 @@ sections:
           'css,result': CSS
           'js,result': JS
           result: 'Result only'
+          chromeless: 'Result no options'
         inline: true
         type: radio
         display: Tabs

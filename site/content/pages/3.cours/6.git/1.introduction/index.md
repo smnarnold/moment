@@ -18,7 +18,6 @@ body:
     body: 'Un répertoire, en anglais _repository_ ou son diminutif _repo_, est le nom donné au dossier&thinsp;📂 devant être surveillé par Git. À chaque `commit`, tous les changements effectués à l''intérieur de celui-ci seront enregistrés par&nbsp;Git.'
   -
     type: image
-    image: /assets/articles/git-folder-icon.png
   -
     type: text
     title: Commit
@@ -32,7 +31,7 @@ body:
     id: BaKQvNq
     theme: light
     ratio: 34
-    tabs: result
+    tabs: chromeless
   -
     type: text
     body: |
@@ -46,7 +45,7 @@ body:
     id: WNwoLvm
     theme: light
     ratio: 34
-    tabs: result
+    tabs: chromeless
   -
     type: text
     body: |
@@ -70,7 +69,7 @@ body:
     id: gOrLZPj
     theme: light
     ratio: 34
-    tabs: result
+    tabs: chromeless
   -
     type: text
     body: 'Ainsi, il est possible de récupérer les changements les plus récents sur un projet et de continuer son avancement exactement où nous étions&nbsp;rendus.'
@@ -103,7 +102,7 @@ body:
     id: ZEWLEpm
     theme: light
     ratio: 56
-    tabs: result
+    tabs: chromeless
   -
     type: text
     title: Conflits

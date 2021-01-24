@@ -1,6 +1,3 @@
-title: Boucles
-template: page-article
-color_scheme: auto
 body:
   -
     type: text
@@ -44,14 +41,13 @@ body:
       - `index += 2` mise à jour de la variable servant de compteur. _(Effectué <u>avant</u> la validation de la condition)_.
   -
     type: image
-    image: /assets/articles/for-loop.svg
   -
     type: codepen
     id: ExyMPMr
     theme: light
     ratio: 34
     custom_ratio: '37'
-    tabs: result
+    tabs: chromeless
   -
     type: text
     title: 'For & Tableau'
@@ -189,5 +185,15 @@ body:
     type: note
     intent: good
     body: 'Pour en savoir plus, voir cet [article MDN🦖 portant sur&nbsp;forEach()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach)'
+title: Boucles
+subtitle: 'For & ForEach'
+template: page-article
+color_scheme: auto
+description: |
+  <p>Les boucles nous permettent de répéter une action plusieurs fois.
+  </p>
+preview_color: '#04c2b5'
+preview_abbr: B
+preview: /assets/img/preview-loop.jpg
 fieldset: page-article
 id: effab56c-b3bd-45b0-8533-e639b8a88dc4

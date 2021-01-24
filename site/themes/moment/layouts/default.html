@@ -14,7 +14,7 @@
   {{ /if }}
 
   <!-- CSS -->
-  {{ theme:css src="main" tag="true" }}
+  {{ theme:css src="main" tag="true" cache_bust="true" }}
   <style>{{ partial:themes }}</style>
 </head>
 <body itemscope="" itemtype="http://schema.org/WebPage">
@@ -31,16 +31,36 @@
   {{ partial:layout/site-footer }}
 
   <!-- JS -->
-  {{ theme:js src="app" tag="true" }}
-
-  {{ if google_analytics }}
+  
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      {{ if google_analytics }}
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ google_analytics }}');
+      {{ /if }}
 
-      gtag('config', '{{ google_analytics }}');
+      {{ if facebook_app_id }}
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '{{ facebook_app_id }}',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v9.0'
+          });
+          FB.AppEvents.logPageView();   
+        };
+      
+        (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+       {{ /if }}
     </script>
-  {{ /if }}
+  
+  {{ theme:js src="app" tag="true" cache_bust="true" }}
 </body>
 </html>
