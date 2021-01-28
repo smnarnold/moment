@@ -136,6 +136,21 @@ sections:
                 type: partial
                 width: 50
                 display: Ratio
+          youtube:
+            display: Youtube
+            fields:
+              url:
+                type: text
+                display: URL
+                width: 66
+              poster:
+                container: main
+                folder: img
+                restrict: true
+                max_files: 1
+                type: assets
+                width: 33
+                display: Poster
         type: replicator
         display: Body
   sidebar:

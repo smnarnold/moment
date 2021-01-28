@@ -14,7 +14,7 @@
   {{ /if }}
 
   <!-- CSS -->
-  {{ theme:css src="main" tag="true" cache_bust="true" }}
+  {{ theme:css src="../app" tag="true" cache_bust="true" }}
   <style>{{ partial:themes }}</style>
 </head>
 <body itemscope="" itemtype="http://schema.org/WebPage">
@@ -61,6 +61,6 @@
        {{ /if }}
     </script>
   
-  {{ theme:js src="app" tag="true" cache_bust="true" }}
+  {{ theme:js src="../app" tag="true" cache_bust="true" }}
 </body>
 </html>

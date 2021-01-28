@@ -1,0 +1,20 @@
+@charset "UTF-8"; // stylelint-disable-line string-quotes
+// vendors
+@import '~normalize.css/normalize';
+@import '~bootstrap/scss/bootstrap-grid';
+// abstracts
+@import 'abstracts/**/*.scss';
+// placeholders
+@import 'placeholders/**/*.scss';
+// base
+@import 'base/**/*.scss';
+// atoms
+@import 'atoms/**/*.scss';
+// molecules
+@import 'molecules/**/*.scss';
+// components
+@import 'components/**/*.scss';
+// layout
+@import 'layout/**/*.scss';
+// pages
+@import 'pages/**/*.scss';

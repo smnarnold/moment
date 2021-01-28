@@ -1,0 +1,10 @@
+<a href="{{ part:url }}" class="youtube" data-module="Youtube">
+  {{ if part:poster }}
+    {{ assets:part:poster }}
+      <img src="{{ url }}" alt="" class="youtube__poster" loading="lazy">
+    {{ /assets:part:poster }}
+  {{ else }}
+    <img src="{{ part:url | YoutubePoster }}" alt="" class="youtube__poster" loading="lazy">
+  {{ /if }}
+  <span class="youtube__button"></span>
+</a>

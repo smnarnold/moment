@@ -1,6 +1,3 @@
-title: 'Unités CSS'
-template: page-article
-color_scheme: auto
 body:
   -
     type: text
@@ -137,7 +134,6 @@ body:
     body: 'Créant ainsi, une mise en page parfaitement&nbsp;adaptée.'
   -
     type: image
-    image: /assets/articles/simpsons-carl.gif
   -
     type: text
     title: 'En résumé'
@@ -151,5 +147,14 @@ body:
     type: note
     intent: good
     body: 'Big up à **Jess Mitchell** et son article sur [Alligator.io](https://alligator.io/css/css-units-explained/) qui a fortement inspiré cet&nbsp;article.'
+  -
+    type: youtube
+    url: 'https://www.youtube.com/watch?v=_sgF8I-Q1Gs'
+    poster: /assets/img/home-preview.jpg
+is_hidden: false
+title: 'Unités CSS'
+template: page-article
+color_scheme: auto
+preview_color: '#000'
 fieldset: page-article
 id: 6b88ecf4-f8ec-4fab-8004-6155c7c5903f

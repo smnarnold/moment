@@ -4,7 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta property="og:locale" content="{{ locale_full }}" />
   <meta name="title" content="{{ title | strip_tags }}">
+  {{ if template == "page-article" }}
+  <meta property="og:title" content="{{ parent:title }} - {{ title | strip_tags }}">
+  {{ else }}
   <meta property="og:title" content="{{ title | strip_tags }}">
+  {{ /if }}
   <meta property="og:url" content="{{ permalink }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site_name }}">
