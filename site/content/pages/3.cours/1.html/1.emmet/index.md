@@ -1,6 +1,3 @@
-title: Emmet
-template: page-article
-color_scheme: auto
 body:
   -
     type: text
@@ -106,5 +103,11 @@ body:
     type: note
     intent: tool
     body: 'Cheat sheet d''Emmet pour voir toutes les possibilités [docs.emmet.io/cheat-sheet](https://docs.emmet.io/cheat-sheet/)'
+is_hidden: false
+title: Emmet
+template: page-article
+color_scheme: auto
+preview_color: '#000'
+preview: /assets/img/emmet.jpg
 fieldset: page-article
 id: b5f63616-85d4-4c5c-a13d-38ba13f41e22

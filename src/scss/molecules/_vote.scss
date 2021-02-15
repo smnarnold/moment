@@ -54,6 +54,8 @@
       &:hover {
         #{$block}__icon { transform: scale(1); }
       }
+
+      &.is-voted { opacity: 1; }
     }
  
     &:hover {

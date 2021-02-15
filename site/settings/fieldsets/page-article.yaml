@@ -84,11 +84,13 @@ sections:
               intent:
                 options:
                   generic: Generic
+                  mdn: MDN
                   good: Good
                   warning: Warning
                   bad: Bad
                   exercice: Exercice
                   tool: Outils
+                  emmet: Emmet
                   source: Source
                 type: select
                 width: 25

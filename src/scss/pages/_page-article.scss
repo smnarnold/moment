@@ -18,6 +18,23 @@
     }
   }
 
+  &__category {
+    @extend %small-caps;
+
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-family: font(sans-serif);
+    text-align: center;
+    opacity: 0.75;
+    width: fit-content;
+    margin: 0 auto -0.75em;
+
+    &[href]:hover {
+      opacity: 1;
+    }
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 0.4em;
@@ -65,6 +82,10 @@
     em {
       opacity: 0.65;
     }
+  }
+
+  .media {
+    margin: 1em 0;
   }
 }
 

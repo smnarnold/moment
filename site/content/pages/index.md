@@ -43,14 +43,15 @@ components:
     type: preview-pictures
     preview-pictures_limit: 2
     preview-pictures_sort: random
-title: Home
+is_hidden: false
+title: Accueil
 template: default
 color_scheme: light
 description: |
-  <p>Développeur web, professeur, amateur de rhum
+  <p>Tchèque, je suis sur Google☝️ Portfolio de Simon Arnold, développeur front-<wbr style="background-color: initial;">end & professeur. Ancien Sid Lee, La Presse+, Cossette et Nurun.<br>
   </p>
 preview_color: '#000'
-preview: /assets/img/home-preview.jpg
+preview: /assets/previews/accueil.jpg
 posts: 3
 fieldset: default
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7

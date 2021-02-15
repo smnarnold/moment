@@ -1,7 +1,11 @@
 {{ assets:part:image }}
   <figure class="media{{ if caption }} media--caption{{ /if }}">
     <div class="media__element">
-      <img src="{{ url }}" alt="{{ alt }}" class="media__image">
+      {{ if extension == 'mp4' }}
+        <video src="{{ url }}" autoplay muted loop class="media__gifv"></video>
+      {{ else }}
+        <img src="{{ url }}" alt="{{ alt }}" class="media__image">
+      {{ /if }}
     </div>
 
     {{ if caption }}

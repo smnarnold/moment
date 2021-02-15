@@ -1,0 +1,30 @@
+<section 
+  class="section vote" 
+  data-slug="{{ slug }}" 
+  data-parent="{{ parent:slug }}"
+  data-type="Exercice - Feedback"
+  data-module="Vote">
+  <div class="vote__title">
+    Donnez votre opinion <u>sur l'exercice</u>.
+  </div>
+  
+  <div class="vote__options">
+    <button class="vote__item is-disabled" disabled="true">
+      <span class="vote__icon">👶</span>
+      <div class="vote__desc">Trop<br>facile</div>
+    </button>
+
+    <button class="vote__item is-disabled" disabled="true">
+      <span class="vote__icon">👍</span>
+      <div class="vote__desc">Fair &<br>square</div>
+    </button>
+    
+    <button class="vote__item is-disabled" disabled="true">
+      <span class="vote__icon">🤯</span>
+      <div class="vote__desc">Dude<br>calm down</div>
+    </button>
+
+    <div class="vote__msg vote__msg--completed">Merci d'avoir partagé ton opinion&thinsp;😎</div>
+    <div class="vote__msg vote__msg--teaser">Pssst, c'est 💯 anonyme</div>
+  </div>
+</section>

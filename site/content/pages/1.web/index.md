@@ -13,8 +13,11 @@ components:
 title: Web
 template: default
 color_scheme: light
+description: |
+  <p>Ouais, je sais faire du web! Check le bel aperçu de partage ☝️
+  </p>
 preview_color: '#000'
-preview: /assets/img/smnarnold2.jpg
+preview: /assets/previews/web.jpg
 hidden: false
 fieldset: default
 mount: websites

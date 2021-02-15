@@ -4,14 +4,16 @@
   margin: 3.6rem auto;
   padding: 0 var(--gutter);
 
-  &__wrapper {
-    padding-bottom: var(--gutter);
-  }
+  &__wrapper { padding-bottom: var(--gutter); }
+
+  &-article { margin-bottom: 0; }
 }
 
 @include media-breakpoint-up(lg) {
   .page {
     margin-top: 8.6rem;
     margin-bottom: 8.6rem;
+
+    &-article { margin-bottom: 0; }
   }
 }

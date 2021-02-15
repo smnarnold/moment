@@ -62,6 +62,17 @@ $assets: '../../assets/';
   --pink: #fdc7da;
   --pinkShade: #fed3e2;
   --pinkContrast: #874159;
+  --orange: #FFE7CF;
+  --orangeShade:#FFF3E7;
+  --orangeContrast: #BE5F00;
+
+  --emmet: #DDFFD4;
+  --emmetShade: #E3FFDD;
+  --emmetContrast: #262626;
+
+  --mdn: #c2e8f9;
+  --mdnShade: #9AD9F5;
+  --mdnContrast: #333;
 }
 
 $palettes: (
@@ -156,5 +167,9 @@ $fonts: (
     --pink: #a04e6b;
     --pinkShade: #874159;
     --pinkContrast: #fed3e2;
+
+    --emmet: #5f9352;
+    --emmetShade: #4f7b44;
+    --emmetContrast: #d4ffca;
   }
 }

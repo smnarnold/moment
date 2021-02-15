@@ -21,6 +21,7 @@ body {
 main {
   position: relative;
   padding-top: var(--headerHeight);
+  overflow-x: hidden;
   min-height: 100vh;
   z-index: 1;
   background-color: var(--primary);

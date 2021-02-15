@@ -1,6 +1,9 @@
 <article class="page page-article">
   <div class="page__wrapper">
     <header class="page-article__header">
+      {{ parent }}
+        <a href="{{ url }}" class="page-article__category">{{ short_title or title }}</a>
+      {{ /parent }}
       <h1 class="page-article__title">{{ title }}</h1>
       <div class="page-article__read-time">{{ body|flatten|collapse|join|read_time }}</div>
     </header>
@@ -10,7 +13,7 @@
     {{ /body }}
 
     <footer class="page-article__footer">
-      {{ partial:molecules/vote }}
+      {{ partial:molecules/vote_article }}
     </footer>
   </div>
 </article>

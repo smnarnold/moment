@@ -1,0 +1,25 @@
+<article class="page page-article">
+  <div class="page__wrapper">
+    <header class="page-article__header">
+      <h1 class="page-article__title">{{ title }}</h1>
+    </header>
+
+    {{ body scope="part"}}
+      {{ partial src="molecules/{type}" items="part" }}
+    {{ /body }}
+  </div>
+</article>
+
+<script>
+  var url = 'https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=';
+  var theme = 'default';
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    theme = 'desert';
+  }
+
+  var script = document.createElement('script');
+  script.src = url + theme;
+  document.head.appendChild(script);
+</script>
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>

@@ -138,10 +138,12 @@ body:
     type: note
     intent: exercice
     body: 'Complétez les 8 premiers niveaux de [CSS Diner&thinsp;🍎](https://flukeout.github.io/)'
+is_hidden: false
 title: Sélecteurs
+subtitle: 'balise, #, ., combinaison, descendant'
 template: page-article
 color_scheme: auto
-preview_color: '#000'
-preview: /assets/img/smnarnold.jpg
+preview_color: '#35c9d6'
+preview: /assets/previews/selecteurs.png
 fieldset: page-article
 id: 4ad471d7-d09e-4f29-b525-027ff2c8faf7
