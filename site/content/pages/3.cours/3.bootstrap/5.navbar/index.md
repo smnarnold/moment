@@ -93,7 +93,7 @@ body:
       
       Bootstrap nomme cet élément le: _"Toggler"_. Il faut donc insérer un _toggler_ dans la navbar et lui spécifier, via ses attributs, la navigation qu'il doit&nbsp;ouvrir/masquer.
       
-      Dans l'exemple ci-dessous, les attributs `data-bs-target`et `aria-controls` indiquent à Bootstrap que ce bouton contrôle l'élément avec le id&nbsp;`mainNav`.
+      Dans l'exemple ci-dessous, les attributs `data-bs-target` et `aria-controls` indiquent à Bootstrap que ce bouton contrôle l'élément avec le id&nbsp;`mainNav`.
   -
     type: code
     lang: html

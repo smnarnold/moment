@@ -23,6 +23,7 @@ body:
     body: |
       Pour me concentrer lorsque je programme j'écoute surtout des listes de lecture&nbsp;instrumentales: 
       - [Retrowave/Outrun](https://open.spotify.com/playlist/37i9dQZF1DXdLEN7aqioXM?si=1C9shmS6RIWmV7NupDDHrg)
+      - [Daft Punk - Alive&thinsp;🤖](https://open.spotify.com/album/7u6zL7kqpgLPISZYXNTgYk?si=nCAMkT2iRhm8OSRzgS_9Zw)
       - [All Nighter](https://open.spotify.com/playlist/37i9dQZF1DX692WcMwL2yW?si=0mcjXZPuTbmRR06VG-ILNw)
       - [☕️ Programming](https://open.spotify.com/playlist/2mtlhuFVOFMn6Ho3JmrLc2?si=ojjRz_YVToiSQgsYdvKQaA)
       - [Soviet Wave](https://open.spotify.com/playlist/1ZH0DbkVV729d0DciMq9ON?si=Pep5FMp5TNae4JtpzCVN1Q)

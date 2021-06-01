@@ -28,16 +28,53 @@ sections:
           subpages_listing:
             display: 'Subpages listing'
             fields: {  }
+          youtube:
+            display: Youtube
+            fields:
+              url:
+                type: text
+                width: 66
+                display: Url
+              poster:
+                container: main
+                folder: Youtube
+                restrict: false
+                max_files: 1
+                type: assets
+                width: 33
+                display: Poster
+          note:
+            display: Note
+            fields:
+              intent:
+                options:
+                  generic: Generic
+                  mdn: MDN
+                  good: Good
+                  warning: Warning
+                  bad: Bad
+                  tool: Tool
+                  exercice: Exercice
+                  emmet: Emmet
+                  source: Source
+                type: select
+                width: 66
+                display: Intent
+              body:
+                cheatsheet: true
+                restrict_assets: false
+                type: markdown
+                display: Body
         type: replicator
         display: Body
   sidebar:
-      display: Sidebar
-      fields:
-        basics:
-          fieldset: partial_page_basics
-          type: partial
-          localizable: true
-          display: Basic
+    display: Sidebar
+    fields:
+      basics:
+        fieldset: partial_page_basics
+        type: partial
+        localizable: true
+        display: Basic
 taxonomies: false
 template: page-pages-hub
 title: 'Page - Pages hub'

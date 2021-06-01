@@ -9,7 +9,7 @@ body:
       Par exemple, j'ai trois éléments dotés d'une largeur de 33.33% et d'un léger padding. Si nous sommes en `box-sizing: content-box;`, comme à gauche, ses valeurs s'additionnent, tandis qu'à droite, en `box-sizing: border-box;`, elles se soustraient.
   -
     type: codepen
-    id: PoYBGab
+    id: 64d864ac7b6b75a5a7e8024f89a03f0a
     theme: light
     ratio: 34
     tabs: result

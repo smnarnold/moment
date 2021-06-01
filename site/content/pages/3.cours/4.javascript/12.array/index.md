@@ -258,7 +258,9 @@ body:
     type: note
     intent: good
     body: 'Pour en savoir plus, voir cet [article de MDN🦖 sur&nbsp;concat()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/concat).'
+is_hidden: false
 title: Array
+subtitle: 'isArray, includes, find, sort, shift, etc'
 template: page-article
 color_scheme: auto
 preview_color: '#00ccdd'

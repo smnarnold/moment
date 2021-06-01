@@ -1,6 +1,11 @@
 body:
   -
     type: subpages_listing
+  -
+    type: note
+    intent: tool
+    body: '[HTML cheat sheet](https://overapi.com/html)'
+is_hidden: false
 title: HTML
 template: page-pages-hub
 color_scheme: auto

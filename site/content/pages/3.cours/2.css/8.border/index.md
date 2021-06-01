@@ -12,7 +12,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: dypBpKb
+    id: 9b460298192571a8b75904c9af8b1d49
     theme: light
     ratio: 34
     tabs: chromeless
@@ -44,7 +44,7 @@ body:
       - `outset` bordure 3D donnant l'impression que l'élément&nbsp;ressort
   -
     type: codepen
-    id: oNzrYjj
+    id: 58f278eaaad2914c65d9e66054c4d6f7
     theme: light
     ratio: 34
     tabs: chromeless
@@ -66,7 +66,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: ZEpdBOw
+    id: 6f937ba8b6e678deb9af61d48eebbb1c
     theme: light
     ratio: 34
     tabs: chromeless
@@ -88,7 +88,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: OJRebpO
+    id: 9f34c3088c7004fbe5ed1cc0191f91ad
     theme: light
     ratio: 34
     tabs: chromeless
@@ -103,7 +103,7 @@ body:
     body: 'Permets de définir des coins arrondis sur un&nbsp;élément.'
   -
     type: codepen
-    id: RwGzoej
+    id: a00340d4e22b947f9cb28a7e78afcf37
     theme: light
     ratio: 34
     tabs: chromeless
@@ -135,10 +135,14 @@ body:
       Par exemple:
   -
     type: codepen
-    id: VwKJmRz
+    id: e73541370f51d9a034625d9af989b531
     theme: light
     ratio: 34
     tabs: chromeless
+  -
+    type: note
+    intent: tool
+    body: 'Générateur de border-radius: [Fancy Border-radius](https://9elements.github.io/fancy-border-radius)'
   -
     type: note
     intent: mdn

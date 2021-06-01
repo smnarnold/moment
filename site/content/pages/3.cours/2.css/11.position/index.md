@@ -23,7 +23,7 @@ body:
       Cette valeur de position à pour objectif de positionner les éléments comme le ferait le code HTML sans l’intervention du&nbsp;CSS. On remarque donc que la propriété `top` n'affecte aucunement la boite&thinsp;🟦.
   -
     type: codepen
-    id: bGwZJav
+    id: 926baa43a50e491c3bbaf893efcddc5b
     theme: light
     ratio: 34
     tabs: 'css,result'
@@ -41,7 +41,7 @@ body:
       On remarque donc dans l'exemple ci-dessous que la boite&thinsp;🟦 est décalée d'une demi-hauteur de boite par rapport à sa position normale dans le&nbsp;flux.
   -
     type: codepen
-    id: XWjQrMK
+    id: b7158a45803836df52fd959d5d225621
     theme: light
     ratio: 34
     tabs: 'css,result'
@@ -59,7 +59,7 @@ body:
       On remarque dans l'exemple ci-dessous que les éléments respectant le flux se positionnent exactement comme si la boite&thinsp;🟦 n'existait pas _(aucun espace vide entre la boite&thinsp;🟩 et la&thinsp;🟥)_. La boite&thinsp;🟦 quant à elle se positionne par rapport au `<body>` qui en l'absence de parent avec une position devient sont point de&nbsp;référence.
   -
     type: codepen
-    id: qBawWJp
+    id: 2058f2403f795651e876724cbd36d419
     theme: light
     ratio: 34
     tabs: 'css,result'
@@ -77,7 +77,7 @@ body:
       On remarque dans l'exemple ci-dessous que les éléments respectant le flux se positionnent exactement comme si la boite 🟦 n'existait pas _(aucun espace vide entre la boite 🟩 et la 🟥)_. La boite&thinsp;🟦 quant à elle se positionne par rapport à la fenêtre, donc même si la page défile, la boite reste&nbsp;fixe.
   -
     type: codepen
-    id: yLarNJB
+    id: abbdf6d81873902d4ce2b711369cf814
     theme: light
     ratio: 34
     tabs: 'css,result'
@@ -95,7 +95,7 @@ body:
       Dans l'exemple ci-dessous, la boite&thinsp;🟦 n'est à priori pas affectée par la propriété `top`. Cependant, lorsque la page défile et que la boite se trouve à une distance du sommet équivalente à la valeur de sa propriété `top`, celle-ci devient fixe et arrête de défiler avec le reste de la&nbsp;page.
   -
     type: codepen
-    id: bGwJdBz
+    id: de66a75299280945437ecda242ce0054
     theme: light
     ratio: 34
     tabs: 'css,result'

@@ -101,6 +101,7 @@ body:
     body: 'Pour en savoir plus, voir cet [article MDN🦖 sur&nbsp;classList](https://developer.mozilla.org/fr/docs/Web/API/Element/classList).'
 is_hidden: false
 title: ClassList
+subtitle: 'add, remove, contains, toggle'
 template: page-article
 color_scheme: auto
 preview_color: '#000'

@@ -26,7 +26,7 @@ body:
   -
     type: note
     intent: warning
-    body: 'Il existe une autre lirairie utilisant le nom _"ScrollTrigger"_. Si une animation ne se déclenche pas au moment déterminé par ScrollTrigger, il est possible que la mauvaise librarie aille été&nbsp;chargée.'
+    body: 'Il existe une autre librairie utilisant le nom _"ScrollTrigger"_. Si une animation ne se déclenche pas au moment déterminé par ScrollTrigger, il est possible que la mauvaise librairie aille été&nbsp;chargé.'
   -
     type: text
     title: 'Utilisation de base'
@@ -36,10 +36,10 @@ body:
       
       Par exemple, si un carré bleu&thinsp;🟦  possède une animation, mais que le carré n'est visible qu'après avoir fait défiler la page, il est possible que son animation se termine avant même que l'utilisateur puisse la&nbsp;voir. 
       
-      Heureusement, l'utilisation de ScrollTrigger permet de retarder le déclenchement de l'animation au moment où la partie supérieure du carré deviend&nbsp;visible.
+      Heureusement, l'utilisation de ScrollTrigger permet de retarder le déclenchement de l'animation au moment où la partie supérieure du carré devient&nbsp;visible.
   -
     type: codepen
-    id: XWdqygx
+    id: b8afdb631c9f7c2f8a30c1a2b86eb013
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -50,10 +50,10 @@ body:
     body: |
       Il est possible de raffiner le comportement d'une animation ScrollTrigger. Pour ce faire, il faut utiliser un objet JavaScript pouvant contenir plusieurs propriétés et valeurs plutôt qu'une valeur texte comme dans l'exemple&nbsp;précédent.
       
-      Par exemple, convertissons la valeur textuel de l'exemple en&nbsp;objet.
+      Par exemple, convertissons la valeur textuelle de l'exemple en&nbsp;objet.
   -
     type: codepen
-    id: zYqjeQW
+    id: 14887b913cb08021f50ef8b52d36f8e8
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -70,7 +70,7 @@ body:
       Pour l'activer, il faut lui donner la valeur `true`, comme dans l'exemple&nbsp;suivant:
   -
     type: codepen
-    id: RwayvzX
+    id: cb717536c9d9cadad16a0767f1fa6062
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -87,7 +87,7 @@ body:
     body: |
       Les propriétés `start` et `end` de l'objet ScrollTrigger sont constituées de deux valeurs. Une première correspondant au marqueur associé au `trigger` et une deuxième au marqueur associé à la fenêtre. 
       
-      Il est possible de modifier ces valeurs en passant une chaine de caractères constitué soit de:
+      Il est possible de modifier ces valeurs en passant une chaine de caractères constituée soit de:
       
       - Positions sous forme de texte: `top`, `center`,&nbsp;`bottom`
       - Pourcentage, ex:&nbsp;`50%`
@@ -103,7 +103,7 @@ body:
       Par exemple, pour déclencher l'animation non pas quand elle entre dans la fenêtre, mais bien lorsque le milieu de l'élément atteint 75% de la page, il est possible de spécifier `"center 75%"` comme dans l'exemple&nbsp;suivant:
   -
     type: codepen
-    id: bGpMZNw
+    id: 900df00be0fe11b27fee9ac057e112af
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -164,12 +164,12 @@ body:
       - Se déclenche à chaque fois que le marqueur `start` croise&nbsp;`scroller-start`.
       - Se complète lorsque le marqueur `end` croise&nbsp;`scroller-end`.
       - Joue à l'envers lorsque le marqueur `end` croise `scroller-end` dans la direction&nbsp;opposée.
-      - Retourne à son état initiale lorsque le marqueur `start` croise `scroller-start` dans la direction&nbsp;opposée. 
+      - Retourne à son état initial lorsque le marqueur `start` croise `scroller-start` dans la direction&nbsp;opposée. 
       
       il est possible de spécifier `"restart complete reverse reset"` comme dans l'exemple&nbsp;suivant:
   -
     type: codepen
-    id: poyVYQK
+    id: 6bebadc0ffd3397edf286dd3a8b66251
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -187,94 +187,21 @@ body:
       Par exemple:
   -
     type: codepen
-    id: ExKLJKx
+    id: 99e31ae79aae73b9d180080ec0d1d1af
     theme: light
     ratio: 34
     tabs: 'js,result'
   -
     type: note
     intent: exercice
-    body: 'Exercice Zelda&thinsp;🛡️ [codepen.io/smnarnold/pen/PoNaGBe](https://codepen.io/smnarnold/pen/PoNaGBe?editors=001)'
-  -
-    type: text
-    title: Scrub
-    level: h2
-    body: |
-      La propriété `scrub` permet de synchroniser la progression d'une animation avec le défilement de la page _(scroll)_. Ainsi, l'animation débutera lorsque le marqueur `start` croisera `scroller-start` et progressera proportionellement jusqu'à ce que le marqueur `end` croise&nbsp;`scroller-end`. 
-      
-      Par défaut, la valeur de cette propriété est à `false`. Pour l'activer, il faut lui donner la valeur `true`, comme dans l'exemple&nbsp;suivant:
-  -
-    type: codepen
-    id: OJNZGRQ
-    theme: light
-    ratio: 34
-    tabs: 'js,result'
-  -
-    type: text
-    body: |
-      Lorsque la roulette d'une souris&thinsp;🖱️ est utilisée pour effectuer un défilement de page _(scroll)_, l'animation est parfois saccadée. Ce comportement est normal, puisque certaines souris incrémente le défilement en utilisant un très grand intervalle. Cependant, il est possible de remédier à ce problème en spécifiant à la propriété `scrub` une valeur en secondes&thinsp;⏲️ . Ainsi, une interpolation correspondant à la durée est générée entre chaque étape de&nbsp;l'animation.
-      
-      Par exemple, reprenons le précédent exemple, mais avec une interpolation d'une seconde&nbsp;`scrub: 1`:
-  -
-    type: codepen
-    id: abNGxJv
-    theme: light
-    ratio: 34
-    tabs: 'js,result'
-  -
-    type: note
-    intent: exercice
-    body: 'Exercice&thinsp;🔵 [codepen.io/smnarnold/pen/abNQMBZ](https://codepen.io/smnarnold/pen/abNQMBZ)'
-  -
-    type: text
-    title: 'Pin 📌'
-    level: h2
-    body: |
-      La propriété `pin` permet de fixer verticalement un élément durant son animation, de sorte qu'elle reste visible tout au long de sa&nbsp;progression.
-      
-      Par défaut, la valeur de cette propriété est à `false`. Pour l'activer, il faut lui donner la valeur `true`, comme dans l'exemple suivant:
-  -
-    type: codepen
-    id: mdPLgwB
-    theme: light
-    ratio: 34
-    tabs: 'js,result'
-  -
-    type: text
-    body: |
-      Afin d'effectuer un pin, ScrollTrigger ajoute un div englobant l'élément animé et lui donne temporairement une `position: fixed;` afin d'éviter que le défilement de la page&nbsp;l'affecte.
-      
-      Afin de visualiser ce comportement, revoici le précédent exemple, mais avec une bordure pointillée autour du div créé par&nbsp;ScrollTrigger:
-  -
-    type: codepen
-    id: gOrzyoe
-    theme: light
-    ratio: 34
-    tabs: 'js,result'
-  -
-    type: text
-    title: PinSpacing
-    level: h3
-    body: |
-      Par défaut, la propriété `pin` crée un espace vide afin que l'élément animé reste toujours entre l'élément qui le précède et celui qui le suit. Cependant, la propriété `pinSpacing` permet de contrôler ce comportement, si cet espace est jugé&nbsp;indésirable.
-      
-      Par défaut, la valeur de cette propriété est à `true`, ce qui créé l'espace mentionné. Pour le désactiver, il faut lui donner la valeur `false`, comme dans l'exemple suivant:
-  -
-    type: codepen
-    id: wvGjZEQ
-    theme: light
-    ratio: 34
-    tabs: 'js,result'
-  -
-    type: note
-    intent: exercice
-    body: 'Tester vos apprentissages [codepen.io/smnarnold/pen/zYqaxKO](https://codepen.io/smnarnold/pen/zYqaxKO?editors=001)'
+    body: '[Exercice Zelda](https://smnarnold.com/exercice/gsap/zelda)&thinsp;🛡️'
   -
     type: note
     intent: good
-    body: 'Exercice effets spéciaux [collection de réalisations utilisant ScrollTrigger](https://codepen.io/collection/DkvGzg).'
+    body: 'Pour en savoir, voir la [documentation de GreenSock sur&nbsp;ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger).'
 is_hidden: false
 title: ScrollTrigger
+subtitle: 'markers, start, end, toggleActions'
 template: page-article
 color_scheme: auto
 preview_color: '#77c814'

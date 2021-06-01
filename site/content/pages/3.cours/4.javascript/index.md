@@ -1,5 +1,8 @@
 body:
   -
+    type: text
+    body: '[Java](https://fr.wikipedia.org/wiki/Java_(langage)) est à [JavaScript](https://fr.wikipedia.org/wiki/JavaScript) ce qu''un chat&thinsp;🐈 est à un&nbsp;château&thinsp;🏰.'
+  -
     type: subpages_listing
 is_hidden: false
 title: JavaScript

@@ -2,4 +2,8 @@ collections:
   blog: '/pictures/{year}/{month}/{day}/{slug}'
 taxonomies:
   tags: '/pictures/tags/{slug}'
-routes: {  }
+routes: 
+  /sitemap:
+    template: sitemap
+    layout: sitemap
+    content_type: xml

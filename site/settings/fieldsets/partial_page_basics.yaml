@@ -6,7 +6,7 @@ sections:
         type: text
         display: Slug
         width: 66
-      is_hidden: 
+      is_hidden:
         type: toggle
         display: Masquer
         width: 33
@@ -51,7 +51,7 @@ sections:
         display: 'Preview Abbr'
       preview:
         container: main
-        folder: img
+        folder: previews
         restrict: false
         max_files: 1
         type: assets

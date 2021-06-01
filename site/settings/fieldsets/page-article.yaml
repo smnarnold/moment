@@ -147,7 +147,7 @@ sections:
                 width: 66
               poster:
                 container: main
-                folder: img
+                folder: Youtube
                 restrict: true
                 max_files: 1
                 type: assets

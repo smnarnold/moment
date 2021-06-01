@@ -4,7 +4,7 @@ body:
     body: |
       Le Rest API de WordPress est la fonctionnalité préférée des développeurs WordPress n'affectionnant pas particulièrement&nbsp;WordPress&thinsp;🖤. 
       
-      Elle permet aux éditeurs de continuer d'entrer/modifier du contenu dans le tableau de bord de Wordpress, comme dans tout site WordPress classique. Tout en permettant aux développeurs d'accéder aux contenus en JavaScript via des JSON plutôt que d'avoir à utiliser les templates PHP de&nbsp;WordPress.
+      Elle permet aux éditeurs de continuer d'entrer/modifier du contenu dans le tableau de bord de WordPress, comme dans tout site WordPress classique. Tout en permettant aux développeurs d'accéder aux contenus en JavaScript via des JSON plutôt que d'avoir à utiliser les templates PHP de&nbsp;WordPress.
   -
     type: text
     title: 'Utilisation de base'
@@ -88,8 +88,13 @@ body:
         .then(data => console.log(data));
   -
     type: note
+    intent: generic
+    body: '`the_ID()` est une fonction de WordPress retournant le id de la page courante, ex:&nbsp;10.'
+  -
+    type: note
     intent: good
     body: 'Pour en savoir, voir cet [article de WordPress à propos du Rest&nbsp;API](https://developer.wordpress.org/rest-api/using-the-rest-api/global-parameters/).'
+is_hidden: false
 title: 'Rest API'
 template: page-article
 color_scheme: auto

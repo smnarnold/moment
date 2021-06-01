@@ -1,6 +1,3 @@
-title: AddEventListener
-template: page-article
-color_scheme: auto
 body:
   -
     type: text
@@ -75,7 +72,7 @@ body:
       Affichez l'exemple ci-dessous dans CodePen et ouvrez la console de votre navigateur. Vous remarquerez que la fonction reçoit un paramètre nommé `event`. Lorsque ce paramètre est affiché dans la console, il est possible de voir qu'il s'agit d'un objet `MouseEvent` détaillant l'événement `click` venant de se&nbsp;produire.
   -
     type: codepen
-    id: ExyEKvY
+    id: 97d13be59e3f0458fba1cfdd7b293d71
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -84,7 +81,7 @@ body:
     body: 'Revoici le même exemple, mais avec une fonction&nbsp;anonyme:'
   -
     type: codepen
-    id: rNLdedX
+    id: d9357263051391b8dc7356e8b86a10e0
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -177,5 +174,10 @@ body:
     type: note
     intent: good
     body: 'Pour plus d''infos, voir l''[article de Davide Rama sur removeEventListener](https://medium.com/@DavideRama/removeeventlistener-and-anonymous-functions-ab9dbabd3e7b) publié sur&nbsp;Medium.com'
+is_hidden: false
+title: AddEventListener
+template: page-article
+color_scheme: auto
+preview_color: '#000'
 fieldset: page-article
 id: 3dd4f184-ae68-4ad7-a218-08b4c46998a4

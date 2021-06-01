@@ -29,7 +29,7 @@ body:
       Par exemple, dans le code ci-dessous&thinsp;👇 le contenu texte `1` est remplacé par le chiffre&nbsp;`2`;
   -
     type: codepen
-    id: LYZmjwv
+    id: 1d0047f24af69225380c1e95ab1b5a55
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -63,7 +63,7 @@ body:
       Par exemple, dans le code ci-dessous 👇 le contenu texte `1` est remplacé par `<em>2</em>`, ce qui nous donne le chiffre `2` en&nbsp;italique.
   -
     type: codepen
-    id: PozeJqz
+    id: 5f5b65e0cef134ce05ae696f36bc8723
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -90,7 +90,7 @@ body:
     level: h3
   -
     type: codepen
-    id: VwjxMKw
+    id: b7c59aa68c1b2231559bb02e417e154c
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -100,7 +100,7 @@ body:
     level: h3
   -
     type: codepen
-    id: KKMRXgZ
+    id: ffa61aa279cc0718d8266bd65cc2f6ea
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -131,7 +131,7 @@ body:
     level: h3
   -
     type: codepen
-    id: zYBjEoy
+    id: e5dd9f0ff0e468a47f992d82e08e3550
     theme: light
     ratio: 34
     tabs: 'js,result'
@@ -141,7 +141,7 @@ body:
     level: h3
   -
     type: codepen
-    id: bGeMogR
+    id: dcd4c1005769b628f46e39ac30abad91
     theme: light
     ratio: 34
     tabs: 'js,result'

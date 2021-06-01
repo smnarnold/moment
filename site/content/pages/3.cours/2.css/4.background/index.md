@@ -22,7 +22,7 @@ body:
     body: 'Tous ces exemples _(à l''exception de celui utilisant un nom de couleur)_  correspondent au vert utilisé dans l''exemple ci-dessous, mais écrit dans des formats&nbsp;différents.'
   -
     type: codepen
-    id: bGegzvL
+    id: d04cd5c260aca2e1861d2066fdf800b3
     theme: light
     ratio: 34
     tabs: 'css,result'
@@ -51,7 +51,7 @@ body:
     level: h3
   -
     type: codepen
-    id: ZEOLwRP
+    id: fe175639aa0cd7082d1b95d7bea24169
     theme: light
     ratio: 34
     tabs: 'css,result'
@@ -65,7 +65,7 @@ body:
       À droite, `background-image: radial-gradient(#3FC774, #3C38BA);` génère aussi un dégradé de vert à bleu, mais sous forme&nbsp;circulaire.
   -
     type: codepen
-    id: yLJgZxG
+    id: 1ea0686e31020a92f530a72ef4bb677a
     theme: light
     ratio: 34
     tabs: result
@@ -73,6 +73,10 @@ body:
     type: note
     intent: emmet
     body: 'Raccourci Emmet: bgi'
+  -
+    type: note
+    intent: good
+    body: 'Pour en savoir plus, voir ce [billet sur les&nbsp;dégradés](linear-gradient).'
   -
     type: note
     intent: mdn
@@ -87,7 +91,7 @@ body:
       À gauche par exemple, deux images <img src="/assets/articles/square-1582418465.png" class="carré" height="20px"> & <img src="/assets/articles/circle.png" class="cercle" height="20px"> sont passés en arrière-plan et se superposent.
   -
     type: codepen
-    id: gOMgqEX
+    id: f45cf8a780e7114f76995fbfb25f12ad
     theme: light
     ratio: 34
     tabs: result
@@ -121,7 +125,7 @@ body:
       À droite, `background-repeat: no-repeat;` indique au contraire de ne pas répéter l'image&nbsp;d'arrière-plan.
   -
     type: codepen
-    id: wvWgNBJ
+    id: bb8cb09c8bd0eb92a1d84704ddc99d2d
     theme: light
     ratio: 34
     tabs: result
@@ -135,7 +139,7 @@ body:
       Tandis qu'à droite, `background-repeat: repeat-y;` indique à l'opposé de répéter l'image d'arrière-plan sur l'axe des Y&nbsp;uniquement&thinsp;↕️.
   -
     type: codepen
-    id: VwjPgeY
+    id: 7981adbcdb63b552d0330045a87f1e0d
     theme: light
     ratio: 34
     tabs: result
@@ -159,7 +163,7 @@ body:
       Tandis qu'à droite, `background-position: center bottom;` positionne l'arrière-plan au centre et au bas de son&nbsp;élément.
   -
     type: codepen
-    id: JjKEzPK
+    id: 5d64b16db6e78257c7dece339719b76f
     theme: light
     ratio: 34
     tabs: result
@@ -186,7 +190,7 @@ body:
       À gauche par exemple, `background-size: 80px 40px;` déforme l'arrière-plan qui normalement est carré. Tandis qu'à droite, `background-size: 50% auto` indique à l'image d'arrière-plan de prendre une demi-largeur et de s'ajuster automatiquement sur la hauteur afin de garder le ratio original de&nbsp;l'image.
   -
     type: codepen
-    id: zYBNyML
+    id: 43a16e26041b3cc4034a13079631a4fc
     theme: light
     ratio: 34
     tabs: result
@@ -200,7 +204,7 @@ body:
       À droite, `background-size: cover;` garde aussi le ratio de l'image d'arrière-plan intact, mais la redimensionne de sorte que l'élément soit entièrement recouverte par elle. Quitte à rogner certaines parties de&nbsp;l'image.
   -
     type: codepen
-    id: PozWXMz
+    id: 59f11ff05812b35f5bac29b76497b7d3
     theme: light
     ratio: 34
     tabs: result
@@ -229,6 +233,12 @@ body:
     type: note
     intent: good
     body: '[Lea Verou 👩‍💻](https://lea.verou.me/) a mis sur pied une [collection d''arrière-plans CSS](http://projects.verou.me/css3patterns/) réalisés à partir de dégradés pouvant être utilisés sur des projets ou servir de source d''inspiration.'
+  -
+    type: text
+  -
+    type: note
+    intent: exercice
+    body: '[Exercice Candy Crush&thinsp;🍬](https://smnarnold.com/exercice/css/background-candy-crush)'
 is_hidden: false
 title: Background
 subtitle: 'color, image, gradient'

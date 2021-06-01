@@ -14,7 +14,7 @@ body:
       Dans l'exemple suivant, remarquez comment le changement de margin affecte l'espace autour du carré&nbsp;🟦.
   -
     type: codepen
-    id: QWKeBXw
+    id: a4e62856863bdf08252ccfdd05432219
     theme: light
     ratio: 34
     tabs: chromeless
@@ -45,7 +45,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: jOMgvZV
+    id: 54ad3feeeb2c3cf7ef6078e4833d7d11
     theme: light
     ratio: 34
     tabs: chromeless
@@ -71,7 +71,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: ZEpgMRa
+    id: 0455e83f9cecddb3ea378ca9bee07c62
     theme: light
     ratio: 34
     tabs: chromeless
@@ -85,7 +85,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: yLamRME
+    id: cec68a5aa9102cf55575587952078c71
     theme: light
     ratio: 34
     tabs: chromeless
@@ -96,7 +96,7 @@ body:
     body: 'Les marges sont régulièrement utilisées afin de centrer horizontalement&thinsp;↔️ des éléments dans leurs parents. Pour ce faire, il suffit d''attribuer la valeur `auto` aux marges de gauche et de&nbsp;droite.'
   -
     type: codepen
-    id: mdrNzOP
+    id: c3ac6d02f85ac7dd24f03e8cf1d2d33f
     theme: light
     ratio: 34
     custom_ratio: '17'

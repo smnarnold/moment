@@ -44,7 +44,7 @@ body:
     image: /assets/articles/for-loop.svg
   -
     type: codepen
-    id: ExyMPMr
+    id: ab1e3685574da54666981886f47a5c1c
     theme: light
     ratio: 34
     custom_ratio: '37'

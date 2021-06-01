@@ -7,8 +7,3 @@ widgets:
     collection: websites
     limit: 5
     width: full
-  -
-    type: collection
-    collection: courses
-    limit: 5
-    width: full

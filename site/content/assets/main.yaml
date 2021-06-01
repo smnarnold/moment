@@ -32,3 +32,9 @@ assets:
     alt: 'Tour McGill'
   articles/responsive-vs-adaptive.gif:
     caption: 'Crédit: [Froont.com](https://blog.froont.com/9-basic-principles-of-responsive-web-design/)'
+  articles/batman.jpg:
+    caption: 'Source: [4k.com](https://4k.com/)'
+  articles/bonjour-mq-main-0.png:
+    caption: 'Citation seule sur sa ligne, prenant toute la largeur de l''écran après le main.'
+  articles/bonjour-mq-main-1.png:
+    caption: 'Citation de retour à la droite du main.'

@@ -19,7 +19,7 @@ body:
     body: 'Permet de sélectionner les éléments utilisant la balise&nbsp;`<em>`.'
   -
     type: codepen
-    id: XWdGaXm
+    id: bfc799e4b4ee8c9c429b869f94113a44
     theme: light
     ratio: 56
     custom_ratio: '15'
@@ -45,7 +45,7 @@ body:
     body: 'Permet de modifier l''apparence de l''élément ayant l''id&nbsp;`no1`.'
   -
     type: codepen
-    id: oNxVeYe
+    id: 35c8b75486508a40e544429b4537d18e
     theme: light
     ratio: 56
     custom_ratio: '15'
@@ -71,7 +71,7 @@ body:
     body: 'Permet de sélectionner tous les éléments partageant la classe&nbsp;`element`.'
   -
     type: codepen
-    id: abNMyNm
+    id: 5d001f24b32c46ccef2f71fcc4437556
     theme: light
     ratio: 56
     custom_ratio: '15'
@@ -123,7 +123,7 @@ body:
     body: 'Permet de sélectionner les éléments avec la classe `.element`, mais uniquement s''ils sont enfants d''une balise possédant la classe&nbsp;`.group`.'
   -
     type: codepen
-    id: gOrEZEq
+    id: 815352cee8af466f36637330e67eb6dd
     theme: light
     ratio: 56
     custom_ratio: '15'
@@ -134,6 +134,10 @@ body:
       Dans l'exemple précédent, `.group` est ce que l'on appel le parent de&nbsp;`.element`. 
       
       Cependant, plusieurs balises auraient pu séparer `.group` de ses descendants `.element` sans problème. Tout comme plusieurs générations peuvent séparer une personne de ses ancètres, elle n'en reste pas moins  sa&nbsp;descendance.
+  -
+    type: note
+    intent: tool
+    body: '[Selectors explained](https://kittygiraudel.github.io/selectors-explained/): traduire ses sélecteurs CSS en texte humainement lisible afin de valider leur&nbsp;portée.'
   -
     type: note
     intent: exercice

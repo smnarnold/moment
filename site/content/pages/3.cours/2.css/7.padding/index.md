@@ -9,7 +9,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: vYXqoqO
+    id: 7241465f2f305314d6f3504d67df6d54
     theme: light
     ratio: 34
     tabs: chromeless
@@ -40,7 +40,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: YzGmKap
+    id: a5e54b9318d0c3dd90e95796238ab140
     theme: light
     ratio: 34
     tabs: chromeless
@@ -62,7 +62,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: WNGVeXJ
+    id: 91649c892c3c8f86acbe2e80e5c7fb60
     theme: light
     ratio: 34
     tabs: chromeless
@@ -76,7 +76,7 @@ body:
       Par exemple:
   -
     type: codepen
-    id: LYRwgeE
+    id: 90bcfbec887c3ed3b2206f2e614e2930
     theme: light
     ratio: 34
     tabs: chromeless
